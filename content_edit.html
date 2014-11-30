@@ -64,30 +64,55 @@
                   <i class="ico ico__48 ico__text"></i>
                   <span>Текст</span>
                 </div>
-                <!-- %div.ui-block{data: {block: "blockquotes"}} -->
-                <!-- %i.ico.ico__48.ico__blockquotes -->
-                <!-- %span Цитата -->
-                <!-- %div.ui-block{data: {block: "image"}} -->
-                <!-- %i.ico.ico__48.ico__image -->
-                <!-- %span Изображение -->
+                <div class="ui-block" data-block="blockquote">
+                  <i class="ico ico__48 ico__blockquote"></i>
+                  <span>Цитата</span>
+                </div>
+                <div class="ui-block" data-block="image">
+                  <i class="ico ico__48 ico__image"></i>
+                  <span>Изображение</span>
+                </div>
                 <!-- %div.ui-block{data: {block: "images"}} -->
                 <!-- %i.ico.ico__48.ico__images -->
                 <!-- %span Галерея -->
-                <!-- %div.ui-block{data: {block: "video"}} -->
-                <!-- %i.ico.ico__48.ico__video -->
-                <!-- %span Видео -->
+                <div class="ui-block" data-block="video">
+                  <i class="ico ico__48 ico__video"></i>
+                  <span>Видео</span>
+                </div>
               </nav>
             </div><div class="grid_i grid_i__grid-3-4">
-              <div class="ctn ui-content"></div>
+              <div class="ui-content"></div>
             </div></div>
         </div>
       </div>
     </main>
     <script id="block-heading" type="text/html">
-      <h1>Header H1</h1>
+      <div class="cnt">
+        <h1>Header H1</h1>
+      </div>
     </script>
     <script id="block-text" type="text/html">
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc varius libero eu tristique porta. Curabitur cursus nisl maximus diam euismod tincidunt. Ut faucibus turpis at elit euismod tempus. Nulla a aliquet mauris, a accumsan nunc. Praesent luctus odio nibh, at egestas arcu placerat sed. Vestibulum sodales auctor porttitor. Donec in viverra orci. Ut dictum justo ex, sit amet ultricies risus placerat vel. Cras id interdum augue. Donec finibus, lectus eget finibus commodo, nisl erat ultricies felis, id porta odio orci ac leo. Nulla non luctus risus, nec pretium ex. Sed sapien neque, consequat ac velit et, dapibus dapibus orci. Sed ut odio sit amet ante hendrerit fermentum ornare a justo.</p>
+      <div class="cnt">
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc varius libero eu tristique porta. Curabitur cursus nisl maximus diam euismod tincidunt. Ut faucibus turpis at elit euismod tempus. Nulla a aliquet mauris, a accumsan nunc. Praesent luctus odio nibh, at egestas arcu placerat sed. Vestibulum sodales auctor porttitor. Donec in viverra orci. Ut dictum justo ex, sit amet ultricies risus placerat vel. Cras id interdum augue. Donec finibus, lectus eget finibus commodo, nisl erat ultricies felis, id porta odio orci ac leo. Nulla non luctus risus, nec pretium ex. Sed sapien neque, consequat ac velit et, dapibus dapibus orci. Sed ut odio sit amet ante hendrerit fermentum ornare a justo.</p>
+      </div>
+    </script>
+    <script id="block-blockquote" type="text/html">
+      <div class="cnt">
+        <blockquote>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc varius libero eu tristique porta. Curabitur cursus nisl maximus diam euismod tincidunt. Ut faucibus turpis at elit euismod tempus. Nulla a aliquet mauris, a accumsan nunc. Praesent luctus odio nibh, at egestas arcu placerat sed. Vestibulum sodales auctor porttitor. Donec in viverra orci. Ut dictum justo ex, sit amet ultricies risus placerat vel. Cras id interdum augue. Donec finibus, lectus eget finibus commodo, nisl erat ultricies felis, id porta odio orci ac leo. Nulla non luctus risus, nec pretium ex. Sed sapien neque, consequat ac velit et, dapibus dapibus orci. Sed ut odio sit amet ante hendrerit fermentum ornare a justo.</blockquote>
+      </div>
+    </script>
+    <script id="block-image" type="text/html">
+      <div class="cnt">
+        <figure>
+          <img alt="Images caption" height="150" src="/assets/images/blank.gif" style="background-color: #eee;" width="500">
+          <figcaption>Images caption</figcaption>
+        </figure>
+      </div>
+    </script>
+    <script id="block-video" type="text/html">
+      <div class="cnt">
+        <iframe allowfullscreen="allowfullscreen" frameborder="0" height="315" src="//www.youtube.com/embed/UtnRlZ4oSlE" width="420"></iframe>
+      </div>
     </script>
     <footer class='footer' id='footer' role='contentinfo'>
       <div class='ctn'></div>

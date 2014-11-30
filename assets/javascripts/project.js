@@ -51,12 +51,24 @@ $(function() {
       
   $('.ui-content').sortable({
       placeholder: 'ui-placeholder',
+      cancel: '.ui-disabled',
       update: function (event, ui) {
         
         var block = ui.item.data('block');
         var tpl = _.template($('#block-' + block).html())();
 
-        ui.item.html(tpl).raptor();
+        var $item = ui.item;
+
+        $item.html(tpl).raptor({
+          bind: {
+            enabling: function() {
+              $item.addClass('ui-disabled');
+            },
+            cancel: function() {
+              $item.removeClass('ui-disabled');
+            }
+          }
+        });
 
       }
   });
