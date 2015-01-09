@@ -1,0 +1,719 @@
+<!DOCTYPE html>
+<html class="no-js" lang="ru-RU">
+  <head>
+    <title>Product / Sneyk</title>
+    <meta charset='utf-8'>
+    <meta content='width=device-width' name='viewport'>
+    <meta content='telephone=no' name='format-detection'>
+    <meta content='' name='description'>
+    <meta content='' name='keywords'>
+    <link href='/humans.txt' rel='author'>
+    <link href='/favicon.ico' rel='icon'>
+    <link href='/apple-touch-icon-precomposed.png' rel='apple-touch-icon'>
+    <link href='/apple-touch-icon-57x57-precomposed.png' rel='apple-touch-icon' sizes='57x57'>
+    <link href='/apple-touch-icon-72x72-precomposed.png' rel='apple-touch-icon' sizes='72x72'>
+    <link href='/apple-touch-icon-114x114-precomposed.png' rel='apple-touch-icon' sizes='114x114'>
+    <link href='/apple-touch-icon-144x144-precomposed.png' rel='apple-touch-icon' sizes='144x144'>
+    <link href='/assets/stylesheets/application.css' rel='stylesheet'>
+    <!-- build:javascripts -->
+    <script src='/assets/javascripts/vendor/modernizr-latest.js'></script>
+    <script src='/assets/javascripts/vendor/jquery-2.1.1.js'></script>
+    <script src='/assets/javascripts/vendor/jquery-ui.js'></script>
+    <script src='/assets/javascripts/vendor/underscore.js'></script>
+    <script src='/assets/javascripts/vendor/backbone.js'></script>
+    <script src='/assets/javascripts/vendor/selectordie.js'></script>
+    <script src='/assets/javascripts/vendor/accounting.js'></script>
+    <script src='/assets/javascripts/vendor/jquery.arcticmodal.js'></script>
+    <script src='/assets/javascripts/vendor/owl.carousel.js'></script>
+    <script src='/assets/javascripts/vendor/imagesloaded.pkgd.js'></script>
+    <script src='/assets/javascripts/vendor/masonry.pkgd.js'></script>
+    <script src='/assets/javascripts/vendor/jquery.sticky-kit.min.js'></script>
+    <script src='/assets/javascripts/vendor/jquery.raty.js'></script>
+    <script src='/assets/javascripts/vendor/jquery.maskedinput.js'></script>
+    <script src='/assets/javascripts/config.js'></script>
+    <script src='/assets/javascripts/jquery.extensions.js'></script>
+    <script src='/assets/javascripts/helpers.js'></script>
+    <script src='/assets/javascripts/forms.js'></script>
+    <script src='/assets/javascripts/application.js'></script>
+    <script src='/assets/javascripts/app.js'></script>
+    <script src='/assets/javascripts/project.js'></script>
+    <!-- endbuild -->
+  </head>
+  <body class="page page__default" id="page">
+    <style>
+      .alert-js{display:none;padding:2rem 0;background:#b22222;color:#fff;text-align:center}.alert-js h1{font-size:2rem;line-height:1.5}.no-js .alert-js{display:block}
+    </style>
+    <div class='alert-js' role='alert'><h1>У вас отключен JavaScript.</h1></div>
+    <!--[if lt IE 9]>
+      <style>
+        .alert-ie{padding:20px 0;background:#4682b4;color:#fff;text-align:center}.alert-ie h1{font-size:20px;line-height:1.5}.alert-ie a{color:#fff;text-decoration:underline}.alert-ie a:hover{text-decoration:none}
+      </style>
+      <div class='alert-ie' role='alert'><h1>Использование устаревшего браузера<br>повышает риск взлома вашего компьютера.<br><a href='http://browsehappy.com/' rel='nofollow' target='_blank'>Обновите свой браузер!</a></h1></div>
+    <![endif]-->
+    <div class='flash' id='flash'>
+      <div class='flash_inner'>
+        <p class='flash_msg'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce sagittis. Nullam consequat non mauris eu commodo. Mauris cursus, quam in convallis ultricies, tortor ligula facilisis justo, vitae mattis orci eros in massa. Sed felis enim, fringilla sit amet neque at, semper porttitor nibh.</p>
+        <a class='flash_close js-flash-close' href='#'>
+          <i class='fa fa-times-circle-o'></i>
+        </a>
+      </div>
+    </div>
+    <header class='header' id='header' role='banner'>
+      <div class='ctn'>
+        <div class='cf'>
+          <div class='f-l'>
+            <div class='header_logo'>
+              <a href='/'>
+                <img alt='Sneyk' height='25' src='/assets/images/logo.svg' width='120'>
+              </a>
+            </div>
+            <nav class='header_nav'><a class='header_nav_i header_nav_i__current' href='/catalog.html'>MENS</a><a class='header_nav_i' href='/catalog.html'>WOMENS</a><a class='header_nav_i' href='/catalog.html'>SUPPLEMENTS</a><a class='header_nav_i' href='/catalog.html'>STORIES</a></nav>
+          </div>
+          <div class='f-r'>
+            <!-- %div.header_invite -->
+            <!-- %a{href: "#"} -->
+            <!-- %span> INVITE A FRIEND -->
+            <!-- %br> -->
+            <!-- %span YOU EACH GET -->
+            <!-- &nbsp; -->
+            <!-- %span.price.price_s.format-money.format-money__us 25 -->
+            <a class='header_search js-search-toggle' href='#'></a>
+            <a class='header_profile' href='#'>
+              <span>MY ACCOUNT</span>
+              <i class='fa fa-caret-down'></i>
+            </a>
+            <a class='header_cart' href='#'></a>
+          </div>
+        </div>
+        <form class='search form js-form' id='search'>
+          <div class='form_el js-form_el form_el__block form_tx form_tx__s'>
+            <input class='form_el_tag form_tx_tag' type='text'>
+          </div>
+        </form>
+      </div>
+    </header>
+    <nav class='nav' rele='navigation'>
+      <div class='ctn'>
+        <div class='cf'>
+          <div class='f-l'>
+            <a class='nav_i nav_i__current' href='#'>Footwear</a>
+            <a class='nav_i' href='#'>Apparel</a>
+            <a class='nav_i' href='#'>Camp</a>
+            <a class='nav_i' href='#'>Climb</a>
+            <a class='nav_i' href='#'>Cycle</a>
+            <a class='nav_i' href='#'>Fitness</a>
+            <a class='nav_i' href='#'>Snow</a>
+            <a class='nav_i' href='#'>Surf/Skate</a>
+            <a class='nav_i' href='#'>More</a>
+          </div>
+          <div class='f-r'>
+            <a class='nav_i nav_i__special' href='#'>On Sale Now</a>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <main class="main" id="main" role="main">
+      <section aria-label="Product card" class="section pb-8" role="region">
+        <div class="ctn">
+          <div class="section_inner">
+            <div class='product-card'>
+              <p class='back-to'>
+                <a class='back-to_a' href='/catalog.html'>
+                  <i class='fa fa-chevron-left back-to_a_ico'></i>
+                  Back to&nbsp;full-suspension MTBs catalog
+                </a>
+              </p>
+              <div class='grid'><div class='grid_i grid_i__desktop-grid-5-12'>
+                  <div class='product-card_photo'>
+                    <img alt="Woman's shit computer" src='/assets/images/product-no-photo.png' width='100%'>
+                  </div>
+                </div><div class='grid_i grid_i__desktop-grid-7-12'>
+                  <div class='mb-1'>
+                    <ul class='product-card_breadcrumbs'>
+                      <li class='product-card_breadcrumbs_i'>
+                        <a class='product-card_breadcrumbs_i_a' href='#'>Specialized</a>
+                      </li>
+                    </ul>
+                  </div>
+                  <div class='mb-4'>
+                    <h1>S-Works Epic Carbon 29&rsquo;&rsquo;</h1>
+                    <div class='mb-2'>
+                      <div class='grid'><div class='grid_i grid_i__desktop-grid-5-7'>
+                          <p class='mb-2'>Full-suspension MTB</p>
+                          <p class='price price__l format-money format-money__us'>10500</p>
+                        </div><div class='grid_i grid_i__desktop-grid-2-7'>
+                          <span class='product-card_social-info'>SHARE & EARN</span>
+                          <span class='price price__s format-money format-money__us'>25</span>
+                          <ul class='product-card_social'><li class='product-card_social_i'>
+                              <a href='#'>
+                                <i class='ico ico__16 ico__fb'></i>
+                              </a>
+                            </li><li class='product-card_social_i'>
+                              <a href='#'>
+                                <i class='ico ico__16 ico__tw'></i>
+                              </a>
+                            </li><li class='product-card_social_i'>
+                              <a href='#'>
+                                <i class='ico ico__16 ico__mail'></i>
+                              </a>
+                            </li></ul>
+                        </div></div>
+                    </div>
+                    <p>The full-suspension, carbon fiber, S-Works Epic 29&nbsp;is the first 29er to&nbsp;win a&nbsp;World Cup event, and the bike Mountain Bike Action magazine describes as&nbsp;the &laquo;best bike we&rsquo;ve ever ridden&raquo;.</p>
+                  </div>
+                  <div class='mb-4'>
+                    <p class='tx-myriad-pro-semibold mb-1'>
+                      <span class='tx-white'>Body kit:</span>
+                      <span>Shimano XT</span>
+                    </p>
+                    <ul class='product-card_body-kit'><li class='product-card_body-kit_i'>
+                        <a class='product-card_body-kit_i_a product-card_body-kit_i_a__current' href='#'><span>Shimano XT</span><br><span class='price price__s format-money format-money__us'>10500</span>
+                        </a>
+                      </li><li class='product-card_body-kit_i'>
+                        <a class='product-card_body-kit_i_a' href='#'><span>SRAM XO</span><br><span class='price price__s format-money format-money__us'>11500</span>
+                        </a>
+                      </li><li class='product-card_body-kit_i'>
+                        <a class='product-card_body-kit_i_a' href='#'><span>Shimano XT</span><br><span class='price price__s format-money format-money__us'>10500</span>
+                        </a>
+                      </li><li class='product-card_body-kit_i'>
+                        <a class='product-card_body-kit_i_a' href='#'><span>SRAM XO</span><br><span class='price price__s format-money format-money__us'>11500</span>
+                        </a>
+                      </li></ul>
+                  </div>
+                  <div class='mb-4'>
+                    <p class='tx-myriad-pro-semibold mb-1'>
+                      <span class='tx-white'>Color:</span>
+                      <span class='js-product-color'>White</span>
+                    </p>
+                    <ul class='product-card_color'><li class='product-card_color_i'>
+                        <a class='product-card_color_i_a' href='#'></a>
+                      </li><li class='product-card_color_i'>
+                        <a class='product-card_color_i_a' href='#'></a>
+                      </li><li class='product-card_color_i'>
+                        <a class='product-card_color_i_a' href='#'></a>
+                      </li><li class='product-card_color_i'>
+                        <a class='product-card_color_i_a' href='#'></a>
+                      </li></ul>
+                  </div>
+                  <div class='mb-4'>
+                    <p class='tx-myriad-pro-semibold mb-1'>
+                      <span class='tx-white'>Size:</span>
+                    </p>
+                    <ul class='product-card_size'><li class='product-card_size_i product-card_size_i__current'>S</li><li class='product-card_size_i'>L</li><li class='product-card_size_i'>XL</li><li class='product-card_size_i'>XXL</li></ul>
+                  </div>
+                  <div class='mb-3'>
+                    <div class='grid'><div class='grid_i grid_i__desktop-grid-1-2 grid_i__tablet-grid-1-2 grid_i__phone-grid-1-1'>
+                        <div class='form js-form'>
+                          <div class='form_el form_el__block js-form_el form_btn form_btn__green form_btn__l'>
+                            <p class='form_el_inner form_btn_inner'>ORDER NOW</p>
+                            <button class='form_el_tag form_btn_tag' type='button'></button>
+                          </div>
+                        </div>
+                      </div><div class='grid_i grid_i__desktop-grid-1-2 grid_i__tablet-grid-1-2 grid_i__phone-grid-1-1'>
+                        <div class='form js-form'>
+                          <div class='form_el form_el__block js-form_el form_btn form_btn__gray form_btn__l'>
+                            <p class='form_el_inner form_btn_inner'>ADD TO WISHLIST</p>
+                            <button class='form_el_tag form_btn_tag' type='button'></button>
+                          </div>
+                        </div>
+                      </div></div>
+                  </div>
+                  <div>
+                    <div class='mb-1'>
+                      <dl class='grid'><dt class='grid_i grid_i__desktop-grid-1-2 grid_i__tablet-grid-1-2 grid_i__phone-grid-1-1'>
+                          <p class='tx-voice'>Free shipping</p>
+                        </dt><dd class='grid_i grid_i__desktop-grid-1-2 grid_i__tablet-grid-1-2 grid_i__phone-grid-1-1'>
+                          <p class='tx-voice'>14 days to return or exchange</p>
+                        </dd></dl>
+                    </div>
+                    <div>
+                      <dl class='grid'><dt class='grid_i grid_i__desktop-grid-1-2 grid_i__tablet-grid-1-2 grid_i__phone-grid-1-1'>
+                          <p class='tx-voice'>Estimated delivery tomorrow</p>
+                        </dt><dd class='grid_i grid_i__desktop-grid-1-2 grid_i__tablet-grid-1-2 grid_i__phone-grid-1-1'>
+                          <p class='tx-voice'>Call 8 (800) 500 05 68 for details</p>
+                        </dd></dl>
+                    </div>
+                  </div>
+                </div></div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section aria-label="You might like" class="section section__decoration mb-7" role="region">
+        <div class="ctn">
+          <h4 class="sub-heading sub-heading__left">
+            <span class="sub-heading_inner">YOU MIGHT LIKE</span>
+          </h4>
+          <div class="grid"><div class="grid_i grid_i__desktop-grid-1-3 grid_i__tablet-grid-1-3 grid_i__phone-grid-1-3">
+              <div class='might-like-i'>
+                <div class='grid'><div class='grid_i grid_i__desktop-grid-1-3 grid_i__tablet-grid-1-3 grid_i__phone-grid-1-3'>
+                    <div class='might-like-i_photo'>
+                      <a href='#'>
+                        <img alt='KNOG' src='/assets/images/product-no-photo.png' width='100%'>
+                      </a>
+                    </div>
+                  </div><div class='grid_i grid_i__desktop-grid-2-3 grid_i__tablet-grid-2-3 grid_i__phone-grid-2-3'>
+                    <div class='pt-1 pb-1'>
+                      <p class='zeta'>
+                        <a class='tx-gray' href='#'>KNOG</a>
+                      </p>
+                      <p class='epsilon'>
+                        <a class='tx-white' href='#'>BLINDER 4 STANDARD</a>
+                      </p>
+                      <p class='tx-voice'>Taillight</p>
+                      <p class='tx-voice'>Available in few colors</p>
+                    </div>
+                  </div></div>
+                <div class='might-like-i_pane'>
+                  <div class='grid'><div class='grid_i grid_i__middle grid_i__desktop-grid-1-2 grid_i__tablet-grid-1-2 grid_i__phone-grid-1-2'>
+                      <p class='price price__s format-money format-money__us'>26.98</p>
+                    </div><div class='grid_i grid_i__middle grid_i__desktop-grid-1-2 grid_i__tablet-grid-1-2 grid_i__phone-grid-1-2'>
+                      <div class='form js-form'>
+                        <div class='form_el form_el__block js-form_el form_btn form_btn__green form_btn__s'>
+                          <p class='form_el_inner form_btn_inner'>ORDER NOW</p>
+                          <button class='form_el_tag form_btn_tag' type='button'></button>
+                        </div>
+                      </div>
+                    </div></div>
+                </div>
+              </div>
+            </div><div class="grid_i grid_i__desktop-grid-1-3 grid_i__tablet-grid-1-3 grid_i__phone-grid-1-3">
+              <div class='might-like-i'>
+                <div class='grid'><div class='grid_i grid_i__desktop-grid-1-3 grid_i__tablet-grid-1-3 grid_i__phone-grid-1-3'>
+                    <div class='might-like-i_photo'>
+                      <a href='#'>
+                        <img alt='KNOG' src='/assets/images/product-no-photo.png' width='100%'>
+                      </a>
+                    </div>
+                  </div><div class='grid_i grid_i__desktop-grid-2-3 grid_i__tablet-grid-2-3 grid_i__phone-grid-2-3'>
+                    <div class='pt-1 pb-1'>
+                      <p class='zeta'>
+                        <a class='tx-gray' href='#'>KNOG</a>
+                      </p>
+                      <p class='epsilon'>
+                        <a class='tx-white' href='#'>BLINDER 4 STANDARD</a>
+                      </p>
+                      <p class='tx-voice'>Taillight</p>
+                      <p class='tx-voice'>Available in few colors</p>
+                    </div>
+                  </div></div>
+                <div class='might-like-i_pane'>
+                  <div class='grid'><div class='grid_i grid_i__middle grid_i__desktop-grid-1-2 grid_i__tablet-grid-1-2 grid_i__phone-grid-1-2'>
+                      <p class='price price__s format-money format-money__us'>26.98</p>
+                    </div><div class='grid_i grid_i__middle grid_i__desktop-grid-1-2 grid_i__tablet-grid-1-2 grid_i__phone-grid-1-2'>
+                      <div class='form js-form'>
+                        <div class='form_el form_el__block js-form_el form_btn form_btn__green form_btn__s'>
+                          <p class='form_el_inner form_btn_inner'>ORDER NOW</p>
+                          <button class='form_el_tag form_btn_tag' type='button'></button>
+                        </div>
+                      </div>
+                    </div></div>
+                </div>
+              </div>
+            </div><div class="grid_i grid_i__desktop-grid-1-3 grid_i__tablet-grid-1-3 grid_i__phone-grid-1-3">
+              <div class='might-like-i'>
+                <div class='grid'><div class='grid_i grid_i__desktop-grid-1-3 grid_i__tablet-grid-1-3 grid_i__phone-grid-1-3'>
+                    <div class='might-like-i_photo'>
+                      <a href='#'>
+                        <img alt='KNOG' src='/assets/images/product-no-photo.png' width='100%'>
+                      </a>
+                    </div>
+                  </div><div class='grid_i grid_i__desktop-grid-2-3 grid_i__tablet-grid-2-3 grid_i__phone-grid-2-3'>
+                    <div class='pt-1 pb-1'>
+                      <p class='zeta'>
+                        <a class='tx-gray' href='#'>KNOG</a>
+                      </p>
+                      <p class='epsilon'>
+                        <a class='tx-white' href='#'>BLINDER 4 STANDARD</a>
+                      </p>
+                      <p class='tx-voice'>Taillight</p>
+                      <p class='tx-voice'>Available in few colors</p>
+                    </div>
+                  </div></div>
+                <div class='might-like-i_pane'>
+                  <div class='grid'><div class='grid_i grid_i__middle grid_i__desktop-grid-1-2 grid_i__tablet-grid-1-2 grid_i__phone-grid-1-2'>
+                      <p class='price price__s format-money format-money__us'>26.98</p>
+                    </div><div class='grid_i grid_i__middle grid_i__desktop-grid-1-2 grid_i__tablet-grid-1-2 grid_i__phone-grid-1-2'>
+                      <div class='form js-form'>
+                        <div class='form_el form_el__block js-form_el form_btn form_btn__green form_btn__s'>
+                          <p class='form_el_inner form_btn_inner'>ORDER NOW</p>
+                          <button class='form_el_tag form_btn_tag' type='button'></button>
+                        </div>
+                      </div>
+                    </div></div>
+                </div>
+              </div>
+            </div></div>
+        </div>
+      </section>
+      <section aria-label="Product navigation" class="section pb-5" role="region">
+        <div class="ctn">
+          <div class="grid"><div class="grid_i grid_i__desktop-grid-7-12 grid_i__desktop-prefix-5-12">
+              <nav class="product_nav" id="product-nav">
+                <ul><li>
+                    <a href="#description">Product information</a>
+                  </li><li>
+                    <a href="#reviews">Ratings & reviews</a>
+                  </li><li>
+                    <a href="#questions">Questions & answers</a>
+                  </li></ul>
+              </nav>
+            </div></div>
+        </div>
+      </section>
+      <section aria-label="Product information" aria-offset="50" class="section pb-5" role="region">
+        <div class="ctn">
+          <div class="product-info" id="description">
+            <h2>Product information</h2>
+            <hr class="hr mb-2">
+            <div class='mb-2'>
+              <div class='owl-carousel'>
+                <img alt='' src='/assets/images/slide-1.jpg' width='100%'>
+                <img alt='' src='/assets/images/slide-1.jpg' width='100%'>
+                <img alt='' src='/assets/images/slide-1.jpg' width='100%'>
+                <img alt='' src='/assets/images/slide-1.jpg' width='100%'>
+                <img alt='' src='/assets/images/slide-1.jpg' width='100%'>
+              </div>
+            </div>
+            <div class='mb-4'>
+              <div class='grid'><div class='grid_i grid_i__desktop-grid-1-2 grid_i__tablet-grid-1-1 grid_i__phone-grid-1-1'>
+                  <div class='cnt'>
+                    <h1>THE S-WORKS LINE APPEALS TO&nbsp;A&nbsp;CERTAIN TYPE OF&nbsp;RIDER.</h1>
+                    <p>Do&nbsp;you weigh your coffee beans with a&nbsp;carbon fiber scale before brewing? Do&nbsp;you use words like &laquo;proprietary&raquo; and &laquo;torsional stiffness&raquo; to&nbsp;describe your toothbrush? Do&nbsp;you find yourself racing co-workers up&nbsp;the stairs completely unbeknownst to&nbsp;them? If&nbsp;so, you&rsquo;re in&nbsp;good company. S-Works is&nbsp;the pinnacle of&nbsp;everything we&rsquo;re capable&nbsp;of. No&nbsp;expense is&nbsp;spared, no&nbsp;ideal too abstract, no&nbsp;design too extreme. An&nbsp;accountant from finance once told&nbsp;us we&nbsp;needed to&nbsp;rein in&nbsp;spending for S-Works development; he&nbsp;walked back upstairs with a&nbsp;black eye. Not that we&nbsp;have anything against bean-counters of&nbsp;course, they&rsquo;re some of&nbsp;our best customers. More importantly, S-Works is&nbsp;where innovation and design are pushed to&nbsp;the limits. It&nbsp;has to&nbsp;be&nbsp;though; when our R+D team is&nbsp;composed of&nbsp;riders like Mark Cavendish, Craig &laquo;Crowie&raquo; Alexander and Christophe Sauser, the stakes are pretty high. Above all else S-Works is&nbsp;a&nbsp;standard; if&nbsp;it&rsquo;s not the best, it&nbsp;gets tossed aside. Our dedication is&nbsp;relentless, some would even say borderline obsessive. We&rsquo;re not offended though, they&rsquo;re probably just the ones that we&nbsp;beat up&nbsp;the stairs.</p>
+                  </div>
+                </div><div class='grid_i grid_i__desktop-grid-1-2 grid_i__tablet-grid-1-1 grid_i__phone-grid-1-1'>
+                  <img alt='' class='va-t' src='/assets/images/content-1.jpg' width='100%'>
+                </div></div>
+            </div>
+            <div class='mb-2'>
+              <hr class='hr'>
+            </div>
+            <div>
+              <div class='grid'><div class='grid_i grid_i__desktop-grid-3-12'>
+                  <p class='tx-major'>What's in the Box?</p>
+                </div><div class='grid_i grid_i__desktop-grid-9-12'>
+                  <div class='cnt'>
+                    <ul>
+                      <li>Ready to drive bicycle</li>
+                      <li>User manual</li>
+                      <li>Helmet</li>
+                    </ul>
+                  </div>
+                </div></div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section aria-label="Ratings &amp; Reviews" class="section pb-5" role="region">
+        <div class="ctn">
+          <div class="product-reviews" id="reviews">
+            <h2>Ratings & Reviews</h2>
+            <hr class="hr mb-2">
+            <div>
+              <div class='grid'><div class='grid_i grid_i__desktop-grid-3-12'>
+                  <p class='tx-minor'>Have you experience using this product?</p>
+                  <p class='tx-minor'>
+                    <a href='#'>Review it now!</a>
+                  </p>
+                </div><div class='grid_i grid_i__desktop-grid-9-12'>
+                  <div>
+                    <p class='tx-voice'>Most recent</p>
+                    <hr class='hr'>
+                  </div>
+                  <div class='mb-2'>
+                    <article class='product-reviews_i'>
+                      <header class='product-reviews_i_h'>
+                        <div class='raty' data-score='3'></div>
+                      </header>
+                      <div>
+                        <div class='grid'><div class='grid_i grid_i__desktop-grid-7-9'>
+                            <p>
+                              When the cover is&nbsp;flipped over to&nbsp;the back of&nbsp;my&nbsp;iPad, it&nbsp;completely blocks the camera lens. When I&nbsp;try to&nbsp;take pics&nbsp;I have to&nbsp;let the cover hang on&nbsp;the side...
+                              <a class='js-reviews-toggle' href='#'>Read&nbsp;more</a>
+                            </p>
+                            <p class='product-reviews_i_more'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec tempor tincidunt sapien, ut&nbsp;tincidunt nibh posuere&nbsp;at. Fusce ac&nbsp;dui quis lorem molestie gravida ornare vitae sapien. Etiam volutpat porta lectus vitae consectetur. Vivamus volutpat ac&nbsp;felis a&nbsp;egestas. Vestibulum a&nbsp;augue quis risus elementum placerat. Phasellus id&nbsp;enim ac&nbsp;nisl luctus tristique. Vivamus porta, tellus eget consequat facilisis, quam augue sagittis tellus, varius imperdiet mi&nbsp;enim et&nbsp;felis. Sed vel rhoncus nulla. Etiam sagittis dignissim ultricies. Curabitur dolor libero, ultrices bibendum suscipit&nbsp;eu, aliquet eget enim. Nunc malesuada vulputate justo, quis euismod sapien pellentesque&nbsp;ac. Integer non volutpat tellus. Sed aliquet, erat et&nbsp;dapibus consequat, elit elit mattis massa, eget porttitor velit nisl eu&nbsp;sapien.</p>
+                          </div><div class='grid_i grid_i__desktop-grid-2-9'>
+                            <p class='tx-minor mb-1'>Was this useful?</p>
+                            <div class='grid'><div class='grid_i grid_i__desktop-grid-1-2 grid_i__tablet-grid-1-2 grid_i__phone-grid-1-2'>
+                                <div class='form js-form'>
+                                  <div class='form_el form_el__block js-form_el form_btn form_btn__green form_btn__s'>
+                                    <p class='form_el_inner form_btn_inner'>Yes</p>
+                                    <button class='form_el_tag form_btn_tag' type='button'></button>
+                                  </div>
+                                </div>
+                              </div><div class='grid_i grid_i__desktop-grid-1-2 grid_i__tablet-grid-1-2 grid_i__phone-grid-1-2'>
+                                <div class='form js-form'>
+                                  <div class='form_el form_el__block js-form_el form_btn form_btn__gray form_btn__s'>
+                                    <p class='form_el_inner form_btn_inner'>No</p>
+                                    <button class='form_el_tag form_btn_tag' type='button'></button>
+                                  </div>
+                                </div>
+                              </div></div>
+                          </div></div>
+                      </div>
+                      <footer class='product-reviews_i_f'>
+                        <p>Written by Kaori I from Chicago | Jul 27, 2014</p>
+                        <p>11 of 13 people found this useful</p>
+                      </footer>
+                    </article>
+                    <article class='product-reviews_i'>
+                      <header class='product-reviews_i_h'>
+                        <div class='raty' data-score='4'></div>
+                      </header>
+                      <div>
+                        <div class='grid'><div class='grid_i grid_i__desktop-grid-7-9'>
+                            <p>
+                              When the cover is&nbsp;flipped over to&nbsp;the back of&nbsp;my&nbsp;iPad, it&nbsp;completely blocks the camera lens. When I&nbsp;try to&nbsp;take pics&nbsp;I have to&nbsp;let the cover hang on&nbsp;the side...
+                              <a class='js-reviews-toggle' href='#'>Read&nbsp;more</a>
+                            </p>
+                            <p class='product-reviews_i_more'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec tempor tincidunt sapien, ut&nbsp;tincidunt nibh posuere&nbsp;at. Fusce ac&nbsp;dui quis lorem molestie gravida ornare vitae sapien. Etiam volutpat porta lectus vitae consectetur. Vivamus volutpat ac&nbsp;felis a&nbsp;egestas. Vestibulum a&nbsp;augue quis risus elementum placerat. Phasellus id&nbsp;enim ac&nbsp;nisl luctus tristique. Vivamus porta, tellus eget consequat facilisis, quam augue sagittis tellus, varius imperdiet mi&nbsp;enim et&nbsp;felis. Sed vel rhoncus nulla. Etiam sagittis dignissim ultricies. Curabitur dolor libero, ultrices bibendum suscipit&nbsp;eu, aliquet eget enim. Nunc malesuada vulputate justo, quis euismod sapien pellentesque&nbsp;ac. Integer non volutpat tellus. Sed aliquet, erat et&nbsp;dapibus consequat, elit elit mattis massa, eget porttitor velit nisl eu&nbsp;sapien.</p>
+                          </div><div class='grid_i grid_i__desktop-grid-2-9'>
+                            <p class='tx-minor mb-1'>Was this useful?</p>
+                            <div class='grid'><div class='grid_i grid_i__desktop-grid-1-2 grid_i__tablet-grid-1-2 grid_i__phone-grid-1-2'>
+                                <div class='form js-form'>
+                                  <div class='form_el form_el__block js-form_el form_btn form_btn__green form_btn__s'>
+                                    <p class='form_el_inner form_btn_inner'>Yes</p>
+                                    <button class='form_el_tag form_btn_tag' type='button'></button>
+                                  </div>
+                                </div>
+                              </div><div class='grid_i grid_i__desktop-grid-1-2 grid_i__tablet-grid-1-2 grid_i__phone-grid-1-2'>
+                                <div class='form js-form'>
+                                  <div class='form_el form_el__block js-form_el form_btn form_btn__gray form_btn__s'>
+                                    <p class='form_el_inner form_btn_inner'>No</p>
+                                    <button class='form_el_tag form_btn_tag' type='button'></button>
+                                  </div>
+                                </div>
+                              </div></div>
+                          </div></div>
+                      </div>
+                      <footer class='product-reviews_i_f'>
+                        <p>Written by Kaori I from Chicago | Jul 27, 2014</p>
+                        <p>11 of 13 people found this useful</p>
+                      </footer>
+                    </article>
+                  </div>
+                  <div>
+                    <p class='tx-minor'>
+                      <a href='#'>Read all the most recent reviews</a>
+                    </p>
+                  </div>
+                </div></div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section aria-label="Questions &amp; Answers" class="section pb-9" role="region">
+        <div class="ctn">
+          <div class="product-faq" id="questions">
+            <h2>Questions & Answers</h2>
+            <hr class="hr mb-2">
+            <div>
+              <div class='grid'><div class='grid_i grid_i__desktop-grid-3-12'>
+                  <p class='tx-minor'>Questions about this product?</p>
+                  <p class='tx-minor'>
+                    Call
+                    <span class='tx-700'>8 (800) 500 05 68</span>
+                    or
+                  </p>
+                  <p class='tx-s'>
+                    <a href='#'>Ask a question</a>
+                  </p>
+                </div><div class='grid_i grid_i__desktop-grid-9-12'>
+                  <div>
+                    <p class='tx-voice'>Most recent</p>
+                    <hr class='hr'>
+                  </div>
+                  <div class='mb-2'>
+                    <article class='product-faq_i'>
+                      <header class='product-faq_i_h'>
+                        <p class='product-faq_i_question'>Does the cover have a back to it?</p>
+                        <p class='tx-voice'>Asked by Cathy H from Conyers | Jul 13, 2014</p>
+                      </header>
+                      <div>
+                        <p>
+                          No. The Smart Cover covers just the screen. The Smart Case covers the screen and the back. They are...
+                          <a class='js-faq-toggle' href='#'>Read&nbsp;more</a>
+                        </p>
+                        <p class='product-faq_i_answers'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec tempor tincidunt sapien, ut&nbsp;tincidunt nibh posuere&nbsp;at. Fusce ac&nbsp;dui quis lorem molestie gravida ornare vitae sapien. Etiam volutpat porta lectus vitae consectetur. Vivamus volutpat ac&nbsp;felis a&nbsp;egestas. Vestibulum a&nbsp;augue quis risus elementum placerat. Phasellus id&nbsp;enim ac&nbsp;nisl luctus tristique. Vivamus porta, tellus eget consequat facilisis, quam augue sagittis tellus, varius imperdiet mi&nbsp;enim et&nbsp;felis. Sed vel rhoncus nulla. Etiam sagittis dignissim ultricies. Curabitur dolor libero, ultrices bibendum suscipit&nbsp;eu, aliquet eget enim. Nunc malesuada vulputate justo, quis euismod sapien pellentesque&nbsp;ac. Integer non volutpat tellus. Sed aliquet, erat et&nbsp;dapibus consequat, elit elit mattis massa, eget porttitor velit nisl eu&nbsp;sapien.</p>
+                      </div>
+                    </article>
+                    <article class='product-faq_i'>
+                      <header class='product-faq_i_h'>
+                        <p class='product-faq_i_question'>Does the cover have a back to it?</p>
+                        <p class='tx-voice'>Asked by Cathy H from Conyers | Jul 13, 2014</p>
+                      </header>
+                      <div>
+                        <p>
+                          No. The Smart Cover covers just the screen. The Smart Case covers the screen and the back. They are...
+                          <a class='js-faq-toggle' href='#'>Read&nbsp;more</a>
+                        </p>
+                        <p class='product-faq_i_answers'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec tempor tincidunt sapien, ut&nbsp;tincidunt nibh posuere&nbsp;at. Fusce ac&nbsp;dui quis lorem molestie gravida ornare vitae sapien. Etiam volutpat porta lectus vitae consectetur. Vivamus volutpat ac&nbsp;felis a&nbsp;egestas. Vestibulum a&nbsp;augue quis risus elementum placerat. Phasellus id&nbsp;enim ac&nbsp;nisl luctus tristique. Vivamus porta, tellus eget consequat facilisis, quam augue sagittis tellus, varius imperdiet mi&nbsp;enim et&nbsp;felis. Sed vel rhoncus nulla. Etiam sagittis dignissim ultricies. Curabitur dolor libero, ultrices bibendum suscipit&nbsp;eu, aliquet eget enim. Nunc malesuada vulputate justo, quis euismod sapien pellentesque&nbsp;ac. Integer non volutpat tellus. Sed aliquet, erat et&nbsp;dapibus consequat, elit elit mattis massa, eget porttitor velit nisl eu&nbsp;sapien.</p>
+                      </div>
+                    </article>
+                    <article class='product-faq_i'>
+                      <header class='product-faq_i_h'>
+                        <p class='product-faq_i_question'>Does the cover have a back to it?</p>
+                        <p class='tx-voice'>Asked by Cathy H from Conyers | Jul 13, 2014</p>
+                      </header>
+                      <div>
+                        <p>
+                          No. The Smart Cover covers just the screen. The Smart Case covers the screen and the back. They are...
+                          <a class='js-faq-toggle' href='#'>Read&nbsp;more</a>
+                        </p>
+                        <p class='product-faq_i_answers'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec tempor tincidunt sapien, ut&nbsp;tincidunt nibh posuere&nbsp;at. Fusce ac&nbsp;dui quis lorem molestie gravida ornare vitae sapien. Etiam volutpat porta lectus vitae consectetur. Vivamus volutpat ac&nbsp;felis a&nbsp;egestas. Vestibulum a&nbsp;augue quis risus elementum placerat. Phasellus id&nbsp;enim ac&nbsp;nisl luctus tristique. Vivamus porta, tellus eget consequat facilisis, quam augue sagittis tellus, varius imperdiet mi&nbsp;enim et&nbsp;felis. Sed vel rhoncus nulla. Etiam sagittis dignissim ultricies. Curabitur dolor libero, ultrices bibendum suscipit&nbsp;eu, aliquet eget enim. Nunc malesuada vulputate justo, quis euismod sapien pellentesque&nbsp;ac. Integer non volutpat tellus. Sed aliquet, erat et&nbsp;dapibus consequat, elit elit mattis massa, eget porttitor velit nisl eu&nbsp;sapien.</p>
+                      </div>
+                    </article>
+                    <article class='product-faq_i'>
+                      <header class='product-faq_i_h'>
+                        <p class='product-faq_i_question'>Does the cover have a back to it?</p>
+                        <p class='tx-voice'>Asked by Cathy H from Conyers | Jul 13, 2014</p>
+                      </header>
+                      <div>
+                        <p>
+                          No. The Smart Cover covers just the screen. The Smart Case covers the screen and the back. They are...
+                          <a class='js-faq-toggle' href='#'>Read&nbsp;more</a>
+                        </p>
+                        <p class='product-faq_i_answers'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec tempor tincidunt sapien, ut&nbsp;tincidunt nibh posuere&nbsp;at. Fusce ac&nbsp;dui quis lorem molestie gravida ornare vitae sapien. Etiam volutpat porta lectus vitae consectetur. Vivamus volutpat ac&nbsp;felis a&nbsp;egestas. Vestibulum a&nbsp;augue quis risus elementum placerat. Phasellus id&nbsp;enim ac&nbsp;nisl luctus tristique. Vivamus porta, tellus eget consequat facilisis, quam augue sagittis tellus, varius imperdiet mi&nbsp;enim et&nbsp;felis. Sed vel rhoncus nulla. Etiam sagittis dignissim ultricies. Curabitur dolor libero, ultrices bibendum suscipit&nbsp;eu, aliquet eget enim. Nunc malesuada vulputate justo, quis euismod sapien pellentesque&nbsp;ac. Integer non volutpat tellus. Sed aliquet, erat et&nbsp;dapibus consequat, elit elit mattis massa, eget porttitor velit nisl eu&nbsp;sapien.</p>
+                      </div>
+                    </article>
+                    <article class='product-faq_i'>
+                      <header class='product-faq_i_h'>
+                        <p class='product-faq_i_question'>Does the cover have a back to it?</p>
+                        <p class='tx-voice'>Asked by Cathy H from Conyers | Jul 13, 2014</p>
+                      </header>
+                      <div>
+                        <p>
+                          No. The Smart Cover covers just the screen. The Smart Case covers the screen and the back. They are...
+                          <a class='js-faq-toggle' href='#'>Read&nbsp;more</a>
+                        </p>
+                        <p class='product-faq_i_answers'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec tempor tincidunt sapien, ut&nbsp;tincidunt nibh posuere&nbsp;at. Fusce ac&nbsp;dui quis lorem molestie gravida ornare vitae sapien. Etiam volutpat porta lectus vitae consectetur. Vivamus volutpat ac&nbsp;felis a&nbsp;egestas. Vestibulum a&nbsp;augue quis risus elementum placerat. Phasellus id&nbsp;enim ac&nbsp;nisl luctus tristique. Vivamus porta, tellus eget consequat facilisis, quam augue sagittis tellus, varius imperdiet mi&nbsp;enim et&nbsp;felis. Sed vel rhoncus nulla. Etiam sagittis dignissim ultricies. Curabitur dolor libero, ultrices bibendum suscipit&nbsp;eu, aliquet eget enim. Nunc malesuada vulputate justo, quis euismod sapien pellentesque&nbsp;ac. Integer non volutpat tellus. Sed aliquet, erat et&nbsp;dapibus consequat, elit elit mattis massa, eget porttitor velit nisl eu&nbsp;sapien.</p>
+                      </div>
+                    </article>
+                  </div>
+                  <div>
+                    <p class='tx-minor'>
+                      <a href='#'>Read all the most recent reviews</a>
+                    </p>
+                  </div>
+                </div></div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class='footer' id='footer' role='contentinfo'>
+      <div class='ctn'>
+        <div class='grid'><div class='grid_i grid_i__desktop-grid-1-6'>
+            <img alt='Guaranteed Authentic' class='va-t' height='47' src='/assets/images/guaranteed-authentic.png' width='87'>
+          </div><div class='grid_i grid_i__desktop-grid-1-6'>
+            <nav class='footer_nav'>
+              <p>Company</p>
+              <ul>
+                <li>
+                  <a href='#'>About</a>
+                </li>
+                <li>
+                  <a href='#'>Brand Directory</a>
+                </li>
+                <li>
+                  <a href='#'>Category Directory</a>
+                </li>
+                <li>
+                  <a href='#'>Press Releases</a>
+                </li>
+              </ul>
+            </nav>
+          </div><div class='grid_i grid_i__desktop-grid-1-6'>
+            <nav class='footer_nav'>
+              <p>My Sneyk</p>
+              <ul>
+                <li>
+                  <a href='#'>My Profile</a>
+                </li>
+                <li>
+                  <a href='#'>Track Your Order</a>
+                </li>
+                <li>
+                  <a href='#'>My Orders</a>
+                </li>
+                <li>
+                  <a href='#'>My Wait List</a>
+                </li>
+                <li>
+                  <a href='#'>Invite friends</a>
+                </li>
+              </ul>
+            </nav>
+          </div><div class='grid_i grid_i__desktop-grid-1-6'>
+            <nav class='footer_nav'>
+              <p>Support</p>
+              <ul>
+                <li>
+                  <a href='#'>Privacy Policy</a>
+                </li>
+                <li>
+                  <a href='#'>Terms of Service</a>
+                </li>
+                <li>
+                  <a href='#'>Vendor Inquiry</a>
+                </li>
+                <li>
+                  <a href='#'>Member support</a>
+                </li>
+                <li>
+                  <a href='#'>FAQ</a>
+                </li>
+              </ul>
+            </nav>
+          </div><div class='grid_i grid_i__desktop-grid-1-6'>
+            <nav class='footer_nav'>
+              <p>Shipping & Returns</p>
+              <ul>
+                <li>
+                  <a href='#'>Shipping Policy</a>
+                </li>
+                <li>
+                  <a href='#'>Track Your Order</a>
+                </li>
+                <li>
+                  <a href='#'>Returns</a>
+                </li>
+              </ul>
+            </nav>
+          </div><div class='grid_i grid_i__desktop-grid-1-6'>
+            <nav class='footer_nav'>
+              <p>Stay in Touch</p>
+              <ul>
+                <li>
+                  <a href='#'>Stay in Touch</a>
+                </li>
+                <li>
+                  <a href='#'>Twitter</a>
+                </li>
+                <li>
+                  <a href='#'>Instagram</a>
+                </li>
+              </ul>
+            </nav>
+          </div></div>
+        <div class='footer_hr'></div>
+        <div class='cf'>
+          <div class='f-l'>
+            <p class='footer_copy'>&copy;&nbsp;2014 The Sneyk&reg; LLC. All rights reserved.</p>
+          </div>
+          <div class='f-r'>
+            <p class='footer_counter'>
+              Last week we have
+              <span>1</span>
+              <span>8</span>
+              <span>4</span>
+              <span>4</span>
+              <span>0</span>
+              happy customers
+            </p>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
