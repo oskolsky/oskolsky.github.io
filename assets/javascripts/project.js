@@ -147,7 +147,9 @@ $(function() {
   //
   // .. Flash notify show
   //
-  setTimeout('$(\'#flash\').slideDown(150)', 1000);
+  setTimeout(function() {
+    $('#flash').slideDown(150);
+  }, 1000);
 
 
 

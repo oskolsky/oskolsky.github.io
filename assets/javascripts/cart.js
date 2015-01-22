@@ -1,6 +1,6 @@
 var Lists = Backbone.Collection.extend({
   url: function() {
-    return '/cart.json'
+    return '/cart.json';
   }
 });
 

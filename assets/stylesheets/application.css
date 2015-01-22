@@ -9082,11 +9082,13 @@ input[type="search"]::-webkit-search-cancel-button, input[type="search"]::-webki
   padding: 0 2.1rem; }
 
 .form_textarea {
-  padding: .5rem .75rem;
-  height: 9.2rem;
-  border: 1px solid #ccc;
-  border-radius: .3rem;
-  background-color: #fff; }
+  height: 20rem;
+  padding: 1.6rem;
+  color: #fff;
+  border: .1rem solid #131313;
+  border-radius: 2px;
+  background-color: #595959;
+  box-shadow: inset 0 1px 4px 0 rgba(0, 0, 0, 0.5); }
 
 .form_checkbox {
   width: 1.6rem;
