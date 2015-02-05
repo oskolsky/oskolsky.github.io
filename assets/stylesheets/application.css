@@ -10631,6 +10631,7 @@ input[type='search']::-webkit-search-cancel-button, input[type='search']::-webki
   right: 0;
   display: none;
   min-width: 16rem;
+  padding: .58rem 0;
   border: 1px solid #191919;
   background-color: #292929;
   -webkit-transform: translateX(0.1rem);
