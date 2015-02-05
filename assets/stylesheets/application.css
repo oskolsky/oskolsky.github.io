@@ -10456,6 +10456,9 @@ input[type='search']::-webkit-search-cancel-button, input[type='search']::-webki
   bottom: 0;
   left: 0;
   padding: 1rem; }
+  .might-like-i_pane .price {
+    position: relative;
+    top: .1rem; }
 
 .index-nav {
   text-align: center;
