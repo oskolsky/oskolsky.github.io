@@ -103,15 +103,30 @@ $(document).on('click', '.nav_i_a', function() {
   var $el = $(this).siblings('.nav-dropdown');
   if ($el.is(':hidden')) {
     $('.nav-dropdown').hide();
-    $el.show();
     $('.nav_i_a').removeClass('nav_i_a__active');
+    $el.show();
     $(this).addClass('nav_i_a__active');
   } else {
     $el.hide();
     $(this).removeClass('nav_i_a__active');
   }
+  return false;
 });
 
+//
+// .. User profile dropdown
+//
+$(document).on('click', '.user-profile', function() {
+  var $el = $(this).find('.user-profile_dropdown');
+  if ($el.is(':hidden')) {
+    $el.show();
+    $(this).addClass('user-profile__active');
+  } else {
+    $el.hide();
+    $(this).removeClass('user-profile__active');
+  }
+  return false;
+});
 
 
 //****************************************************************************************************

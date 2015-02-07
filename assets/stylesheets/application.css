@@ -10596,23 +10596,6 @@ input[type='search']::-webkit-search-cancel-button, input[type='search']::-webki
   -ms-box-sizing: border-box;
   -o-box-sizing: border-box;
   box-sizing: border-box; }
-  .user-profile:hover {
-    border-color: #191919;
-    background-color: #292929; }
-    .user-profile:hover::after {
-      position: absolute;
-      top: 100%;
-      right: 0;
-      left: 0;
-      z-index: 2;
-      height: .1rem;
-      content: '';
-      background-color: #292929; }
-    .user-profile:hover > span,
-    .user-profile:hover > .fa {
-      color: #fff; }
-    .user-profile:hover > .user-profile_dropdown {
-      display: block; }
   .user-profile > span {
     font-family: "MyriadPro-BoldCond", Helvetica, Arial, sans-serif;
     line-height: 1.6rem;
@@ -10628,6 +10611,22 @@ input[type='search']::-webkit-search-cancel-button, input[type='search']::-webki
     display: inline-block;
     margin-left: .3rem;
     color: #d8d8d8; }
+
+.user-profile__active {
+  border-color: #191919;
+  background-color: #292929; }
+  .user-profile__active::after {
+    position: absolute;
+    top: 100%;
+    right: 0;
+    left: 0;
+    z-index: 2;
+    height: .1rem;
+    content: '';
+    background-color: #292929; }
+  .user-profile__active > span,
+  .user-profile__active > .fa {
+    color: #fff; }
 
 .user-profile_dropdown {
   position: absolute;
