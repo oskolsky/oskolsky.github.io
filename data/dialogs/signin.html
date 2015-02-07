@@ -8,12 +8,12 @@
           </a>
         </div>
         <div class="dialog_body">
-          <form class="form js-form">
+          <form class="form js-form" data-url-valid="/signin.json">
             <h2 class="mb-1">Sign in</h2>
             <div class="mb-2">
               <label class="form_el form_el__block form_label">Your E-mail or phone</label>
               <div class="form_el js-form_el form_el__block form_tx form_tx__s">
-                <input class="form_el_tag form_tx_tag" type="text">
+                <input class="form_el_tag form_tx_tag" name="login" type="text">
               </div>
             </div>
             <div class="mb-2">
@@ -25,13 +25,13 @@
                   </p>
                 </div></div>
               <div class="form_el js-form_el form_el__block form_tx form_tx__s">
-                <input class="form_el_tag form_tx_tag" type="password">
+                <input class="form_el_tag form_tx_tag" name="password" type="password">
               </div>
             </div>
             <div class="mb-1">
               <div class="form_el form_el__block js-form_el form_btn form_btn__green form_btn__l">
                 <p class="form_el_inner form_btn_inner">SIGN IN</p>
-                <button class="form_el_tag form_btn_tag" type="submit"></button>
+                <button class="form_el_tag form_btn_tag js-form-submit" type="button"></button>
               </div>
             </div>
             <div class="mb-2">
