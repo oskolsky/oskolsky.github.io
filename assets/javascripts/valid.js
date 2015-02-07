@@ -9,7 +9,7 @@ $(document).on('click', '.js-form-submit', function() {
 
 
       $el.attr({'data-valid': 'false'});
-      $el.closest('.js-form_el').after('<p class="form_el form_error">' + val + '</p>');
+      $el.closest('.js-form_el').siblings('.js-form-error').html('<p class="form_el form_error">' + val + '</p>');
 
 
       $('.js-form').customForm();
