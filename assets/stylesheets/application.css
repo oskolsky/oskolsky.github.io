@@ -10173,9 +10173,8 @@ input[type='search']::-webkit-search-cancel-button, input[type='search']::-webki
   right: 20px;
   left: 20px;
   margin-top: -1px;
-  padding-bottom: 1rem;
   display: none;
-  padding-bottom: 1rem;
+  padding-bottom: 2rem;
   background-color: #191919;
   -webkit-transform: translateY(-0.1rem);
   -moz-transform: translateY(-0.1rem);
