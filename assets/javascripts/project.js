@@ -96,6 +96,22 @@ $(document).on('click', '.js-search-toggle', function() {
   return false;
 });
 
+//
+// .. Nav catalog dropdown
+//
+$(document).on('click', '.nav_i_a', function() {
+  var $el = $(this).siblings('.nav-dropdown');
+  if ($el.is(':hidden')) {
+    $('.nav-dropdown').hide();
+    $el.show();
+    $('.nav_i_a').removeClass('nav_i_a__active');
+    $(this).addClass('nav_i_a__active');
+  } else {
+    $el.hide();
+    $(this).removeClass('nav_i_a__active');
+  }
+});
+
 
 
 //****************************************************************************************************

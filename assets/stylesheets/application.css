@@ -10138,21 +10138,6 @@ input[type='search']::-webkit-search-cancel-button, input[type='search']::-webki
   display: inline-block; }
   .nav_i:not(:last-child) {
     margin-right: 1rem; }
-  .nav_i:hover > .nav-dropdown {
-    display: block; }
-  .nav_i:hover > .nav_i_a::after {
-    position: absolute;
-    top: 100%;
-    right: 0;
-    left: 0;
-    height: .1rem;
-    content: '';
-    background-color: #fff;
-    -webkit-transform: translateY(0.4rem);
-    -moz-transform: translateY(0.4rem);
-    -ms-transform: translateY(0.4rem);
-    -o-transform: translateY(0.4rem);
-    transform: translateY(0.4rem); }
 
 .nav_i_a {
   position: relative;
@@ -10164,6 +10149,20 @@ input[type='search']::-webkit-search-cancel-button, input[type='search']::-webki
 
 .nav_i_a__current {
   color: #00BBEE; }
+
+.nav_i_a__active::after {
+  position: absolute;
+  top: 100%;
+  right: 0;
+  left: 0;
+  height: .1rem;
+  content: '';
+  background-color: #fff;
+  -webkit-transform: translateY(0.4rem);
+  -moz-transform: translateY(0.4rem);
+  -ms-transform: translateY(0.4rem);
+  -o-transform: translateY(0.4rem);
+  transform: translateY(0.4rem); }
 
 .nav-dropdown {
   line-height: 1;
