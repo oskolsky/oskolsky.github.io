@@ -10550,9 +10550,11 @@ input[type='search']::-webkit-search-cancel-button, input[type='search']::-webki
   border-bottom: 0.1rem dashed #FF7E00; }
 
 .cart {
+  overflow-y: auto;
+  max-height: 33rem;
   padding: 1rem;
-  background: #292929;
-  border: 1px solid #131313; }
+  border: 1px solid #131313;
+  background: #292929; }
 
 .order {
   font-family: "MyriadPro-Semibold", Helvetica, Arial, sans-serif;
