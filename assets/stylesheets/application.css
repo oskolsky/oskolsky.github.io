@@ -10583,6 +10583,7 @@ input[type='search']::-webkit-search-cancel-button, input[type='search']::-webki
 
 .user-profile {
   position: relative;
+  z-index: 1;
   display: inline-block;
   margin-right: 1rem;
   padding: 0 1rem;
