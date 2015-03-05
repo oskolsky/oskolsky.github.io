@@ -1,18 +1,43 @@
 $(function() {
 
-  var $menu = $('.js-menu');
+    $('.js-menu-toggle').on('click', function() {
 
-  $('.js-menu-toggle').on('click', function() {
-    $menu.show().addClass('animated zoomIn');
-    return false;
-  });
+        var $menu = $('.js-menu');
 
-  // $(document).not('.js-menu').on('click', function() {
-  //   alert(1);
-  //   $menu.addClass('animated zoomOut').one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', function() {
-  //     $(this).hide();
-  //   });
-  //   return false;
-  // })
+        if ($menu.is(':hidden')) {
+
+            $(this).addClass('ui-menu-toggle__active');
+            $menu.show().removeClass('zoomOut').addClass('zoomIn');
+
+        } else {
+
+            $(this).removeClass('ui-menu-toggle__active');
+
+            $menu.removeClass('zoomIn').addClass('zoomOut');
+            $menu.one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', function() {
+                $(this).hide();
+            });
+
+        }
+
+        return false;
+    });
+
+    $(document).click(function(event) {
+        if (!$(event.target).closest('.js-menu').length) {
+
+            var $menu = $('.js-menu');
+
+            $('.js-menu-toggle').removeClass('ui-menu-toggle__active');
+
+            $menu.removeClass('zoomIn').addClass('zoomOut');
+            $menu.one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', function() {
+                $(this).hide();
+            });
+
+        }
+
+        return false;
+    });
 
 });
