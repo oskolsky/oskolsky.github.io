@@ -146,14 +146,21 @@
 }
 
 .product-new .product-buy-price {
+    margin: 0 0 -5px;
     color: #454545;
     font-family: "DINPro Medium", Arial, sans-serif;
     font-size: 13px;
 }
 
 .product-new .product-buy-price .price {
-    margin: 0 0 -5px;
+    margin: 0 0 0 4px;
+    color: #454545;
     font-size: 15px;
+}
+
+.product-new .product-buy-price-through {
+    color: #ea4e01;
+    text-decoration: line-through;
 }
 
 .product-new .product-buy-price-total {
