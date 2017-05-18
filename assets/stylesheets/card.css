@@ -39,7 +39,7 @@
     left: 0;
     width: 1px;
     background: #e1e1e1;
-    content: '';
+    content: "";
 }
 
 /* product-options */
@@ -56,13 +56,17 @@
     vertical-align: middle;
 }
 
+.product-new .product-options > li:not(:last-child) {
+    margin-right: 5%;
+}
+
 .product-new .product-options > li > a {
     margin: 0;
     padding: 10px 0 9px;
 }
 
 .product-new .product-options > li:not(:last-child) > a {
-    margin-right: 35px;
+    white-space: nowrap;
 }
 
 .product-new .product-options > li > a > span {

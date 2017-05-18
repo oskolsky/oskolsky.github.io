@@ -1,10 +1,23 @@
 .pickup-map {
-    margin: 0 0 60px;
+    margin: 0 0 50px;
+}
+
+.pickup-map-header {
+    padding: 0 30px;
 }
 
 .pickup-map-title {
-    margin: 0 0 15px 0;
-    padding: 0 30px;
+    margin: 0 0 15px;
+}
+
+.pickup-map-filter {
+    margin: 0 0 10px;
+}
+
+.pickup-map-list {
+    margin: 0 0 20px;
+    color: #000000;
+    font-size: 15px;
 }
 
 .pickup-map-canvas {
@@ -13,7 +26,7 @@
 }
 
 .pickup-map-legend {
-    margin: 0 0 15px 0;
+    margin: 0 0 10px;
     padding: 8px 30px 11px;
     background: #f3f3f3;
 }
@@ -24,7 +37,7 @@
 }
 
 .pickup-map-legend-item:not(:last-child) {
-    margin-right: 30px;
+    margin-right: 5%;
 }
 
 .pickup-map-legend-item img {
@@ -40,7 +53,7 @@
     vertical-align: middle;
 }
 
-.pickup-map-info {
+.pickup-map-footer {
     position: relative;
     padding: 0 30px;
     color: rgba(68, 68, 68, .5);
