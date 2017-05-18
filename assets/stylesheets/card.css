@@ -36,6 +36,7 @@
 /* product-info */
 
 .product-new .product-info {
+    margin-top: 74px;
     box-shadow: inset 0 6px 1px -5px rgba(0, 0, 0, .3);
     background: #f3f3f3;
 }
@@ -164,13 +165,14 @@
 }
 
 .product-new .product-buy-saving {
+    margin: 0 0 4px;
     color: #454545;
     font-family: "DINPro Medium", Arial, sans-serif;
     font-size: 15px;
 }
 
 .product-new .product-buy-bonus {
-    margin: 0 0 20px;
+    margin: 0 0 21px;
     color: #008ac4;
     font-family: "DINPro Medium", Arial, sans-serif;
     font-size: 15px;
