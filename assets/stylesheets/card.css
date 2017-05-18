@@ -1,3 +1,12 @@
+/* btn is-bg-white */
+.product-new .is-bg-white {
+    border: 1px solid rgba(151, 151, 151, .62);
+    background: rgba(255, 255, 255, .6);
+    color: #000000;
+    font-family: "DINPro Medium", Arial, sans-serif;
+    font-size: 15px;
+}
+
 /* product-top */
 
 .product-new .product-top {
@@ -161,20 +170,67 @@
 }
 
 .product-new .product-buy-bonus {
+    margin: 0 0 20px;
     color: #008ac4;
     font-family: "DINPro Medium", Arial, sans-serif;
     font-size: 15px;
-    margin: 0 0 20px;
 }
 
 /* map */
 
-.map-title {
-    margin: 0 30px 15px;
+.map {
+    margin: 0 0 60px;
 }
 
-.map {
+.map-title {
+    margin: 0 0 15px 0;
+    padding: 0 30px;
+}
+
+.map-canvas {
     width: 100%;
     height: 450px;
-    margin: 0 0 30px;
+}
+
+.map-legend {
+    margin: 0 0 15px 0;
+    padding: 8px 30px 11px;
+    background: #f3f3f3;
+}
+
+.map-legend-item {
+    display: inline-block;
+    vertical-align: top;
+}
+
+.map-legend-item:not(:last-child) {
+    margin-right: 30px;
+}
+
+.map-legend-item img {
+    display: inline-block;
+    margin: 2px 4px 0 0;
+    vertical-align: middle;
+}
+
+.map-legend-item span {
+    display: inline-block;
+    color: #444;
+    font-family: "DINPro Medium", Arial, sans-serif;
+    font-size: 14px;
+    vertical-align: middle;
+}
+
+.map-info {
+    position: relative;
+    padding: 0 30px;
+    color: rgba(68, 68, 68, .5);
+    font-family: "DINPro Medium", Arial, sans-serif;
+    font-size: 14px;
+}
+
+.map-info-link {
+    position: absolute;
+    top: 0;
+    right: 30px;
 }
