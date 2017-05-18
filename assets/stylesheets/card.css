@@ -122,7 +122,7 @@
 /* product-buy */
 
 .product-new .product-buy {
-    margin: 0 0 20px 30px;
+    margin: 0 0 31px 30px;
 }
 
 .product-new .product-buy-btn,
@@ -184,6 +184,12 @@
     color: #008ac4;
     font-family: "DINPro Medium", Arial, sans-serif;
     font-size: 15px;
+}
+
+/* product-available */
+
+.product-new .product-available-status {
+    margin: 0 0 1px 0;
 }
 
 /* map */
