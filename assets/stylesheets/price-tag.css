@@ -59,6 +59,10 @@
     vertical-align: top;
 }
 
+.price-tag-buy-btn .btn:active {
+    outline: 1px solid #ff6c22;
+}
+
 .price-tag-buy-btn .btn::after {
     content: normal;
 }
@@ -89,7 +93,7 @@
     width: 100%;
     outline: 1px solid rgba(151, 151, 151, .62);
     background: rgba(255, 255, 255, .6);
-    color: #000000;
+    color: #000;
     font-size: 15px;
     vertical-align: top;
 }

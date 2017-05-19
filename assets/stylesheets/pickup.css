@@ -1,0 +1,38 @@
+.pickup {
+    margin: 0 0 50px;
+}
+
+.pickup-header {
+    padding: 0 30px;
+}
+
+.pickup-title {
+    margin: 0 0 15px;
+}
+
+.pickup-filter {
+    margin: 0 0 15px;
+}
+
+.pickup-filter-link {
+    text-decoration: underline;
+}
+
+.pickup-change {
+    margin: 0 0 20px;
+    color: #000000;
+    font-size: 15px;
+}
+
+.pickup-footer {
+    position: relative;
+    padding: 0 30px;
+    color: rgba(68, 68, 68, .5);
+    font-size: 14px;
+}
+
+.pickup-footer-link {
+    position: absolute;
+    top: 0;
+    right: 30px;
+}

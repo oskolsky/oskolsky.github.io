@@ -1,0 +1,72 @@
+.pickup-list {
+    margin: 0 0 20px;
+    padding: 0 30px;
+    color: #444;
+    font-size: 14px;
+}
+
+.pickup-list .price b {
+    font-family: "DINPro Regular", Arial, sans-serif;
+}
+
+.pickup-list table {
+    width: 100%;
+}
+
+.pickup-list table td:first-child {
+    padding-left: 0;
+}
+
+.pickup-list table td:last-child {
+    padding-right: 0;
+}
+
+.pickup-list-select {
+    width: 100%;
+    padding-bottom: 0;
+    outline: 1px solid rgba(151, 151, 151, .62);
+    background: rgba(255, 255, 255, .6);
+    color: #000;
+    font-size: 15px;
+    vertical-align: top;
+}
+
+.pickup-list-selected {
+    width: 100%;
+    padding-bottom: 0;
+    outline: 1px solid #0082B9;
+    background: #0082B9;
+    color: #fff;
+    font-size: 15px;
+    vertical-align: top;
+}
+
+.pickup-list-item-name {
+    color: #008ac4;
+    font-size: 15px;
+}
+
+.pickup-list-item-address {
+
+}
+
+.pickup-list-item-metro {
+
+}
+
+.pickup-list-item-time {
+
+}
+
+.pickup-list-item-info {
+    color: #599a25;
+}
+
+.pickup-list-pagination {
+    margin: 0 0 20px;
+    padding: 0 30px;
+}
+
+.pickup-list-pagination .pagination {
+    float: none;
+}

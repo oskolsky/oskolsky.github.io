@@ -1,26 +1,4 @@
 .pickup-map {
-    margin: 0 0 50px;
-}
-
-.pickup-map-header {
-    padding: 0 30px;
-}
-
-.pickup-map-title {
-    margin: 0 0 15px;
-}
-
-.pickup-map-filter {
-    margin: 0 0 10px;
-}
-
-.pickup-map-list {
-    margin: 0 0 20px;
-    color: #000000;
-    font-size: 15px;
-}
-
-.pickup-map-canvas {
     width: 100%;
     height: 450px;
 }
@@ -51,17 +29,4 @@
     color: #444;
     font-size: 14px;
     vertical-align: middle;
-}
-
-.pickup-map-footer {
-    position: relative;
-    padding: 0 30px;
-    color: rgba(68, 68, 68, .5);
-    font-size: 14px;
-}
-
-.pickup-map-info-link {
-    position: absolute;
-    top: 0;
-    right: 30px;
 }
