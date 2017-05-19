@@ -4,7 +4,7 @@
 
 @media (max-width: 767px) {
     .price-tag {
-        padding: 20px 30px 37px;
+        padding: 20px 20px 15px;
     }
 }
 
@@ -36,25 +36,25 @@
 }
 
 .price-tag-saving {
+    margin: 0 0 5px;
     color: #454545;
     font-size: 15px;
-    margin: 0 0 5px;
 }
 
 .price-tag-bonus {
+    margin: 0 0 20px;
     color: #008ac4;
     font-size: 15px;
-    margin: 0 0 20px;
 }
 
 .price-tag-buttons {
-    margin: 0 0 30px;
+    margin: 0 0 15px;
 }
 
 .price-tag-buy-btn {
     display: inline-block;
     min-width: 180px;
-    margin: 0 10px 0 0;
+    margin: 0 10px 15px 0;
     padding: 1px;
     vertical-align: top;
 }
@@ -91,6 +91,7 @@
 .price-tag-buyonclick-btn {
     display: inline-block;
     min-width: 180px;
+    margin: 0 0 15px 0;
     padding: 1px;
     vertical-align: top;
 }
@@ -115,6 +116,12 @@
 
 .price-tag-delivery td {
     font-size: 14px;
+}
+
+@media (max-width: 767px) {
+    .price-tag-delivery td {
+        padding: 10px;
+    }
 }
 
 .price-tag-delivery tr:first-child td {

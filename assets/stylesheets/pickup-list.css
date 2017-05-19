@@ -5,12 +5,25 @@
     font-size: 14px;
 }
 
+@media (max-width: 767px) {
+    .pickup-list {
+        padding: 0 20px;
+    }
+}
+
+
 .pickup-list .price b {
     font-family: "DINPro Regular", Arial, sans-serif;
 }
 
 .pickup-list table {
     width: 100%;
+}
+
+@media (max-width: 767px) {
+    .pickup-list table td {
+        padding: 10px;
+    }
 }
 
 .pickup-list table td:first-child {
@@ -65,6 +78,12 @@
 .pickup-list-pagination {
     margin: 0 0 20px;
     padding: 0 30px;
+}
+
+@media (max-width: 767px) {
+    .pickup-list-pagination {
+        padding: 0 20px;
+    }
 }
 
 .pickup-list-pagination .pagination {

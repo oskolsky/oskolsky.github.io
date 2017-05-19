@@ -46,9 +46,27 @@
 
 .product-new .product-options {
     position: static;
-    margin: 0 0 28px 0;
+    margin: 0 0 28px;
     padding: 0 30px;
     background: rgba(72, 72, 72, .4);
+}
+
+@media (max-width: 767px) {
+    .product-new .product-options {
+        display: none;
+    }
+}
+
+.product-new  .product-options-sm {
+    display: none;
+    margin: 0;
+    padding: 0 20px;
+}
+
+@media (max-width: 767px) {
+    .product-new .product-options-sm {
+        display: block;
+    }
 }
 
 .product-new .product-options > li {
@@ -61,6 +79,7 @@
 }
 
 .product-new .product-options > li > a {
+    display: block !important;
     margin: 0;
     padding: 10px 0 9px;
     text-decoration: none;
