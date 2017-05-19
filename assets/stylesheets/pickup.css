@@ -26,7 +26,7 @@
 
 .pickup-change-link-current {
     color: #000;
-    text-decoration: none;
+    text-decoration: none !important;
 }
 
 .pickup-footer {
