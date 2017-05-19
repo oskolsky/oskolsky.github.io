@@ -8,10 +8,13 @@
         <link rel="stylesheet" href="assets/stylesheets/card.css">
         <link rel="stylesheet" href="assets/stylesheets/checkbox.css">
         <link rel="stylesheet" href="assets/stylesheets/pickup.css">
+        <link rel="stylesheet" href="assets/stylesheets/pickup-list.css">
         <link rel="stylesheet" href="assets/stylesheets/pickup-map.css">
         <link rel="stylesheet" href="assets/stylesheets/price-tag.css">
+        <script src="https://code.jquery.com/jquery-3.2.1.min.js" type="text/javascript" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
         <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
         <script src="assets/javascripts/map.js" type="text/javascript"></script>
+        <script src="assets/javascripts/pickup.js" type="text/javascript"></script>
         <title>Технопарк - карточка товара</title>
     </head>
     <body>
@@ -271,27 +274,139 @@
                                                 <label for="pickup-filter-2">Пункты самовывоза Boxbery</label>
                                             </div>
                                         </div>
-                                        <div class="pickup-change">Показывать: <a href="#" class="pickup-filter-link">списком</a> на карте</div>
+                                        <div class="pickup-change">Показывать: <a href="#" class="pickup-filter-link js-pickup-list-on">списком</a> <a href="#" class="pickup-filter-link js-pickup-map-on">на карте</a></div>
                                     </div>
-                                    <div id="map" class="pickup-map"></div>
-                                    <ul class="pickup-map-legend">
-                                        <li class="pickup-map-legend-item">
-                                            <img src="assets/images/map-legend-point-shop-1.png" width="10" height="15" alt="Магазин" />
-                                            <span>Магазин</span>
-                                        </li>
-                                        <li class="pickup-map-legend-item">
-                                            <img src="assets/images/map-legend-point-shop-2.png" width="10" height="15" alt="Круглосуточный магазин" />
-                                            <span>Круглосуточный магазин</span>
-                                        </li>
-                                        <li class="pickup-map-legend-item">
-                                            <img src="assets/images/map-legend-point-shop-3.png" width="10" height="15" alt="Кибермаркет" />
-                                            <span>Кибермаркет</span>
-                                        </li>
-                                        <li class="pickup-map-legend-item">
-                                            <img src="assets/images/map-legend-point-shop-4.png" width="10" height="15" alt="Пункт Boxberry" />
-                                            <span>Пункт Boxberry</span>
-                                        </li>
-                                    </ul>
+                                    <div class="js-pickup-map">
+                                        <div id="map" class="pickup-map"></div>
+                                        <ul class="pickup-map-legend">
+                                            <li class="pickup-map-legend-item">
+                                                <img src="assets/images/map-legend-point-shop-1.png" width="10" height="15" alt="Магазин" />
+                                                <span>Магазин</span>
+                                            </li>
+                                            <li class="pickup-map-legend-item">
+                                                <img src="assets/images/map-legend-point-shop-2.png" width="10" height="15" alt="Круглосуточный магазин" />
+                                                <span>Круглосуточный магазин</span>
+                                            </li>
+                                            <li class="pickup-map-legend-item">
+                                                <img src="assets/images/map-legend-point-shop-3.png" width="10" height="15" alt="Кибермаркет" />
+                                                <span>Кибермаркет</span>
+                                            </li>
+                                            <li class="pickup-map-legend-item">
+                                                <img src="assets/images/map-legend-point-shop-4.png" width="10" height="15" alt="Пункт Boxberry" />
+                                                <span>Пункт Boxberry</span>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="js-pickup-list" style="display: none;">
+                                        <div class="pickup-list">
+                                            <table>
+                                                <tbody>
+                                                    <tr>
+                                                        <td>
+                                                            <div class="pickup-list-item-name">Кибермаркет "Технопарк"</div>
+                                                            <div class="pickup-list-item-address">Румянцево, ул. Родниковая, стр. 17/2</div>
+                                                            <div class="pickup-list-item-metro">Саларьево</div>
+                                                            <div class="pickup-list-item-time">10:00 – 20:00</div>
+                                                            <div class="pickup-list-item-info">на складе в магазине</div>
+                                                        </td>
+                                                        <td>Бесплатно</td>
+                                                        <td>
+                                                            <a href="#" class="btn pickup-list-select">
+                                                                <span class="btn-tobuy">Выбрать</span>
+                                                            </a>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>
+                                                            <div class="pickup-list-item-name">Кибермаркет "Технопарк"</div>
+                                                            <div class="pickup-list-item-address">Румянцево, ул. Родниковая, стр. 17/2</div>
+                                                            <div class="pickup-list-item-metro">Саларьево</div>
+                                                            <div class="pickup-list-item-time">10:00 – 20:00</div>
+                                                            <div class="pickup-list-item-info">на складе в магазине</div>
+                                                        </td>
+                                                        <td>
+                                                            <div class="price"><b>100</b></div>
+                                                        </td>
+                                                        <td>
+                                                            <a href="#" class="btn pickup-list-selected">
+                                                                <span class="btn-tobuy">Выбрано</span>
+                                                            </a>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>
+                                                            <div class="pickup-list-item-name">Кибермаркет "Технопарк"</div>
+                                                            <div class="pickup-list-item-address">Румянцево, ул. Родниковая, стр. 17/2</div>
+                                                            <div class="pickup-list-item-metro">Саларьево</div>
+                                                            <div class="pickup-list-item-time">10:00 – 20:00</div>
+                                                            <div class="pickup-list-item-info">на складе в магазине</div>
+                                                        </td>
+                                                        <td>Бесплатно</td>
+                                                        <td>
+                                                            <a href="#" class="btn btn-buy btn-event pickup-list-select">
+                                                                <span class="btn-tobuy">Выбрать</span>
+                                                            </a>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>
+                                                            <div class="pickup-list-item-name">Кибермаркет "Технопарк"</div>
+                                                            <div class="pickup-list-item-address">Румянцево, ул. Родниковая, стр. 17/2</div>
+                                                            <div class="pickup-list-item-metro">Саларьево</div>
+                                                            <div class="pickup-list-item-time">10:00 – 20:00</div>
+                                                            <div class="pickup-list-item-info">на складе в магазине</div>
+                                                        </td>
+                                                        <td>Бесплатно</td>
+                                                        <td>
+                                                            <a href="#" class="btn btn-buy btn-event pickup-list-select">
+                                                                <span class="btn-tobuy">Выбрать</span>
+                                                            </a>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>
+                                                            <div class="pickup-list-item-name">Кибермаркет "Технопарк"</div>
+                                                            <div class="pickup-list-item-address">Румянцево, ул. Родниковая, стр. 17/2</div>
+                                                            <div class="pickup-list-item-metro">Саларьево</div>
+                                                            <div class="pickup-list-item-time">10:00 – 20:00</div>
+                                                            <div class="pickup-list-item-info">на складе в магазине</div>
+                                                        </td>
+                                                        <td>Бесплатно</td>
+                                                        <td>
+                                                            <a href="#" class="btn btn-buy btn-event pickup-list-select">
+                                                                <span class="btn-tobuy">Выбрать</span>
+                                                            </a>
+                                                        </td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                        <div class="pickup-list-pagination">
+                                            <ul class="pagination">
+                                                <li>
+                                                    <button class="pagination-item pagination-prev icon-direction" disabled></button>
+                                                </li>
+                                                <li class="active">
+                                                    <span>1</span>
+                                                </li>
+                                                <li>
+                                                    <a href="#" class="pagination-item">2</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#" class="pagination-item">3</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#" class="pagination-item">4</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#" class="pagination-item">5</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#" class="pagination-item pagination-next icon-direction"></a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
                                     <div class="pickup-footer">
                                         Адрес самовывоза нужно согласовать с оператором
                                         <a href="#" class="pickup-footer-link">Подробнее о самовывозе</a>
