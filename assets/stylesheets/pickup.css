@@ -14,14 +14,19 @@
     margin: 0 0 15px;
 }
 
-.pickup-filter-link {
+.pickup-change {
+    margin: 0 0 20px;
+    color: #000;
+    font-size: 15px;
+}
+
+.pickup-change-link {
     text-decoration: underline;
 }
 
-.pickup-change {
-    margin: 0 0 20px;
-    color: #000000;
-    font-size: 15px;
+.pickup-change-link-current {
+    color: #000;
+    text-decoration: none;
 }
 
 .pickup-footer {
