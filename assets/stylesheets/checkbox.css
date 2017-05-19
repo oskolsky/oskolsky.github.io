@@ -34,7 +34,7 @@
     font-size: 14px;
 }
 
-.checkbox label span .price {
+.checkbox label span.price {
     color: rgba(0, 0, 0, .5);
     font-family: "DINPro Regular", Arial, sans-serif;
     font-size: 14px;
