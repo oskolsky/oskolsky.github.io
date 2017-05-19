@@ -2,6 +2,12 @@
     padding: 74px 30px 37px;
 }
 
+@media (max-width: 767px) {
+    .price-tag {
+        padding: 20px 30px 37px;
+    }
+}
+
 .price-tag-cost {
     color: #454545;
     font-size: 13px;
