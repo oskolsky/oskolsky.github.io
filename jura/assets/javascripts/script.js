@@ -9,17 +9,18 @@ $(function() {
     });
 
     // Send form demo
-    var $form = $('#js-form');
-    var $complete = $('#js-complete');
-
     $('#js-send').on('click', function() {
+        var $form = $('#js-form');
+        var $complete = $('#js-complete');
+
         $form.hide();
         $complete.fadeIn(300);
+
+        setTimeout(function() {
+            $complete.hide();
+            $form.fadeIn(300);
+        }, 5000);
+
         return false;
     });
-
-    setTimeout(function() {
-        $complete.hide();
-        $form.fadeIn(300);
-    }, 5000)
 });
