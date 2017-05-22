@@ -115,6 +115,7 @@ body {
     bottom: 0;
     left: 0;
     z-index: -1;
+    overflow: hidden;
 }
 
 .slide {
@@ -152,11 +153,9 @@ body {
 @keyframes imageAnimation {
     0% {
         opacity: 0;
-        /*animation-timing-function: ease-in;*/
     }
     12% {
         opacity: 1;
-        /*animation-timing-function: ease-out;*/
     }
     25% {
         opacity: 1;
