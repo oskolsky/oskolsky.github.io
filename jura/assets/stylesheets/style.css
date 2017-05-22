@@ -145,7 +145,7 @@ body {
         align-content: center;
         align-items: center;
         justify-content: flex-start;
-        padding: 0 15px;
+        padding: 30px 15px;
         background: url('../images/header-bg.jpg') center no-repeat / cover;
         text-align: center;
     }
@@ -328,7 +328,7 @@ body {
         align-content: center;
         align-items: center;
         justify-content: flex-start;
-        padding: 0 25px;
+        padding: 30px 25px;
         background: url('../images/header-bg.jpg') center no-repeat / cover;
     }
 
@@ -553,7 +553,7 @@ body {
         align-content: center;
         align-items: center;
         justify-content: flex-start;
-        padding: 0 25px;
+        padding: 30px 25px;
         background: url('../images/header-bg.jpg') center no-repeat / cover;
     }
 
@@ -778,7 +778,7 @@ body {
         align-content: center;
         align-items: center;
         justify-content: flex-start;
-        padding: 0 150px;
+        padding: 30px 150px;
         background: url('../images/header-bg.jpg') center no-repeat / cover;
     }
 
