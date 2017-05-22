@@ -107,6 +107,11 @@ body {
     background: #E50000;
 }
 
+.header {
+    box-sizing: border-box;
+    height: 100vh;
+}
+
 @media (max-width: 760px) {
     body {
         font-size: 14px;
@@ -196,11 +201,11 @@ body {
         position: absolute;
         bottom: 100%;
         left: 50%;
-        content: '';
-        transform: translateZ(-50%);
         width: 33px;
         height: 39px;
         background: url('../images/pin-light.svg') center no-repeat;
+        content: '';
+        transform: translateZ(-50%);
     }
 
     .header_address {
