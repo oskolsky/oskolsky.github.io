@@ -108,9 +108,68 @@ body {
     background: #E50000;
 }
 
-.header {
-    box-sizing: border-box;
-    height: 100vh;
+.slider {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: -1;
+}
+
+.slide {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    opacity: 0;
+    animation: imageAnimation 16s linear infinite 0s;
+}
+
+.slide__1 {
+    background-image: url('../images/slide-1.jpg');
+}
+
+.slide__2 {
+    background-image: url('../images/slide-2.jpg');
+    animation-delay: 4s;
+}
+
+.slide__3 {
+    background-image: url('../images/slide-3.jpg');
+    animation-delay: 8s;
+}
+
+.slide__4 {
+    background-image: url('../images/slide-4.jpg');
+    animation-delay: 12s;
+}
+
+@keyframes imageAnimation {
+    0% {
+        opacity: 0;
+        /*animation-timing-function: ease-in;*/
+    }
+    12% {
+        opacity: 1;
+        /*animation-timing-function: ease-out;*/
+    }
+    25% {
+        opacity: 1;
+        transform: scale(1);
+    }
+    50% {
+        opacity: 0;
+        transform: scale(1.2);
+    }
+    100% {
+        opacity: 0;
+        transform: scale(1.4);
+    }
 }
 
 @media (max-width: 760px) {
@@ -151,8 +210,9 @@ body {
         align-content: center;
         align-items: center;
         justify-content: flex-start;
+        box-sizing: border-box;
+        height: 100vh;
         padding: 30px 15px;
-        background: url('../images/header-bg.jpg') center no-repeat / cover;
         text-align: center;
     }
 
@@ -334,8 +394,9 @@ body {
         align-content: center;
         align-items: center;
         justify-content: flex-start;
+        box-sizing: border-box;
+        height: 100vh;
         padding: 30px 25px;
-        background: url('../images/header-bg.jpg') center no-repeat / cover;
     }
 
     .header_inner {
@@ -559,8 +620,9 @@ body {
         align-content: center;
         align-items: center;
         justify-content: flex-start;
+        box-sizing: border-box;
+        height: 100vh;
         padding: 30px 25px;
-        background: url('../images/header-bg.jpg') center no-repeat / cover;
     }
 
     .header_inner {
@@ -784,8 +846,9 @@ body {
         align-content: center;
         align-items: center;
         justify-content: flex-start;
+        box-sizing: border-box;
+        height: 100vh;
         padding: 30px 150px;
-        background: url('../images/header-bg.jpg') center no-repeat / cover;
     }
 
     .header_inner {

@@ -5,11 +5,30 @@
         <meta name="viewport" content="width=device-width">
         <link rel="stylesheet" href="assets/stylesheets/reset.css" />
         <link rel="stylesheet" href="assets/stylesheets/style.css" />
+        <script type="text/javascript">
+            var a=[
+                'assets/images/slide-1.jpg',
+                'assets/images/slide-2.jpg',
+                'assets/images/slide-3.jpg',
+                'assets/images/slide-4.jpg'
+            ];
+            var ai=[];
+            for(var i=0; i<a.length; i++){
+                ai[i] = new Image();
+                ai[i].src = a[i];
+            }
+        </script>
         <title>Jura</title>
     </head>
     <body>
         <main>
             <header class="header" id="header">
+                <div class="slider">
+                    <div class="slide slide__1"></div>
+                    <div class="slide slide__2"></div>
+                    <div class="slide slide__3"></div>
+                    <div class="slide slide__4"></div>
+                </div>
                 <img src="assets/images/logo.svg" class="logo" alt="">
                 <div class="header_inner">
                     <h1 class="header_title hidden-phone">Первый в&nbsp;России  бутик кофемашин  JURA</h1>
