@@ -55,6 +55,7 @@ body {
     height: 50px;
     padding: 0 23px;
     border: none;
+    border-top: 3px solid transparent;
     border-bottom: 3px solid transparent;
     color: #474D5B;
     font-size: 16px;
@@ -62,7 +63,7 @@ body {
 }
 
 .input__error {
-    border-color: #FF0000;
+    border-bottom-color: #FF0000;
 }
 
 .input__name {
