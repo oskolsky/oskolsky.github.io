@@ -172,6 +172,43 @@ body {
     }
 }
 
+.complete {
+    display: none;
+    color: #FFF;
+    font-size: 16px;
+    line-height: 25px;
+    letter-spacing: .5px;
+}
+
+.complete_inner {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-content: center;
+    align-items: center;
+    justify-content: flex-start;
+    height: 225px;
+}
+
+.complete p {
+    position: relative;
+    flex: 1 1 auto;
+    align-self: center;
+    margin: 0 0 55px;
+    padding: 0 0 0 30px;
+}
+
+.complete p::after {
+    position: absolute;
+    top: 5px;
+    left: 0;
+    width: 19px;
+    height: 15px;
+    background: url('../images/complete.svg') center no-repeat;
+    content: '';
+}
+
+
 @media (max-width: 760px) {
     body {
         font-size: 14px;
