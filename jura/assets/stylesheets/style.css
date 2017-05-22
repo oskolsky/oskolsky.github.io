@@ -121,6 +121,14 @@ body {
         letter-spacing: .4px;
     }
 
+    .hidden-phone {
+        display: none;
+    }
+
+    .visible-phone {
+        display: block;
+    }
+
     .input {
         width: 100%;
     }
@@ -302,6 +310,14 @@ body {
         font-size: 16px;
         line-height: 20px;
         letter-spacing: .4px;
+    }
+
+    .hidden-phone {
+        display: block;
+    }
+
+    .visible-phone {
+        display: none;
     }
 
     .header {
@@ -521,6 +537,14 @@ body {
         letter-spacing: .2px;
     }
 
+    .hidden-phone {
+        display: block;
+    }
+
+    .visible-phone {
+        display: none;
+    }
+
     .header {
         position: relative;
         display: flex;
@@ -736,6 +760,14 @@ body {
         font-size: 24px;
         line-height: 32px;
         letter-spacing: .2px;
+    }
+
+    .hidden-phone {
+        display: block;
+    }
+
+    .visible-phone {
+        display: none;
     }
 
     .header {
