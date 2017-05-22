@@ -109,3 +109,114 @@
         <script type="text/javascript" src="assets/javascripts/script.js"></script>
     </body>
 </html>
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width">
+        <link rel="stylesheet" href="assets/stylesheets/reset.css" />
+        <link rel="stylesheet" href="assets/stylesheets/style.css" />
+        <script type="text/javascript">
+            var a=[
+                'assets/images/slide-1.jpg',
+                'assets/images/slide-2.jpg',
+                'assets/images/slide-3.jpg',
+                'assets/images/slide-4.jpg'
+            ];
+            var ai=[];
+            for(var i=0; i<a.length; i++){
+                ai[i] = new Image();
+                ai[i].src = a[i];
+            }
+        </script>
+        <title>Jura</title>
+    </head>
+    <body>
+        <main>
+            <header class="header" id="header">
+                <div class="slider">
+                    <div class="slide slide__1"></div>
+                    <div class="slide slide__2"></div>
+                    <div class="slide slide__3"></div>
+                    <div class="slide slide__4"></div>
+                </div>
+                <img src="assets/images/logo.svg" class="logo" alt="">
+                <div class="header_inner">
+                    <h1 class="header_title hidden-phone">Первый в&nbsp;России  бутик кофемашин  JURA</h1>
+                    <h1 class="header_title visible-phone">Первый в&nbsp;России  бутик JURA</h1>
+                    <div class="header_text hidden-phone">Посетите роскошный шоурум в&nbsp;самом центре Москвы, где вас ждут коллекция легендарных швейцарских кофемашин и&nbsp;дегустация совершенного кофе</div>
+                    <div class="header_text visible-phone">Легендарные швейцарские кофемашины и&nbsp;дегустация совершенного кофе</div>
+                    <button type="button" class="header_button button" id="scroll-to-bottom">Записаться на дегустацию</button>
+                    <div class="header_address">ГУМ, Красная площадь 3, 3 этаж</div>
+                    <div class="header_phone">
+                        <a href="tel:84997046896" class="header_link">8 499 704 68 96</a>
+                    </div>
+                </div>
+            </header>
+
+            <div class="figures">
+                <figure class="figure figure__one">
+                    <div class="figure_image">
+                        <img src="assets/images/figure-1.jpg" alt="Швейцарское качество  в лучшем исполнении" />
+                    </div>
+                    <figcaption class="figure_caption">
+                        <div>
+                            <h2>Швейцарское качество  в лучшем исполнении</h2>
+                            <p>Компания JURA&nbsp;&mdash; мировой лидер в&nbsp;производстве полностью автоматических кофемашин. Эксперты постоянно внедряют инновационные разработки, что гарантирует безупречное качество, высокую точность и&nbsp;абсолютную надежность швейцарских моделей.</p>
+                        </div>
+                    </figcaption>
+                </figure>
+                <figure class="figure figure__two">
+                    <div class="figure_image">
+                        <img src="assets/images/figure-2.jpg" alt="Швейцарское качество  в лучшем исполнении" />
+                    </div>
+                    <figcaption class="figure_caption">
+                        <div>
+                            <h2>Возможности эксклюзивных кофемашин</h2>
+                            <p>Модели JURA поражают своим функционалом: от&nbsp;революционной технологии импульсной экстракции P.E.P.<sup class="reg">&reg;</sup> для раскрытия аромата зерен до&nbsp;управления с&nbsp;вашего смартфона. Благодаря этим уникальным возможностям вы&nbsp;всегда получите идеальный кофе в&nbsp;одно касание.</p>
+                        </div>
+                    </figcaption>
+                </figure>
+                <figure class="figure figure__three">
+                    <div class="figure_image">
+                        <img src="assets/images/figure-3.jpg" alt="Швейцарское качество  в лучшем исполнении" />
+                    </div>
+                    <figcaption class="figure_caption">
+                        <div>
+                            <h2>Кофе на любой вкус</h2>
+                            <p>Все кофемашины JURA гарантируют эталонное приготовление основных ингредиентов — эспрессо и молочной пены — и дарят безграничное наслаждение вкусом разнообразных кофейных напитков.</p>
+                        </div>
+                    </figcaption>
+                </figure>
+            </div>
+
+            <div class="order">
+                <div class="order_inner">
+                    <div class="order_header">Прикоснитесь к роскоши</div>
+                    <div class="order_text">Запишитесь на&nbsp;персональную дегустацию и&nbsp;попробуйте самые экзотические кофейные бленды из&nbsp;коллекции JURA с&nbsp;идеальной швейцарской обжаркой</div>
+                    <form class="form">
+                        <input type="text" class="input input__name input__error" placeholder="Ваше имя" />
+                        <input type="text" class="input input__phone" id="js-input-phone" placeholder="Телефон" />
+                        <p class="form_message">Введите ваши имя и&nbsp;телефон</p>
+                        <button type="button" class="button">Записаться на дегустацию</button>
+                    </form>
+                </div>
+            </div>
+
+            <footer class="footer">
+                <p class="footer_address">
+                    <img src="assets/images/pin.svg" class="footer_icon" width="33" height="40" alt="">
+                    ГУМ, Красная площадь 3, 3 этаж
+                </p>
+                <p class="footer_phone">
+                    <img src="assets/images/phone.svg" class="footer_icon" width="33" height="33" alt="">
+                    <a href="tel:84997046896" class="footer_link">8 499 704 68 96</a>
+                </p>
+            </footer>
+        </main>
+
+        <script type="text/javascript" src="assets/javascripts/vendor/jquery-3.1.1.min.js"></script>
+        <script type="text/javascript" src="assets/javascripts/vendor/jquery.maskedinput.min.js"></script>
+        <script type="text/javascript" src="assets/javascripts/script.js"></script>
+    </body>
+</html>
