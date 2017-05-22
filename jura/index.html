@@ -194,12 +194,17 @@
                 <div class="order_inner">
                     <div class="order_header">Прикоснитесь к роскоши</div>
                     <div class="order_text">Запишитесь на&nbsp;персональную дегустацию и&nbsp;попробуйте самые экзотические кофейные бленды из&nbsp;коллекции JURA с&nbsp;идеальной швейцарской обжаркой</div>
-                    <form class="form">
+                    <form class="form" id="js-form">
                         <input type="text" class="input input__name input__error" placeholder="Ваше имя" />
                         <input type="text" class="input input__phone" id="js-input-phone" placeholder="Телефон" />
                         <p class="form_message">Введите ваши имя и&nbsp;телефон</p>
-                        <button type="button" class="button">Записаться на дегустацию</button>
+                        <button type="button" class="button" id="js-send">Записаться на дегустацию</button>
                     </form>
+                    <div class="complete" id="js-complete">
+                        <div class="complete_inner">
+                            <p>Вы&nbsp;успешно записались на&nbsp;дегустацию. Эксперты бутика JURA свяжутся с&nbsp;вами в&nbsp;ближайшее время.</p>
+                        </div>
+                    </div>
                 </div>
             </div>
 
