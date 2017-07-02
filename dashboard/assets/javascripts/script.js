@@ -26,7 +26,7 @@ function moveTableRowRow($el, direction) {
 function widgetRotation(widgetNumber) {
     // For demo rotation
 
-    var randomWidget = Math.floor(Math.random() * $('.js-widget-rotation' + widgetNumber).length);
+    var randomWidget = Math.floor(Math.random() * $('.js-widget-rotation-' + widgetNumber).length);
 
     $('.js-widget-rotation-' + widgetNumber).hide().eq(randomWidget).fadeIn(600);
 }
@@ -84,8 +84,6 @@ $(function() {
     updateDay();
     updateDate();
     updateClock();
-
-    setInterval('moveTableRowRow()', 5000);
 
     setInterval('widgetRotation(1)', 30000);
     setInterval('widgetRotation(2)', 30000);
