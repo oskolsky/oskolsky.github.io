@@ -1,0 +1,21 @@
+@font-face {
+    font-family: 'AkzidenzGroteskProRegular';
+    src: url('../fonts/AkzidenzGroteskPro-Regular/AkzidenzGroteskPro-Regular.eot');
+    src:
+        url('../fonts/AkzidenzGroteskPro-Regular/AkzidenzGroteskPro-Regular.woff') format('woff'),
+        url('../fonts/AkzidenzGroteskPro-Regular/AkzidenzGroteskPro-Regular.ttf') format('truetype'),
+        url('../fonts/AkzidenzGroteskPro-Regular/AkzidenzGroteskPro-Regular.svg#AkzidenzGroteskPro-Regular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'AkzidenzGroteskProMd';
+    src: url('../fonts/AkzidenzGroteskPro-Md/AkzidenzGroteskPro-Md.eot');
+    src:
+        url('../fonts/AkzidenzGroteskPro-Md/AkzidenzGroteskPro-Md.woff') format('woff'),
+        url('../fonts/AkzidenzGroteskPro-Md/AkzidenzGroteskPro-Md.ttf') format('truetype'),
+        url('../fonts/AkzidenzGroteskPro-Md/AkzidenzGroteskPro-Md.svg#AkzidenzGroteskPro-Md') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}

@@ -1,0 +1,294 @@
+html {
+    height: 100%;
+}
+
+body {
+    height: 100%;
+    min-height: 1000px;
+    background: #524641;
+    color: #fff;
+    font-family: "AkzidenzGroteskProRegular", Helvetica, Arial, sans-serif;
+}
+
+h2 {
+    font-size: 20px;
+    line-height: 32px;
+    letter-spacing: .33px;
+}
+
+/* Layout */
+
+.layout {
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    height: 100%;
+    padding: 15px 25px;
+}
+
+.header {
+    position: relative;
+    flex: 1 0 80px;
+    background: #746661;
+}
+
+.main {
+    display: flex;
+    flex: 1 1 auto;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    height: 100%;
+    margin: 15px 0;
+}
+
+.footer {
+    position: relative;
+    display: flex;
+    flex: 1 0 80px;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+    box-sizing: border-box;
+    padding: 0 15px 0 70px;
+    background: #746661;
+    font-size: 24px;
+    letter-spacing: .2px;
+}
+
+.footer::before {
+    position: absolute;
+    top: 50%;
+    left: 15px;
+    width: 32px;
+    height: 32px;
+    margin: -16px 0 0;
+    background: url('../images/info.svg') center no-repeat;
+    content: '';
+}
+
+/* Date */
+
+.date {
+    position: absolute;
+    top: 50%;
+    right: 20px;
+    font-size: 32px;
+    line-height: 36px;
+    letter-spacing: .2px;
+    transform: translateY(-50%);
+}
+
+.date_day {
+    margin: 0 20px 0 0;
+}
+
+.date_date {
+    margin: 0 20px 0 0;
+}
+
+.date_clock-colon {
+    position: relative;
+    top: -2px;
+    display: inline-block;
+    margin: 0 4px 0 3px;
+    line-height: 36px;
+    vertical-align: top;
+    animation: blink 2s linear infinite;
+}
+
+@-webkit-keyframes blink {
+    0% {
+      opacity: 1;
+    }
+
+    25% {
+      opacity: 0;
+    }
+
+    50% {
+      opacity: 1;
+    }
+
+    100% {
+      opacity: 0;
+    }
+}
+
+/* Grid */
+
+.grid {
+    display: flex;
+    flex: 1 1 auto;
+}
+
+.grid_column {
+    display: flex;
+    flex: 0 1 100%;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    box-sizing: border-box;
+    height: 100%;
+}
+
+.grid_column:not(:last-child) {
+    margin: 0 15px 0 0;
+}
+
+.grid_cell {
+    display: flex;
+}
+
+.grid_cell:not(:last-child) {
+    margin: 0 0 15px;
+}
+
+.grid_cell__100 {
+    flex: 0 1 100%;
+}
+
+.grid_cell__50 {
+    flex: 0 1 50%;
+}
+
+/* Widget */
+
+.widget {
+    display: flex;
+    flex: 1 1 auto;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    padding: 12px 15px 0;
+    background: #746661;
+}
+
+.widget_inner {
+    display: flex;
+    flex: 0 1 100%;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-self: stretch;
+    justify-content: flex-end;
+}
+
+/* Widget turnover */
+
+.turnover {
+    position: relative;
+}
+
+.turnover_value {
+    margin: 0 0 8px;
+    color: #f37021;
+    font-size: 96px;
+    line-height: 120px;
+}
+
+.turnover__white .turnover_value {
+    color: #fff;
+}
+
+.turnover_progress {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+
+/* Progress bar */
+
+.progress-bar {
+    position: relative;
+    height: 8px;
+    background: rgba(255, 255, 255, .16);
+}
+
+.progress-bar_value {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    background: #f37021;
+}
+
+.progress-bar__white .progress-bar_value {
+    background: #fff;
+}
+
+/* Table */
+
+.table {
+    width: calc(100% + 30px);
+    margin: 0 -15px;
+}
+
+.table_tr {
+    border-bottom: 1px solid #7f726c;
+}
+
+.table_td {
+    height: 64px;
+    padding: 0 0 0 15px;
+    font-size: 24px;
+    vertical-align: middle;
+}
+
+.table_td__value {
+    text-align: right;
+    letter-spacing: .2px;
+}
+
+.table_td__name {
+    padding: 0;
+    font-family: "AkzidenzGroteskProMd", Helvetica, Arial, sans-serif;
+}
+
+.table_td__progress {
+    width: 96px;
+}
+
+.table_td__spacer {
+    width: 15px;
+    padding: 0;
+}
+
+/* Elements */
+
+.logo {
+    position: absolute;
+    top: 50%;
+    left: 32px;
+    margin: -16px 0 0;
+}
+
+.name {
+    position: relative;
+    padding: 0 0 0 25px;
+}
+
+.name::before {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    width: 16px;
+    height: 16px;
+    margin: -8px 0 0;
+    content: normal;
+}
+
+.name__positive::before {
+    background: url('../images/positive.png') center no-repeat;
+    content: '';
+}
+
+.name__negative::before {
+    background: url('../images/negative.png') center no-repeat;
+    content: '';
+}
+
+.map {
+    margin: auto;
+}
+
+.map > img {
+    width: 100%;
+}
