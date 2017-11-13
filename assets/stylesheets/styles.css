@@ -16,60 +16,61 @@ body {
       line-height: 22px;
       letter-spacing: -.21px; } }
 
-.training-content {
+.content {
   box-sizing: border-box;
-  max-width: 920px;
   min-width: 320px;
+  max-width: 920px;
   margin: 0 auto;
   padding: 0 25px; }
   @media all and (max-width: 320px) {
-    .training-content {
+    .content {
       padding: 0 20px; } }
-  .training-content h1 {
+  .content h1 {
     margin: 0;
     font-size: 34px;
     font-weight: 400;
     line-height: 41px;
     letter-spacing: .41px; }
     @media all and (max-width: 320px) {
-      .training-content h1 {
+      .content h1 {
         font-size: 28px;
         line-height: 34px;
         letter-spacing: .36px; } }
-    .training-content h1:not(:first-child) {
+    .content h1:not(:first-child) {
       margin-top: 32px; }
-    .training-content h1:not(:last-child) {
+    .content h1:not(:last-child) {
       margin-bottom: 32px; }
-  .training-content h2 {
+  .content h2 {
     font-size: 20px;
     font-weight: 400;
     line-height: 24px;
     letter-spacing: .38px; }
-    .training-content h2:not(:first-child) {
+    .content h2:not(:first-child) {
       margin-top: 32px; }
-    .training-content h2:not(:last-child) {
+    .content h2:not(:last-child) {
       margin-bottom: 32px; }
-  .training-content p {
+  .content p {
     margin: 0; }
-    .training-content p:not(:first-child) {
+    .content p:not(:first-child) {
       margin-top: 22px; }
-    .training-content p:not(:last-child) {
+    .content p:not(:last-child) {
       margin-bottom: 22px; }
-  .training-content img {
+  .content img {
     display: block;
-    margin: 0 auto; }
+    margin: 0 auto;
+    max-width: 100%; }
     @media all and (max-width: 320px) {
-      .training-content img {
+      .content img {
         width: 100%; } }
-    .training-content img:not(:first-child) {
+    .content img:not(:first-child) {
       margin-top: 32px; }
-    .training-content img:not(:last-child) {
+    .content img:not(:last-child) {
       margin-bottom: 32px; }
-  .training-content ol {
+  .content ol {
     margin: 0;
     padding: 0;
     list-style-position: inside; }
-    .training-content ol:not(:first-child) {
+    .content ol:not(:first-child) {
       margin-top: 32px; }
-    .training-content ol:not(:last-child) {
+    .content ol:not(:last-child) {
       margin-bottom: 32px; }
