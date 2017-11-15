@@ -71,6 +71,28 @@ body {
     padding: 0;
     list-style-position: inside; }
     .content ol:not(:first-child) {
-      margin-top: 32px; }
+      margin-top: 22px; }
     .content ol:not(:last-child) {
-      margin-bottom: 32px; }
+      margin-bottom: 22px; }
+  .content ul {
+    margin: 0 0 0 20px;
+    padding: 0; }
+    .content ul li {
+      list-style: disc; }
+    .content ul:not(:first-child) {
+      margin-top: 22px; }
+    .content ul:not(:last-child) {
+      margin-bottom: 22px; }
+  .content table {
+    margin: 0;
+    border-collapse: collapse; }
+    .content table:not(:first-child) {
+      margin-top: 22px; }
+    .content table:not(:last-child) {
+      margin-bottom: 22px; }
+    .content table td {
+      padding: 5px 20px; }
+      .content table td:first-child {
+        padding-left: 0; }
+      .content table td:last-child {
+        padding-right: 0; }
