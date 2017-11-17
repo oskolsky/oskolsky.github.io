@@ -67,16 +67,17 @@ body {
     .content img:not(:last-child) {
       margin-bottom: 32px; }
   .content ol {
-    margin: 0;
+    margin: 0 0 0 20px;
     padding: 0;
-    list-style-position: inside; }
+    list-style-position: outside; }
     .content ol:not(:first-child) {
       margin-top: 22px; }
     .content ol:not(:last-child) {
       margin-bottom: 22px; }
   .content ul {
     margin: 0 0 0 20px;
-    padding: 0; }
+    padding: 0;
+    list-style-position: outside; }
     .content ul li {
       list-style: disc; }
     .content ul:not(:first-child) {
