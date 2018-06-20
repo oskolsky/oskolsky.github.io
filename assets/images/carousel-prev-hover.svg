@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="12px" height="22px" viewBox="0 0 12 22" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 50.2 (55047) - http://www.bohemiancoding.com/sketch -->
+    <title>left_arrow</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="yura_1280_main" transform="translate(-109.000000, -348.000000)" fill="#DF0714">
+            <path d="M109.390079,369.597131 C108.869974,369.06089 108.869974,368.189153 109.390079,367.652912 L117.780934,359.000172 L109.390079,350.347432 C108.869974,349.81119 108.869974,348.939454 109.390079,348.403212 C109.910184,347.865596 110.754857,347.865596 111.276292,348.403212 L120.608923,358.028062 C121.130359,358.564304 121.130359,359.43604 120.608923,359.972282 L111.276292,369.597131 C111.015574,369.865252 110.673715,370 110.333186,370 C109.991326,370 109.650797,369.865252 109.390079,369.597131 L109.390079,369.597131 Z" id="left_arrow" transform="translate(115.000000, 359.000000) scale(-1, 1) translate(-115.000000, -359.000000) "></path>
+        </g>
+    </g>
+</svg>

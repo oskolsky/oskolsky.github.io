@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="13px" height="8px" viewBox="0 0 13 8" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 50.2 (55047) - http://www.bohemiancoding.com/sketch -->
+    <title>icons / arrow / down</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="yura_1280_main" transform="translate(-789.000000, -4289.000000)" fill="#596473">
+            <g id="icons-/-arrow-/-down" transform="translate(789.000000, 4284.000000)">
+                <path d="M3.81554912,9.35967697 L10.8101913,9.35967697 C11.0857206,9.35967697 11.3090813,9.59297577 11.3090813,9.8595685 L11.3090813,10.7624074 C11.3090813,11.0384899 11.0797065,11.2622989 10.8101913,11.2622989 L2.52877293,11.2622989 C2.47544776,11.2622989 2.42407666,11.2535604 2.37590063,11.2375331 C2.11705707,11.2181941 1.91292714,10.9974115 1.91292714,10.7400178 L1.91292714,2.45859946 C1.91292714,2.18307012 2.14622595,1.95970946 2.41281867,1.95970946 L3.3156576,1.95970946 C3.59174006,1.95970946 3.81554912,2.18908417 3.81554912,2.45859946 L3.81554912,9.35967697 Z" id="Arrow" transform="translate(6.611004, 6.611004) rotate(-45.000000) translate(-6.611004, -6.611004) "></path>
+            </g>
+        </g>
+    </g>
+</svg>

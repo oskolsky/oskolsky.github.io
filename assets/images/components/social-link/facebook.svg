@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="8px" height="19px" viewBox="0 0 8 19" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 50.2 (55047) - http://www.bohemiancoding.com/sketch -->
+    <title>logo</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="yura_1280_main" transform="translate(-1047.000000, -4551.000000)" fill="#FFFFFF">
+            <g id="social-media" transform="translate(969.000000, 4503.000000)">
+                <g id="#2" transform="translate(59.000000, 34.000000)">
+                    <path d="M20.729166,17.98632 L20.729166,20.46458 L19.000021,20.46458 L19.000021,23.49478 L20.729166,23.49478 L20.729166,32.4999 L24.281264,32.4999 L24.281264,23.49478 L26.664788,23.49478 C26.664788,23.49478 26.888033,22.04162 26.996262,20.45332 L24.294651,20.45332 L24.294651,18.38126 C24.294651,18.0715 24.681928,17.65484 25.064728,17.65484 L27.000035,17.65484 L27.000035,14.50012 L24.368637,14.50012 C20.641353,14.50012 20.729166,17.53334 20.729166,17.98632 Z" id="logo"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

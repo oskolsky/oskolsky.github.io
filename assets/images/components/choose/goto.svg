@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="18px" height="18px" viewBox="0 0 18 18" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 50.2 (55047) - http://www.bohemiancoding.com/sketch -->
+    <title>ic_play</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="yura_1280_main" transform="translate(-582.000000, -3890.000000)">
+            <g id="ic_play" transform="translate(579.000000, 3887.000000)">
+                <g id="Group" transform="translate(4.000000, 4.000000)">
+                    <path d="M7.9999648,4.10782519e-14 C12.4182459,4.10782519e-14 16,3.58165874 16,8 C16,12.4183237 12.4182459,16 7.9999648,16 C3.5817541,16 -4.81836793e-14,12.4183237 -4.81836793e-14,8 C-4.81836793e-14,3.58165874 3.5817541,4.10782519e-14 7.9999648,4.10782519e-14 Z" id="stroke" stroke="#DF0714" stroke-width="1.5" fill-opacity="0" fill="#000000"></path>
+                    <path d="M10.2664528,7.50064 L7.6928176,5.4220648 C7.6167568,5.3642488 7.5222592,5.37394 7.4509312,5.37394 C7.165528,5.37394 7.1667616,5.6560936 7.1667616,5.7277552 L7.1667616,9.9763024 C7.1667616,10.0365376 7.165528,10.3301104 7.4509312,10.3301104 C7.5222592,10.3301104 7.6167568,10.3398088 7.6928176,10.2819928 L10.2664528,8.2034176 C10.477648,8.0420944 10.4411872,7.8520288 10.4411872,7.8520288 C10.4411872,7.8520288 10.4777008,7.6619632 10.2664528,7.50064 Z" id="icon" fill="#DF0714"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
