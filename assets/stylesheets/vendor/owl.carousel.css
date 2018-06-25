@@ -54,7 +54,7 @@
     text-align: center;
 }
 
-.owl-carousel.owl-carousel_boutique .owl-dots {
+.owl-carousel.owl-carousel_promo-boutique .owl-dots {
     position: absolute;
     right: 0;
     left: 0;
@@ -68,7 +68,7 @@
         bottom: 28px;
     }
 
-    .owl-carousel.owl-carousel_boutique .owl-dots {
+    .owl-carousel.owl-carousel_promo-boutique .owl-dots {
         display: none;
     }
 
@@ -79,17 +79,17 @@
         display: none;
     }
 
-    .owl-carousel.owl-carousel_boutique .owl-nav .owl-prev,
-    .owl-carousel.owl-carousel_boutique .owl-nav .owl-next {
+    .owl-carousel.owl-carousel_promo-boutique .owl-nav .owl-prev,
+    .owl-carousel.owl-carousel_promo-boutique .owl-nav .owl-next {
         top: 50%;
         margin: -11px 0 0;
     }
 
-    .owl-carousel.owl-carousel_boutique .owl-nav .owl-prev {
+    .owl-carousel.owl-carousel_promo-boutique .owl-nav .owl-prev {
         left: 12px;
     }
 
-    .owl-carousel.owl-carousel_boutique .owl-nav .owl-next {
+    .owl-carousel.owl-carousel_promo-boutique .owl-nav .owl-next {
         right: 12px;
     }
 }
@@ -101,24 +101,24 @@
         bottom: 50px;
     }
 
-    .owl-carousel.owl-carousel_boutique .owl-dots {
+    .owl-carousel.owl-carousel_promo-boutique .owl-dots {
         bottom: 100px;
     }
 
     /* Prev and next */
 
-    .owl-carousel.owl-carousel_boutique .owl-nav .owl-prev,
-    .owl-carousel.owl-carousel_boutique .owl-nav .owl-next {
+    .owl-carousel.owl-carousel_promo-boutique .owl-nav .owl-prev,
+    .owl-carousel.owl-carousel_promo-boutique .owl-nav .owl-next {
         top: 372px;
     }
 
     .owl-carousel.owl-carousel_promo .owl-nav .owl-prev,
-    .owl-carousel.owl-carousel_boutique .owl-nav .owl-prev {
+    .owl-carousel.owl-carousel_promo-boutique .owl-nav .owl-prev {
         left: 15px;
     }
 
     .owl-carousel.owl-carousel_promo .owl-nav .owl-next,
-    .owl-carousel.owl-carousel_boutique .owl-nav .owl-next {
+    .owl-carousel.owl-carousel_promo-boutique .owl-nav .owl-next {
         right: 15px;
     }
 }
@@ -130,24 +130,24 @@
         bottom: 50px;
     }
 
-    .owl-carousel.owl-carousel_boutique .owl-dots {
+    .owl-carousel.owl-carousel_promo-boutique .owl-dots {
         bottom: 170px;
     }
 
     /* Prev and next */
 
-    .owl-carousel.owl-carousel_boutique .owl-nav .owl-next,
-    .owl-carousel.owl-carousel_boutique .owl-nav .owl-prev {
+    .owl-carousel.owl-carousel_promo-boutique .owl-nav .owl-next,
+    .owl-carousel.owl-carousel_promo-boutique .owl-nav .owl-prev {
         top: 372px;
     }
 
     .owl-carousel.owl-carousel_promo .owl-nav .owl-prev,
-    .owl-carousel.owl-carousel_boutique .owl-nav .owl-prev {
+    .owl-carousel.owl-carousel_promo-boutique .owl-nav .owl-prev {
         left: 110px;
     }
 
     .owl-carousel.owl-carousel_promo .owl-nav .owl-next,
-    .owl-carousel.owl-carousel_boutique .owl-nav .owl-next {
+    .owl-carousel.owl-carousel_promo-boutique .owl-nav .owl-next {
         right: 110px;
     }
 }
@@ -159,7 +159,7 @@
     background-color: rgba(222, 222, 222, .6);
 }
 
-.owl-carousel.owl-carousel_boutique .owl-dot {
+.owl-carousel.owl-carousel_promo-boutique .owl-dot {
     width: 10px;
     height: 10px;
     border-radius: 50%;
@@ -200,8 +200,8 @@
     background-image: url('../../images/carousel-prev-hover.svg');
 }
 
-.owl-carousel.owl-carousel_boutique .owl-nav .owl-next,
-.owl-carousel.owl-carousel_boutique .owl-nav .owl-prev {
+.owl-carousel.owl-carousel_promo-boutique .owl-nav .owl-next,
+.owl-carousel.owl-carousel_promo-boutique .owl-nav .owl-prev {
     position: absolute;
     width: 12px;
     height: 22px;
@@ -209,19 +209,19 @@
     background-position: center;
 }
 
-.owl-carousel.owl-carousel_boutique .owl-nav .owl-next {
+.owl-carousel.owl-carousel_promo-boutique .owl-nav .owl-next {
     background-image: url('../../images/carousel-next-light.svg');
 }
 
-.owl-carousel.owl-carousel_boutique .owl-nav .owl-next:hover {
+.owl-carousel.owl-carousel_promo-boutique .owl-nav .owl-next:hover {
     background-image: url('../../images/carousel-next-hover.svg');
 }
 
-.owl-carousel.owl-carousel_boutique .owl-nav .owl-prev {
+.owl-carousel.owl-carousel_promo-boutique .owl-nav .owl-prev {
     background-image: url('../../images/carousel-prev-light.svg');
 }
 
-.owl-carousel.owl-carousel_boutique .owl-nav .owl-prev:hover {
+.owl-carousel.owl-carousel_promo-boutique .owl-nav .owl-prev:hover {
     background-image: url('../../images/carousel-prev-hover.svg');
 }
 
