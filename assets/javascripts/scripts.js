@@ -1,8 +1,11 @@
-$(document).ready(function(){
+$(document).ready(function() {
+
+    // Mask input
+    $('.js-input-phone').mask('+7 (999) 999-9999');
 
     // Footer toggle text
-    $('.js-footer-toggle').on('click', function() {
-        var $el = $('.js-footer-decription');
+    $('#js-footer-toggle').on('click', function() {
+        var $el = $('#js-footer-decription');
         var isVisibleClass = 'isVisible';
         var isToggleClass = 'isToggle';
 
@@ -24,5 +27,19 @@ $(document).ready(function(){
         margin: 10,
         nav: true,
         navText: '',
+    });
+
+    // Filter toggle
+    $('#js-filter-toggle').on('click', function() {
+        var $el = $('#js-filter');
+        var isToggleClass = 'isToggle';
+
+        if ($el.hasClass(isToggleClass)) {
+            $el.removeClass(isToggleClass);
+        } else {
+            $el.addClass(isToggleClass);
+        }
+
+        return false;
     });
 });

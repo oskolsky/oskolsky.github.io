@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="19px" height="19px" viewBox="0 0 19 19" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 50.2 (55047) - http://www.bohemiancoding.com/sketch -->
+    <title>Shape</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="1260_boutique" transform="translate(-174.000000, -729.000000)" fill="#BEBEBE" fill-rule="nonzero">
+            <g id="1260_email" transform="translate(71.000000, 538.000000)">
+                <path d="M112.5,199.142857 C114.752857,199.142857 116.557857,197.324286 116.557857,195.071429 C116.557857,192.818571 114.752857,191 112.5,191 C110.247143,191 108.428571,192.818571 108.428571,195.071429 C108.428571,197.324286 110.247143,199.142857 112.5,199.142857 Z M112.5,201.857143 C109.337857,201.857143 103,203.445 103,206.607143 L103,210 L122,210 L122,206.607143 C122,203.445 115.662143,201.857143 112.5,201.857143 Z" id="Shape"></path>
+            </g>
+        </g>
+    </g>
+</svg>
