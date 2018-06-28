@@ -9,7 +9,6 @@
         <script src="assets/javascripts/vendor/jquery.raty.min.js"></script>
         <script src="assets/javascripts/tabs.js"></script>
         <script src="assets/javascripts/scripts.js"></script>
-        <script src="assets/javascripts/tabs.js"></script>
         <script src="assets/javascripts/raty.js"></script>
         <title>Jura / IMPRESSA Z9</title>
     </head>
@@ -55,13 +54,23 @@
                     </li>
                 </ul>
 
-                <div class="product-show js-tabs">
-                    <nav class="nav product-show__nav js-tabs-nav">
-                        <a href="#" class="nav__item nav__item_current" data-tab="description">Описание</a>
-                        <a href="#" class="nav__item" data-tab="characteristics">Характеристики</a>
-                        <a href="#" class="nav__item" data-tab="accessories">Аксессуары</a>
-                        <a href="#" class="nav__item" data-tab="instructions">Инструкция</a>
-                        <a href="#" class="nav__item" data-tab="reviews">Отзывы (10)</a>
+                <div class="product-show">
+                    <nav class="nav product-show__nav js-tabs">
+                        <a href="#" class="nav__toggle js-tabs-toggle">Описание</a>
+                        <div class="nav__dropdown js-tabs-dropdown">
+                            <div class="nav__item nav__item_current js-tabs-item">
+                                <a href="#" class="nav__link js-tabs-link" data-tab="description">Характеристики</a>
+                            </div>
+                            <div class="nav__item js-tabs-item">
+                                <a href="#" class="nav__link js-tabs-link" data-tab="accessories">Аксессуары</a>
+                            </div>
+                            <div class="nav__item js-tabs-item">
+                                <a href="#" class="nav__link js-tabs-link" data-tab="instructions">Инструкция</a>
+                            </div>
+                            <div class="nav__item js-tabs-item">
+                                <a href="#" class="nav__link js-tabs-link" data-tab="reviews">Отзывы (10)</a>
+                            </div>
+                        </div>
                     </nav>
 
                     <div class="product-description" data-tab-content="description">

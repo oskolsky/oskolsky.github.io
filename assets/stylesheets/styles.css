@@ -404,8 +404,16 @@ h1 {
       padding: 40px 14px 63px; } }
   @media all and (max-width: 320px) {
     .compare {
-      padding: 30px 0 55px;
-      overflow-x: auto; } }
+      padding: 30px 0 55px; } }
+  .compare__inner {
+    display: flex;
+    flex-flow: row nowrap;
+    align-content: flex-start;
+    align-items: flex-start;
+    justify-content: space-between; }
+    @media all and (max-width: 320px) {
+      .compare__inner {
+        overflow-x: auto; } }
   .compare__controls {
     position: relative; }
     @media all and (min-width: 769px) {
@@ -434,12 +442,6 @@ h1 {
       top: 50%;
       right: 0;
       transform: translateY(-50%); } }
-  .compare__inner {
-    display: flex;
-    flex-flow: row nowrap;
-    align-content: flex-start;
-    align-items: flex-start;
-    justify-content: space-between; }
 
 .contacts__item {
   font-size: 16px;
@@ -589,7 +591,6 @@ h1 {
   .filter__toggle {
     position: relative;
     display: inline-block;
-    padding: 0 13px 0 0;
     color: #df0714;
     font-family: ProximaNova-Regular;
     font-size: 14px;
@@ -601,7 +602,7 @@ h1 {
     .filter__toggle::after {
       position: absolute;
       top: 50%;
-      right: 0;
+      right: -13px;
       width: 9px;
       height: 6px;
       margin: -3px 0 0;
@@ -1205,16 +1206,81 @@ h1 {
         background-image: url("../images/components/boutique/map-babel-phone.svg"); } }
 
 .nav {
+  position: relative;
   text-align: center; }
-  .nav__item {
+  @media all and (min-width: 321px) and (max-width: 768px) {
+    .nav {
+      margin: 25px 0; } }
+  @media all and (max-width: 320px) {
+    .nav {
+      margin: 25px 0; } }
+  .nav__toggle {
+    position: relative;
+    z-index: 2;
+    color: #df0714;
+    font-size: 21px;
+    letter-spacing: 1px; }
+    @media all and (min-width: 769px) {
+      .nav__toggle {
+        display: none; } }
+    .nav__toggle::after {
+      position: absolute;
+      top: 12px;
+      right: -15px;
+      width: 8px;
+      height: 5px;
+      background: url("../images/components/nav/arrow.svg") center no-repeat;
+      content: '';
+      transform: rotate(180deg); }
+      .nav.isToggle .nav__toggle::after {
+        transform: rotate(0deg); }
+  @media all and (min-width: 321px) and (max-width: 768px) {
+    .nav__dropdown {
+      position: absolute;
+      top: -20px;
+      left: 50%;
+      z-index: 1;
+      display: none;
+      padding: 60px 30px 30px;
+      border: 1px solid rgba(151, 151, 151, 0.42);
+      box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.15);
+      background: #fff;
+      transform: translateX(-50%); }
+      .nav.isToggle .nav__dropdown {
+        display: block; } }
+  @media all and (max-width: 320px) {
+    .nav__dropdown {
+      position: absolute;
+      top: -20px;
+      left: 50%;
+      z-index: 1;
+      display: none;
+      padding: 60px 30px 30px;
+      border: 1px solid rgba(151, 151, 151, 0.42);
+      box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.15);
+      background: #fff;
+      transform: translateX(-50%); }
+      .nav.isToggle .nav__dropdown {
+        display: block; } }
+  @media all and (min-width: 769px) {
+    .nav__item {
+      display: inline-block;
+      vertical-align: top; }
+      .nav__item:not(:last-child) {
+        margin: 0 68px 0 0; } }
+  @media all and (min-width: 321px) and (max-width: 768px) {
+    .nav__item:not(:last-child) {
+      margin: 0 0 10px; } }
+  @media all and (max-width: 320px) {
+    .nav__item:not(:last-child) {
+      margin: 0 0 10px; } }
+  .nav__link {
     color: #999da7;
     font-size: 21px;
     letter-spacing: 1px; }
-    .nav__item:hover {
+    .nav__link:hover {
       color: #df0714; }
-    .nav__item:not(:last-child) {
-      margin: 0 68px 0 0; }
-    .nav__item_current {
+    .nav__item_current .nav__link {
       color: #df0714; }
 
 .page__header {

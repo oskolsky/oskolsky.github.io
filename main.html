@@ -10,6 +10,7 @@
         <script src="assets/javascripts/vendor/owl.carousel.min.js"></script>
         <script src="assets/javascripts/scripts.js"></script>
         <script src="assets/javascripts/slider.js"></script>
+        <script src="assets/javascripts/tabs.js"></script>
         <title>Jura</title>
     </head>
     <body>
@@ -127,12 +128,24 @@
                 <h1 class="title promo-catalog__title">
                     <span class="title__inner">Каталог</span>
                 </h1>
-                <nav class="nav promo-catalog__nav hidden-phone">
-                    <a href="#" class="nav__item">Все модели</a>
-                    <a href="#" class="nav__item">Хиты</a>
-                    <a href="#" class="nav__item nav__item_current">Новинки</a>
-                    <a href="#" class="nav__item">Распродажа</a>
+                <nav class="nav promo-catalog__nav js-tabs">
+                    <a href="#" class="nav__toggle js-tabs-toggle">Новинки</a>
+                    <div class="nav__dropdown js-tabs-dropdown">
+                        <div class="nav__item nav__item_current js-tabs-item">
+                            <a href="#" class="nav__link js-tabs-link">Все модели</a>
+                        </div>
+                        <div class="nav__item js-tabs-item">
+                            <a href="#" class="nav__link js-tabs-link">Хиты</a>
+                        </div>
+                        <div class="nav__item js-tabs-item">
+                            <a href="#" class="nav__link js-tabs-link">Новинки</a>
+                        </div>
+                        <div class="nav__item js-tabs-item">
+                            <a href="#" class="nav__link js-tabs-link">Распродажа</a>
+                        </div>
+                    </div>
                 </nav>
+
                 <div class="promo-catalog__promo">
                     <div class="product-promo">
                         <div>

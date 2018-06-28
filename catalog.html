@@ -8,6 +8,7 @@
         <script src="assets/javascripts/vendor/jquery-3.3.1.min.js"></script>
         <script src="assets/javascripts/scripts.js"></script>
         <script src="assets/javascripts/filter.js"></script>
+        <script src="assets/javascripts/tabs.js"></script>
         <title>Jura / Каталог</title>
     </head>
     <body>
@@ -58,15 +59,28 @@
 
                 <div class="page__decoration"></div>
 
-                <nav class="nav page__nav visible-desktop">
-                    <a href="#" class="nav__item">Все модели</a>
-                    <a href="#" class="nav__item">Для дома</a>
-                    <a href="#" class="nav__item nav__item_current">Профессиональные</a>
-                    <a href="#" class="nav__item">Аксессуары</a>
-                    <a href="#" class="nav__item">Кофе</a>
+                <nav class="nav page__nav js-tabs">
+                    <a href="#" class="nav__toggle js-tabs-toggle">Профессиональные</a>
+                    <div class="nav__dropdown js-tabs-dropdown">
+                        <div class="nav__item nav__item_current js-tabs-item">
+                            <a href="#" class="nav__link js-tabs-link">Все модели</a>
+                        </div>
+                        <div class="nav__item js-tabs-item">
+                            <a href="#" class="nav__link js-tabs-link">Для дома</a>
+                        </div>
+                        <div class="nav__item js-tabs-item">
+                            <a href="#" class="nav__link js-tabs-link">Профессиональные</a>
+                        </div>
+                        <div class="nav__item js-tabs-item">
+                            <a href="#" class="nav__link js-tabs-link">Аксессуары</a>
+                        </div>
+                        <div class="nav__item js-tabs-item">
+                            <a href="#" class="nav__link js-tabs-link">Кофе</a>
+                        </div>
+                    </div>
                 </nav>
 
-                <div id="js-filter" class="filter">
+                <div id="js-filter" class="filter isToggle">
                     <a href="#" id="js-filter-toggle" class="filter__toggle">Фильтр</a>
                     <div id="js-filter-inner" class="filter__inner">
                         <a href="#" class="filter__reset">Сбросить фильтр</a>
