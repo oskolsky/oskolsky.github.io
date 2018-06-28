@@ -1,4 +1,7 @@
 @charset "UTF-8";
+.js-hidden {
+  display: none !important; }
+
 @media all and (max-width: 320px) {
   .hidden-phone,
   .visible-tablet,
@@ -212,6 +215,68 @@ h1 {
 @media all and (max-width: 320px) {
   .catalog {
     padding: 0 12px 42px; } }
+
+.characteristics__header {
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  background-color: #eaeaed;
+  color: rgba(91, 98, 112, 0.9);
+  font-size: 20px;
+  line-height: 24px; }
+  @media all and (min-width: 769px) {
+    .characteristics__header {
+      height: 60px;
+      padding: 0 32px; } }
+  @media all and (min-width: 321px) and (max-width: 768px) {
+    .characteristics__header {
+      height: 60px;
+      padding: 0 32px; } }
+  @media all and (max-width: 320px) {
+    .characteristics__header {
+      margin: 0 0 20px;
+      padding: 12px 20px; } }
+
+.characteristics__tr {
+  transition: background-color .2s; }
+  @media all and (min-width: 769px) {
+    .characteristics__tr {
+      display: flex;
+      flex-flow: row nowrap;
+      height: 60px;
+      padding: 0 32px; } }
+  @media all and (min-width: 321px) and (max-width: 768px) {
+    .characteristics__tr {
+      display: flex;
+      flex-flow: row nowrap;
+      height: 60px;
+      padding: 0 32px; } }
+  @media all and (max-width: 320px) {
+    .characteristics__tr {
+      padding: 12px 20px; }
+      .characteristics__tr:not(:last-child) {
+        margin: 0 0 10px; } }
+  .characteristics__tr:hover {
+    background-color: rgba(234, 234, 237, 0.37); }
+
+.characteristics__td {
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  height: 100%;
+  color: #475364;
+  font-size: 18px; }
+  .characteristics__td_key {
+    flex: 1 1 auto; }
+    @media all and (max-width: 320px) {
+      .characteristics__td_key {
+        margin: 0 0 5px; } }
+  @media all and (min-width: 769px) {
+    .characteristics__td_value {
+      flex: 0 0 400px; } }
+  @media all and (min-width: 321px) and (max-width: 768px) {
+    .characteristics__td_value {
+      flex: 0 0 150px; } }
 
 .checkbox {
   position: relative;
@@ -970,6 +1035,67 @@ h1 {
   .input > input:focus + .input__decoration {
     border-color: #df0714; }
 
+.instructions__header {
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  background-color: #eaeaed;
+  color: rgba(91, 98, 112, 0.9);
+  font-size: 20px;
+  line-height: 24px; }
+  @media all and (min-width: 769px) {
+    .instructions__header {
+      height: 60px;
+      margin: 0 0 33px;
+      padding: 0 32px; } }
+  @media all and (min-width: 321px) and (max-width: 768px) {
+    .instructions__header {
+      height: 60px;
+      margin: 0 0 33px;
+      padding: 0 32px; } }
+  @media all and (max-width: 320px) {
+    .instructions__header {
+      margin: 0 0 24px;
+      padding: 12px 20px; } }
+
+.instructions__item {
+  position: relative;
+  display: flex;
+  flex-flow: row nowrap;
+  color: rgba(91, 98, 112, 0.9);
+  font-size: 20px;
+  line-height: 24px; }
+  @media all and (min-width: 769px) {
+    .instructions__item {
+      align-items: center;
+      padding: 0 32px; } }
+  @media all and (min-width: 321px) and (max-width: 768px) {
+    .instructions__item {
+      align-items: center;
+      padding: 0 32px; } }
+  @media all and (max-width: 320px) {
+    .instructions__item {
+      align-items: flex-start;
+      padding: 0 20px; } }
+  .instructions__item:not(:last-child) {
+    margin: 0 0 30px; }
+  .instructions__item:hover {
+    color: #df0714; }
+
+.instructions__icon {
+  flex: 0 0 44px;
+  height: 50px;
+  background: url("../images/components/instructions/pdf.svg") center no-repeat; }
+  @media all and (min-width: 769px) {
+    .instructions__icon {
+      margin: 0 34px 0 0; } }
+  @media all and (min-width: 321px) and (max-width: 768px) {
+    .instructions__icon {
+      margin: 0 34px 0 0; } }
+  @media all and (max-width: 320px) {
+    .instructions__icon {
+      margin: 0 22px 0 0; } }
+
 .label {
   margin: 0 0 2px 16px;
   color: #999da7;
@@ -1231,8 +1357,24 @@ h1 {
   @media all and (max-width: 320px) {
     .page.page_boutique .page__decoration {
       background-image: url("../images/components/page/decoration-boutique-phone.png"); } }
-  .page.page_services .page__decoration {
-    background-image: url("../images/components/page/decoration-services.png"); }
+  @media all and (min-width: 769px) {
+    .page.page_services .page__decoration {
+      background-image: url("../images/components/page/decoration-services-desktop.png"); } }
+  @media all and (min-width: 321px) and (max-width: 768px) {
+    .page.page_services .page__decoration {
+      background-image: url("../images/components/page/decoration-services-tablet.png"); } }
+  @media all and (max-width: 320px) {
+    .page.page_services .page__decoration {
+      background-image: url("../images/components/page/decoration-services-phone.png"); } }
+  @media all and (min-width: 769px) {
+    .page.page_cart .page__decoration {
+      background-image: url("../images/components/page/decoration-cart-desktop.png"); } }
+  @media all and (min-width: 321px) and (max-width: 768px) {
+    .page.page_cart .page__decoration {
+      background-image: url("../images/components/page/decoration-cart-tablet.png"); } }
+  @media all and (max-width: 320px) {
+    .page.page_cart .page__decoration {
+      background-image: url("../images/components/page/decoration-cart-phone.png"); } }
 
 @media all and (min-width: 769px) {
   .page__nav {
@@ -1304,6 +1446,97 @@ h1 {
     display: none; }
     .product-promo:hover .product-promo__buy {
       display: block; }
+
+@media all and (min-width: 769px) {
+  .product-show {
+    width: 1140px;
+    margin: 0 auto;
+    padding: 50px 0 60px; } }
+
+@media all and (min-width: 321px) and (max-width: 768px) {
+  .product-show {
+    width: 100%; } }
+
+@media all and (max-width: 320px) {
+  .product-show {
+    width: 100%; } }
+
+.product-show__nav {
+  margin: 28px 0 29px; }
+
+.product-show__description {
+  background: #fff; }
+  @media all and (min-width: 769px) {
+    .product-show__description {
+      padding: 70px 80px; } }
+  @media all and (min-width: 321px) and (max-width: 768px) {
+    .product-show__description {
+      padding: 60px 64px; } }
+  @media all and (max-width: 320px) {
+    .product-show__description {
+      padding: 30px 12px; } }
+  .product-show__description h2 {
+    font-family: "ProximaNova-Regular", Helvetica, Arial, sans-serif;
+    font-weight: 400; }
+    @media all and (min-width: 769px) {
+      .product-show__description h2 {
+        margin: 0 0 40px;
+        font-size: 28px;
+        line-height: 34px; } }
+    @media all and (min-width: 321px) and (max-width: 768px) {
+      .product-show__description h2 {
+        margin: 0 0 30px;
+        font-size: 24px;
+        line-height: 29px; } }
+    @media all and (max-width: 320px) {
+      .product-show__description h2 {
+        margin: 0 0 30px;
+        font-size: 20px;
+        line-height: 24px; } }
+  .product-show__description p {
+    font-family: "ProximaNova-Light", Helvetica, Arial, sans-serif; }
+    @media all and (min-width: 769px) {
+      .product-show__description p {
+        font-size: 20px;
+        line-height: 24px; }
+        .product-show__description p:not(:last-child) {
+          margin: 0 0 30px; } }
+    @media all and (min-width: 321px) and (max-width: 768px) {
+      .product-show__description p {
+        font-size: 16px;
+        line-height: 20px; }
+        .product-show__description p:not(:last-child) {
+          margin: 0 0 20px; } }
+    @media all and (max-width: 320px) {
+      .product-show__description p {
+        font-size: 14px;
+        line-height: 20px; }
+        .product-show__description p:not(:last-child) {
+          margin: 0 0 20px; } }
+
+.product-show__characteristics {
+  background: #fff; }
+  @media all and (min-width: 769px) {
+    .product-show__characteristics {
+      padding: 50px; } }
+  @media all and (min-width: 321px) and (max-width: 768px) {
+    .product-show__characteristics {
+      padding: 30px 0; } }
+  @media all and (max-width: 320px) {
+    .product-show__characteristics {
+      padding: 20px 0; } }
+
+.product-show__instructions {
+  background: #fff; }
+  @media all and (min-width: 769px) {
+    .product-show__instructions {
+      padding: 50px; } }
+  @media all and (min-width: 321px) and (max-width: 768px) {
+    .product-show__instructions {
+      padding: 30px 0; } }
+  @media all and (max-width: 320px) {
+    .product-show__instructions {
+      padding: 20px 0; } }
 
 .product-vertical {
   position: relative;
