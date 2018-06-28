@@ -6,8 +6,11 @@
         <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
         <link rel="stylesheet" href="assets/stylesheets/styles.css" />
         <script src="assets/javascripts/vendor/jquery-3.3.1.min.js"></script>
+        <script src="assets/javascripts/vendor/jquery.raty.min.js"></script>
+        <script src="assets/javascripts/tabs.js"></script>
         <script src="assets/javascripts/scripts.js"></script>
         <script src="assets/javascripts/tabs.js"></script>
+        <script src="assets/javascripts/raty.js"></script>
         <title>Jura / IMPRESSA Z9</title>
     </head>
     <body>
@@ -56,168 +59,272 @@
                     <nav class="nav product-show__nav js-tabs-nav">
                         <a href="#" class="nav__item nav__item_current" data-tab="description">Описание</a>
                         <a href="#" class="nav__item" data-tab="characteristics">Характеристики</a>
-                        <a href="#" class="nav__item">Аксессуары</a>
+                        <a href="#" class="nav__item" data-tab="accessories">Аксессуары</a>
                         <a href="#" class="nav__item" data-tab="instructions">Инструкция</a>
-                        <a href="#" class="nav__item">Отзывы (10)</a>
+                        <a href="#" class="nav__item" data-tab="reviews">Отзывы (10)</a>
                     </nav>
 
-                    <div class="product-show__description" data-tab-content="description">
+                    <div class="product-description" data-tab-content="description">
                         <h2>Надежные универсальные кофемашины</h2>
                         <p>Универсальность модели X8&nbsp;заключается в&nbsp;следующем: владеет секретами приготовления всего ассортимента кофейных напитков на&nbsp;любой вкус с&nbsp;молоком и&nbsp;молочной пенкой, различных видов черного кофе, а&nbsp;также классического кофе в&nbsp;кофейнике; кроме того, в&nbsp;этой кофемашине есть различные настройки температурных режимов для подготовки горячей воды, что особенно ценится любителями чая.</p>
                         <p>Начиная с&nbsp;1931&nbsp;г., швейцарская компания JURA Elektroapparate AG&nbsp;занимается разработкой современных высококачественных бытовых приборов.</p>
                         <p>Будучи пионером в&nbsp;области создания автоматических эспрессо-кофемашин, компания JURA является ведущим производителем бытовых приборов с&nbsp;середины 80-х годов. Сегодня компания использует собственный опыт и&nbsp;ноу-хау в&nbsp;развитии полупрофессионального оборудования для офисов и&nbsp;предприятий общественного питания.</p>
                     </div>
 
-                    <div class="product-show__characteristics js-hidden" data-tab-content="characteristics">
-                        <div class="characteristics">
-                            <div class="characteristics__header">Стандарты автоматических кофе-машин JURA серии Professional</div>
-                            <div class="characteristics__tr">
-                                <div class="characteristics__td characteristics__td_key">Регулируемая заварочная камера от</div>
-                                <div class="characteristics__td characteristics__td_value">5 - 16 g</div>
+                    <div class="product-characteristics js-hidden" data-tab-content="characteristics">
+                        <div class="product-characteristics__header">Стандарты автоматических кофе-машин JURA серии Professional</div>
+                        <div class="product-characteristics__tr">
+                            <div class="product-characteristics__td characteristics__td_key">Регулируемая заварочная камера от</div>
+                            <div class="product-characteristics__td characteristics__td_value">5 - 16 g</div>
+                        </div>
+                        <div class="product-characteristics__tr">
+                            <div class="product-characteristics__td characteristics__td_key">Интеллектуальная система предварительной ароматизации</div>
+                            <div class="product-characteristics__td characteristics__td_value">+</div>
+                        </div>
+                        <div class="product-characteristics__tr">
+                            <div class="product-characteristics__td characteristics__td_key">Интеллектуальная система предварительного нагрева</div>
+                            <div class="product-characteristics__td characteristics__td_value">+</div>
+                        </div>
+                        <div class="product-characteristics__tr">
+                            <div class="product-characteristics__td characteristics__td_key">Активный контроль наличия кофейных зерен</div>
+                            <div class="product-characteristics__td characteristics__td_value">+</div>
+                        </div>
+                        <div class="product-characteristics__tr">
+                            <div class="product-characteristics__td characteristics__td_key">Энергосберегающий режим (E.S.M.©)</div>
+                            <div class="product-characteristics__td characteristics__td_value">+</div>
+                        </div>
+                        <div class="product-characteristics__tr">
+                            <div class="product-characteristics__td characteristics__td_key">Высокопроизводительный насос, 15 бар</div>
+                            <div class="product-characteristics__td characteristics__td_value">3</div>
+                        </div>
+                        <div class="product-characteristics__tr">
+                            <div class="product-characteristics__td characteristics__td_key">Система нагрева с термоблоком</div>
+                            <div class="product-characteristics__td characteristics__td_value">3</div>
+                        </div>
+                        <div class="product-characteristics__tr">
+                            <div class="product-characteristics__td characteristics__td_key">Система подачи жидкости</div>
+                            <div class="product-characteristics__td characteristics__td_value">2 синхронно работающие</div>
+                        </div>
+                        <div class="product-characteristics__tr">
+                            <div class="product-characteristics__td characteristics__td_key">Контролируемый поддон для сбора остаточной воды</div>
+                            <div class="product-characteristics__td characteristics__td_value">+</div>
+                        </div>
+                        <div class="product-characteristics__tr">
+                            <div class="product-characteristics__td characteristics__td_key">Индикатор состояния обслуживания</div>
+                            <div class="product-characteristics__td characteristics__td_value">+</div>
+                        </div>
+                        <div class="product-characteristics__tr">
+                            <div class="product-characteristics__td characteristics__td_key">Встроенная программа промывки, чистки и удаления накипи</div>
+                            <div class="product-characteristics__td characteristics__td_value">+</div>
+                        </div>
+                        <div class="product-characteristics__tr">
+                            <div class="product-characteristics__td characteristics__td_key">Возможность настройки степени жесткости воды</div>
+                            <div class="product-characteristics__td characteristics__td_value">+</div>
+                        </div>
+                        <div class="product-characteristics__tr">
+                            <div class="product-characteristics__td characteristics__td_key">Одна или две чашки эспрессо за один процесс заваривания</div>
+                            <div class="product-characteristics__td characteristics__td_value">+</div>
+                        </div>
+                        <div class="product-characteristics__tr">
+                            <div class="product-characteristics__td characteristics__td_key">Стандарт гигиеничности компании JURA: сертифицирован TÜV</div>
+                            <div class="product-characteristics__td characteristics__td_value">+</div>
+                        </div>
+                        <div class="product-characteristics__tr">
+                            <div class="product-characteristics__td characteristics__td_key">CLARIS система фильтрации воды</div>
+                            <div class="product-characteristics__td characteristics__td_value">+</div>
+                        </div>
+                        <div class="product-characteristics__tr">
+                            <div class="product-characteristics__td characteristics__td_key">Система включения режима энергосбережения</div>
+                            <div class="product-characteristics__td characteristics__td_value">Классическая</div>
+                        </div>
+                        <div class="product-characteristics__tr">
+                            <div class="product-characteristics__td characteristics__td_key">Swiss made</div>
+                            <div class="product-characteristics__td characteristics__td_value">+</div>
+                        </div>
+                    </div>
+
+                    <div class="product-accessories js-hidden" data-tab-content="accessories">
+                        <div class="product-accessories__inner">
+                            <div class="accessory">
+                                <div class="accessory__photo">
+                                    <img src="assets/images/temp/accessory.png" alt="" />
+                                </div>
+                                <div class="accessory__inner">
+                                    <div class="accessory__name">Стеклянный подогреватель чашек</div>
+                                    <div>
+                                        <div class="accessory__price">5 000 руб.</div>
+                                        <a href="#" class="button accessory__button">Купить</a>
+                                    </div>
+                                </div>
                             </div>
-                            <div class="characteristics__tr">
-                                <div class="characteristics__td characteristics__td_key">Интеллектуальная система предварительной ароматизации</div>
-                                <div class="characteristics__td characteristics__td_value">+</div>
+                            <div class="accessory">
+                                <div class="accessory__photo">
+                                    <img src="assets/images/temp/accessory.png" alt="" />
+                                </div>
+                                <div class="accessory__inner">
+                                    <div class="accessory__name">Стеклянный подогреватель чашек</div>
+                                    <div>
+                                        <div class="accessory__price">5 000 руб.</div>
+                                        <a href="#" class="button accessory__button">Купить</a>
+                                    </div>
+                                </div>
                             </div>
-                            <div class="characteristics__tr">
-                                <div class="characteristics__td characteristics__td_key">Интеллектуальная система предварительного нагрева</div>
-                                <div class="characteristics__td characteristics__td_value">+</div>
+                            <div class="accessory">
+                                <div class="accessory__photo">
+                                    <img src="assets/images/temp/accessory.png" alt="" />
+                                </div>
+                                <div class="accessory__inner">
+                                    <div class="accessory__name">Стеклянный подогреватель чашек</div>
+                                    <div>
+                                        <div class="accessory__price">5 000 руб.</div>
+                                        <a href="#" class="button accessory__button">Купить</a>
+                                    </div>
+                                </div>
                             </div>
-                            <div class="characteristics__tr">
-                                <div class="characteristics__td characteristics__td_key">Активный контроль наличия кофейных зерен</div>
-                                <div class="characteristics__td characteristics__td_value">+</div>
+                            <div class="accessory visible-desktop">
+                                <div class="accessory__photo">
+                                    <img src="assets/images/temp/accessory.png" alt="" />
+                                </div>
+                                <div class="accessory__inner">
+                                    <div class="accessory__name">Стеклянный подогреватель чашек</div>
+                                    <div>
+                                        <div class="accessory__price">5 000 руб.</div>
+                                        <a href="#" class="button accessory__button">Купить</a>
+                                    </div>
+                                </div>
                             </div>
-                            <div class="characteristics__tr">
-                                <div class="characteristics__td characteristics__td_key">Энергосберегающий режим (E.S.M.©)</div>
-                                <div class="characteristics__td characteristics__td_value">+</div>
+                            <div class="accessory visible-desktop">
+                                <div class="accessory__photo">
+                                    <img src="assets/images/temp/accessory.png" alt="" />
+                                </div>
+                                <div class="accessory__inner">
+                                    <div class="accessory__name">Стеклянный подогреватель чашек</div>
+                                    <div>
+                                        <div class="accessory__price">5 000 руб.</div>
+                                        <a href="#" class="button accessory__button">Купить</a>
+                                    </div>
+                                </div>
                             </div>
-                            <div class="characteristics__tr">
-                                <div class="characteristics__td characteristics__td_key">Высокопроизводительный насос, 15 бар</div>
-                                <div class="characteristics__td characteristics__td_value">3</div>
-                            </div>
-                            <div class="characteristics__tr">
-                                <div class="characteristics__td characteristics__td_key">Система нагрева с термоблоком</div>
-                                <div class="characteristics__td characteristics__td_value">3</div>
-                            </div>
-                            <div class="characteristics__tr">
-                                <div class="characteristics__td characteristics__td_key">Система подачи жидкости</div>
-                                <div class="characteristics__td characteristics__td_value">2 синхронно работающие</div>
-                            </div>
-                            <div class="characteristics__tr">
-                                <div class="characteristics__td characteristics__td_key">Контролируемый поддон для сбора остаточной воды</div>
-                                <div class="characteristics__td characteristics__td_value">+</div>
-                            </div>
-                            <div class="characteristics__tr">
-                                <div class="characteristics__td characteristics__td_key">Индикатор состояния обслуживания</div>
-                                <div class="characteristics__td characteristics__td_value">+</div>
-                            </div>
-                            <div class="characteristics__tr">
-                                <div class="characteristics__td characteristics__td_key">Встроенная программа промывки, чистки и удаления накипи</div>
-                                <div class="characteristics__td characteristics__td_value">+</div>
-                            </div>
-                            <div class="characteristics__tr">
-                                <div class="characteristics__td characteristics__td_key">Возможность настройки степени жесткости воды</div>
-                                <div class="characteristics__td characteristics__td_value">+</div>
-                            </div>
-                            <div class="characteristics__tr">
-                                <div class="characteristics__td characteristics__td_key">Одна или две чашки эспрессо за один процесс заваривания</div>
-                                <div class="characteristics__td characteristics__td_value">+</div>
-                            </div>
-                            <div class="characteristics__tr">
-                                <div class="characteristics__td characteristics__td_key">Стандарт гигиеничности компании JURA: сертифицирован TÜV</div>
-                                <div class="characteristics__td characteristics__td_value">+</div>
-                            </div>
-                            <div class="characteristics__tr">
-                                <div class="characteristics__td characteristics__td_key">CLARIS система фильтрации воды</div>
-                                <div class="characteristics__td characteristics__td_value">+</div>
-                            </div>
-                            <div class="characteristics__tr">
-                                <div class="characteristics__td characteristics__td_key">Система включения режима энергосбережения</div>
-                                <div class="characteristics__td characteristics__td_value">Классическая</div>
-                            </div>
-                            <div class="characteristics__tr">
-                                <div class="characteristics__td characteristics__td_key">Swiss made</div>
-                                <div class="characteristics__td characteristics__td_value">+</div>
+                            <div class="accessory visible-desktop">
+                                <div class="accessory__photo">
+                                    <img src="assets/images/temp/accessory.png" alt="" />
+                                </div>
+                                <div class="accessory__inner">
+                                    <div class="accessory__name">Стеклянный подогреватель чашек</div>
+                                    <div>
+                                        <div class="accessory__price">5 000 руб.</div>
+                                        <a href="#" class="button accessory__button">Купить</a>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
 
-                    <div class="product-show__instructions js-hidden" data-tab-content="instructions">
-                        <div class="instructions">
-                            <div class="instructions__header">
+                    <div class="product-instructions js-hidden" data-tab-content="instructions">
+                        <div class="product-instructions__header">
+                            Руководство по эксплуатации кофе-машины GIGA X9c Professional
+                        </div>
+
+                        <a href="#" class="product-instructions__item">
+                            <span class="product-instructions__icon instructions__icon_pdf"></span>
+                            <span class="">
                                 Руководство по эксплуатации кофе-машины GIGA X9c Professional
-                            </div>
-
-                            <a href="#" class="instructions__item">
-                                <span class="instructions__icon instructions__icon_pdf"></span>
-                                <span class="">
-                                    Руководство по эксплуатации кофе-машины GIGA X9c Professional
-                                    <br />
-                                    (PDF, 9,2 MB)
-                                </span>
-                            </a>
-                            <a href="#" class="instructions__item">
-                                <span class="instructions__icon instructions__icon_pdf"></span>
-                                <span class="">
-                                    Руководство по эксплуатации кофе-машины GIGA X9c Professional
-                                    <br />
-                                    (PDF, 9,2 MB)
-                                </span>
-                            </a>
-                            <a href="#" class="instructions__item">
-                                <span class="instructions__icon instructions__icon_pdf"></span>
-                                <span class="">
-                                    Руководство по эксплуатации кофе-машины GIGA X9c Professional
-                                    <br />
-                                    (PDF, 9,2 MB)
-                                </span>
-                            </a>
-                            <a href="#" class="instructions__item">
-                                <span class="instructions__icon instructions__icon_pdf"></span>
-                                <span class="">
-                                    Руководство по эксплуатации кофе-машины GIGA X9c Professional
-                                    <br />
-                                    (PDF, 9,2 MB)
-                                </span>
-                            </a>
-                            <a href="#" class="instructions__item">
-                                <span class="instructions__icon instructions__icon_pdf"></span>
-                                <span class="">
-                                    Руководство по эксплуатации кофе-машины GIGA X9c Professional
-                                    <br />
-                                    (PDF, 9,2 MB)
-                                </span>
-                            </a>
-                            <a href="#" class="instructions__item">
-                                <span class="instructions__icon instructions__icon_pdf"></span>
-                                <span class="">
-                                    Руководство по эксплуатации кофе-машины GIGA X9c Professional
-                                    <br />
-                                    (PDF, 9,2 MB)
-                                </span>
-                            </a>
-
-                            <div class="instructions__header">
+                                <br />
+                                (PDF, 9,2 MB)
+                            </span>
+                        </a>
+                        <a href="#" class="product-instructions__item">
+                            <span class="product-instructions__icon instructions__icon_pdf"></span>
+                            <span class="">
                                 Руководство по эксплуатации кофе-машины GIGA X9c Professional
+                                <br />
+                                (PDF, 9,2 MB)
+                            </span>
+                        </a>
+                        <a href="#" class="product-instructions__item">
+                            <span class="product-instructions__icon instructions__icon_pdf"></span>
+                            <span class="">
+                                Руководство по эксплуатации кофе-машины GIGA X9c Professional
+                                <br />
+                                (PDF, 9,2 MB)
+                            </span>
+                        </a>
+                        <a href="#" class="product-instructions__item">
+                            <span class="product-instructions__icon instructions__icon_pdf"></span>
+                            <span class="">
+                                Руководство по эксплуатации кофе-машины GIGA X9c Professional
+                                <br />
+                                (PDF, 9,2 MB)
+                            </span>
+                        </a>
+                        <a href="#" class="product-instructions__item">
+                            <span class="product-instructions__icon instructions__icon_pdf"></span>
+                            <span class="">
+                                Руководство по эксплуатации кофе-машины GIGA X9c Professional
+                                <br />
+                                (PDF, 9,2 MB)
+                            </span>
+                        </a>
+                        <a href="#" class="product-instructions__item">
+                            <span class="product-instructions__icon instructions__icon_pdf"></span>
+                            <span class="">
+                                Руководство по эксплуатации кофе-машины GIGA X9c Professional
+                                <br />
+                                (PDF, 9,2 MB)
+                            </span>
+                        </a>
+
+                        <div class="product-instructions__header">
+                            Руководство по эксплуатации кофе-машины GIGA X9c Professional
+                        </div>
+
+                        <a href="#" class="product-instructions__item">
+                            <span class="product-instructions__icon instructions__icon_pdf"></span>
+                            <span class="">
+                                Руководство по эксплуатации кофе-машины GIGA X9c Professional
+                                <br />
+                                (PDF, 9,2 MB)
+                            </span>
+                        </a>
+
+                        <a href="#" class="product-instructions__item">
+                            <span class="product-instructions__icon instructions__icon_pdf"></span>
+                            <span class="">
+                                Руководство по эксплуатации кофе-машины GIGA X9c Professional
+                                <br />
+                                (PDF, 9,2 MB)
+                            </span>
+                        </a>
+                    </div>
+
+                    <div class="product-reviews js-hidden" data-tab-content="reviews">
+                        <div class="product-reviews__header">
+                            <a href="#" class="button">Оставить отзыв</a>
+                        </div>
+                        <div class="product-reviews__body">
+                            <div class="product-review">
+                                <div class="product-review__stars stars js-stars-readonly" data-score="3"></div>
+                                <div class="product-review__author">Анатолий 25.01.2018</div>
+                                <div class="product-review__text">Пользуюсь смартфоном, еще с 3-йки. Периодически переходил на Андроид (можно было купить мощный смартфон других брендов за меньшие деньги). Но данный смартфон, это техника, которая практически никогда не подводит. Вернулся сначала на 4-ку, затем 6-ку. Теперь X-ка. Хороша своим функционалом, особенно сложно отвыкнуть, когда беру в руки 7-ку жены и жду привычного срабатывания Face ID. Камера на высоте, функционал на отлично.</div>
                             </div>
-
-                            <a href="#" class="instructions__item">
-                                <span class="instructions__icon instructions__icon_pdf"></span>
-                                <span class="">
-                                    Руководство по эксплуатации кофе-машины GIGA X9c Professional
-                                    <br />
-                                    (PDF, 9,2 MB)
-                                </span>
-                            </a>
-
-                            <a href="#" class="instructions__item">
-                                <span class="instructions__icon instructions__icon_pdf"></span>
-                                <span class="">
-                                    Руководство по эксплуатации кофе-машины GIGA X9c Professional
-                                    <br />
-                                    (PDF, 9,2 MB)
-                                </span>
-                            </a>
+                            <div class="product-review">
+                                <div class="product-review__stars stars js-stars-readonly" data-score="3"></div>
+                                <div class="product-review__author">Анатолий 25.01.2018</div>
+                                <div class="product-review__text">Пользуюсь смартфоном, еще с 3-йки. Периодически переходил на Андроид (можно было купить мощный смартфон других брендов за меньшие деньги). Но данный смартфон, это техника, которая практически никогда не подводит. Вернулся сначала на 4-ку, затем 6-ку. Теперь X-ка. Хороша своим функционалом, особенно сложно отвыкнуть, когда беру в руки 7-ку жены и жду привычного срабатывания Face ID. Камера на высоте, функционал на отлично.</div>
+                            </div>
+                            <div class="product-review">
+                                <div class="product-review__stars stars js-stars-readonly" data-score="3"></div>
+                                <div class="product-review__author">Анатолий 25.01.2018</div>
+                                <div class="product-review__text">Пользуюсь смартфоном, еще с 3-йки. Периодически переходил на Андроид (можно было купить мощный смартфон других брендов за меньшие деньги). Но данный смартфон, это техника, которая практически никогда не подводит. Вернулся сначала на 4-ку, затем 6-ку. Теперь X-ка. Хороша своим функционалом, особенно сложно отвыкнуть, когда беру в руки 7-ку жены и жду привычного срабатывания Face ID. Камера на высоте, функционал на отлично.</div>
+                            </div>
+                            <div class="product-review">
+                                <div class="product-review__stars stars js-stars-readonly" data-score="3"></div>
+                                <div class="product-review__author">Анатолий 25.01.2018</div>
+                                <div class="product-review__text">Пользуюсь смартфоном, еще с 3-йки. Периодически переходил на Андроид (можно было купить мощный смартфон других брендов за меньшие деньги). Но данный смартфон, это техника, которая практически никогда не подводит. Вернулся сначала на 4-ку, затем 6-ку. Теперь X-ка. Хороша своим функционалом, особенно сложно отвыкнуть, когда беру в руки 7-ку жены и жду привычного срабатывания Face ID. Камера на высоте, функционал на отлично.</div>
+                            </div>
+                        </div>
+                        <div class="product-reviews__footer">
+                            <a href="#" class="product-reviews__load">Показать еще</a>
                         </div>
                     </div>
                 </div>
