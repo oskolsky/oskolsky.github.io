@@ -557,6 +557,156 @@ h1 {
     color: #df0714;
     text-decoration: underline; }
 
+.dialog {
+  position: relative; }
+  .dialog_video {
+    text-align: center; }
+    .dialog_video > iframe {
+      display: inline-block;
+      vertical-align: top; }
+      @media all and (min-width: 769px) {
+        .dialog_video > iframe {
+          width: 638px;
+          height: 358px; } }
+      @media all and (min-width: 321px) and (max-width: 768px) {
+        .dialog_video > iframe {
+          width: 638px;
+          height: 358px; } }
+      @media all and (max-width: 320px) {
+        .dialog_video > iframe {
+          width: 100%; } }
+  .dialog_review {
+    box-sizing: border-box;
+    border: 3px solid #df0714;
+    box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+    text-align: center; }
+    @media all and (min-width: 769px) {
+      .dialog_review {
+        width: 1140px;
+        padding: 30px 80px 50px; } }
+    @media all and (min-width: 321px) and (max-width: 768px) {
+      .dialog_review {
+        width: 100%;
+        padding: 30px 60px 50px; } }
+    @media all and (max-width: 320px) {
+      .dialog_review {
+        width: 100%;
+        padding: 30px 12px; } }
+  .dialog_thanks {
+    box-sizing: border-box;
+    border: 3px solid #df0714;
+    box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+    text-align: center; }
+    @media all and (min-width: 769px) {
+      .dialog_thanks {
+        width: 626px;
+        padding: 30px 80px 50px; } }
+    @media all and (min-width: 321px) and (max-width: 768px) {
+      .dialog_thanks {
+        width: 100%;
+        padding: 30px 60px 50px; } }
+    @media all and (max-width: 320px) {
+      .dialog_thanks {
+        width: 100%;
+        padding: 30px 12px; } }
+  .dialog__close {
+    cursor: pointer;
+    position: absolute;
+    width: 21px;
+    height: 21px;
+    background: url("../images/components/dialog/close.svg") center no-repeat; }
+    @media all and (min-width: 769px) {
+      .dialog__close {
+        top: -36px;
+        right: -28px; } }
+    @media all and (min-width: 321px) and (max-width: 768px) {
+      .dialog__close {
+        top: -36px;
+        right: 20px; } }
+    @media all and (max-width: 320px) {
+      .dialog__close {
+        top: -26px;
+        right: 0; } }
+    .dialog__close:hover {
+      background-image: url("../images/components/dialog/close-hover.svg"); }
+  @media all and (min-width: 769px) {
+    .dialog__title {
+      margin: 0 0 11px; } }
+  @media all and (min-width: 321px) and (max-width: 768px) {
+    .dialog__title {
+      margin: 0 0 11px; } }
+  @media all and (min-width: 321px) and (max-width: 768px) {
+    .dialog__title {
+      margin: 0 0 15px; } }
+  .dialog__text {
+    color: rgba(91, 98, 112, 0.9);
+    font-size: 16px;
+    line-height: 20px;
+    text-align: center; }
+    @media all and (min-width: 769px) {
+      .dialog__text {
+        margin: 0 auto 30px; }
+        .dialog_review .dialog__text {
+          width: 600px; } }
+    @media all and (min-width: 321px) and (max-width: 768px) {
+      .dialog__text {
+        margin: 0 auto 30px; }
+        .dialog_review .dialog__text {
+          width: 600px; } }
+    @media all and (max-width: 320px) {
+      .dialog__text {
+        margin: 0 0 28px; } }
+  @media all and (min-width: 769px) {
+    .dialog__row {
+      display: flex;
+      flex-flow: row nowrap;
+      align-items: center;
+      justify-content: space-between; }
+      .dialog__row:not(:last-child) {
+        margin: 0 0 25px; } }
+  @media all and (min-width: 321px) and (max-width: 768px) {
+    .dialog__row {
+      display: flex;
+      flex-flow: row nowrap;
+      align-items: center;
+      justify-content: space-between; }
+      .dialog__row:not(:last-child) {
+        margin: 0 0 25px; } }
+  .dialog__row_input {
+    margin: 0 0 25px; }
+  .dialog__row_textarea {
+    margin: 0 0 60px; }
+  .dialog__row_button {
+    justify-content: flex-end; }
+  @media all and (min-width: 769px) {
+    .dialog__input {
+      width: 340px; } }
+  @media all and (min-width: 321px) and (max-width: 768px) {
+    .dialog__input {
+      width: 308px; } }
+  @media all and (max-width: 320px) {
+    .dialog__input {
+      width: 100%; }
+      .dialog__input:not(:first-child) {
+        margin: 17px 0 0; } }
+  @media all and (max-width: 320px) {
+    .dialog__button {
+      width: 100%; } }
+  @media all and (min-width: 321px) and (max-width: 768px) {
+    .dialog__stars {
+      position: absolute;
+      bottom: 60px;
+      left: 60px; } }
+  @media all and (max-width: 320px) {
+    .dialog__stars {
+      position: absolute;
+      bottom: 90px;
+      left: 50%;
+      text-align: center;
+      transform: translateX(-50%); } }
+
 .divider {
   width: 100%;
   height: 1px;
@@ -2911,11 +3061,17 @@ h1 {
   font-size: 0; }
   .stars > img {
     display: inline-block;
-    width: 18px;
-    height: 18px;
     vertical-align: middle; }
-    .stars > img:not(:last-child) {
+  .stars_small > img {
+    width: 18px;
+    height: 18px; }
+    .stars_small > img:not(:last-child) {
       margin: 0 5px 0 0; }
+  .stars_large > img {
+    width: 30px;
+    height: 30px; }
+    .stars_large > img:not(:last-child) {
+      margin: 0 10px 0 0; }
 
 .subscription {
   border-top: 1px solid #dfdfdf;
@@ -3024,6 +3180,31 @@ h1 {
     @media all and (max-width: 320px) {
       .testing__text {
         margin: 0 0 26px; } }
+
+.textarea {
+  box-sizing: border-box;
+  width: 100%;
+  padding: 15px 28px;
+  border: 2px solid #dedede;
+  border-radius: 25px;
+  background: #f5f5f5;
+  color: #bebebe; }
+  .textarea > textarea {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    color: inherit;
+    font-family: inherit;
+    font-size: inherit;
+    resize: none; }
+    .textarea > textarea::-webkit-input-placeholder {
+      color: #bebebe; }
+    .textarea > textarea::-moz-placeholder {
+      color: #bebebe; }
+    .textarea > textarea:-ms-input-placeholder {
+      color: #bebebe; }
+    .textarea > textarea:-moz-placeholder {
+      color: #bebebe; }
 
 .title__inner {
   position: relative;

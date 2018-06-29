@@ -6,13 +6,18 @@
         <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
         <link rel="stylesheet" href="assets/stylesheets/styles.css" />
         <link rel="stylesheet" href="assets/stylesheets/vendor/owl.carousel.css" />
+        <link rel="stylesheet" href="assets/stylesheets/vendor/jquery.arcticmodal-0.3.css" />
         <script src="assets/javascripts/vendor/jquery-3.3.1.min.js"></script>
         <script src="assets/javascripts/vendor/owl.carousel.min.js"></script>
         <script src="assets/javascripts/vendor/jquery.raty.min.js"></script>
+        <script src="assets/javascripts/vendor/jquery.arcticmodal-0.3.min.js"></script>
+        <script src="assets/javascripts/vendor/jquery.maskedinput.min.js"></script>
         <script src="assets/javascripts/tabs.js"></script>
         <script src="assets/javascripts/scripts.js"></script>
         <script src="assets/javascripts/raty.js"></script>
         <script src="assets/javascripts/slider.js"></script>
+        <script src="assets/javascripts/menu.js"></script>
+        <script src="assets/javascripts/dialog.js"></script>
         <title>Jura / IMPRESSA Z9</title>
     </head>
     <body>
@@ -37,9 +42,30 @@
                 <a href="#" class="header__item header__item_basket">
                     <i class="icon icon_basket header__icon"></i><span>3</span>
                 </a>
-                <a href="#" class="header__item header__menu">
+                <a href="#" id="js-menu-open" class="header__item header__menu">
                     <i class="icon icon_menu header__icon"></i><span class="hidden-phone">Меню</span>
                 </a>
+                <div id="js-menu" class="menu js-hidden">
+                    <div id="js-menu-close" class="menu__close"></div>
+                    <div class="menu__title">Меню</div>
+                    <ul class="menu__list">
+                        <li class="menu__item">
+                            <a href="#" class="menu__link">О компании</a>
+                        </li>
+                        <li class="menu__item">
+                            <a href="#" class="menu__link">Каталог</a>
+                        </li>
+                        <li class="menu__item">
+                            <a href="#" class="menu__link">Сервисный центр</a>
+                        </li>
+                        <li class="menu__item">
+                            <a href="#" class="menu__link">Контакты</a>
+                        </li>
+                        <li class="menu__item">
+                            <a href="#" class="menu__link menu__link_current">Бутик</a>
+                        </li>
+                    </ul>
+                </div>
             </div>
         </header>
 
@@ -61,7 +87,7 @@
 
                     <div class="product-card">
                         <div class="product-card__photo">
-                            <a href="#" class="product-card__play"></a>
+                            <a href="#" id="js-video-dialog-open" class="product-card__play"></a>
                             <a href="#" class="product-card__compare visible-phone"></a>
                             <div class="owl-carousel owl-carousel_product js-owl-carousel">
                                 <div class="product-card__slide">
@@ -409,26 +435,26 @@
 
                     <div class="product-reviews js-hidden" data-tab-content="reviews">
                         <div class="product-reviews__header">
-                            <a href="#" class="button">Оставить отзыв</a>
+                            <a href="#" id="js-review-dialog-open" class="button">Оставить отзыв</a>
                         </div>
                         <div class="product-reviews__body">
                             <div class="product-review">
-                                <div class="product-review__stars stars js-stars-readonly" data-score="3"></div>
+                                <div class="product-review__stars stars stars_small js-stars-readonly" data-score="3"></div>
                                 <div class="product-review__author">Анатолий 25.01.2018</div>
                                 <div class="product-review__text">Пользуюсь смартфоном, еще с 3-йки. Периодически переходил на Андроид (можно было купить мощный смартфон других брендов за меньшие деньги). Но данный смартфон, это техника, которая практически никогда не подводит. Вернулся сначала на 4-ку, затем 6-ку. Теперь X-ка. Хороша своим функционалом, особенно сложно отвыкнуть, когда беру в руки 7-ку жены и жду привычного срабатывания Face ID. Камера на высоте, функционал на отлично.</div>
                             </div>
                             <div class="product-review">
-                                <div class="product-review__stars stars js-stars-readonly" data-score="3"></div>
+                                <div class="product-review__stars stars stars_small js-stars-readonly" data-score="3"></div>
                                 <div class="product-review__author">Анатолий 25.01.2018</div>
                                 <div class="product-review__text">Пользуюсь смартфоном, еще с 3-йки. Периодически переходил на Андроид (можно было купить мощный смартфон других брендов за меньшие деньги). Но данный смартфон, это техника, которая практически никогда не подводит. Вернулся сначала на 4-ку, затем 6-ку. Теперь X-ка. Хороша своим функционалом, особенно сложно отвыкнуть, когда беру в руки 7-ку жены и жду привычного срабатывания Face ID. Камера на высоте, функционал на отлично.</div>
                             </div>
                             <div class="product-review">
-                                <div class="product-review__stars stars js-stars-readonly" data-score="3"></div>
+                                <div class="product-review__stars stars stars_small js-stars-readonly" data-score="3"></div>
                                 <div class="product-review__author">Анатолий 25.01.2018</div>
                                 <div class="product-review__text">Пользуюсь смартфоном, еще с 3-йки. Периодически переходил на Андроид (можно было купить мощный смартфон других брендов за меньшие деньги). Но данный смартфон, это техника, которая практически никогда не подводит. Вернулся сначала на 4-ку, затем 6-ку. Теперь X-ка. Хороша своим функционалом, особенно сложно отвыкнуть, когда беру в руки 7-ку жены и жду привычного срабатывания Face ID. Камера на высоте, функционал на отлично.</div>
                             </div>
                             <div class="product-review">
-                                <div class="product-review__stars stars js-stars-readonly" data-score="3"></div>
+                                <div class="product-review__stars stars stars_small js-stars-readonly" data-score="3"></div>
                                 <div class="product-review__author">Анатолий 25.01.2018</div>
                                 <div class="product-review__text">Пользуюсь смартфоном, еще с 3-йки. Периодически переходил на Андроид (можно было купить мощный смартфон других брендов за меньшие деньги). Но данный смартфон, это техника, которая практически никогда не подводит. Вернулся сначала на 4-ку, затем 6-ку. Теперь X-ка. Хороша своим функционалом, особенно сложно отвыкнуть, когда беру в руки 7-ку жены и жду привычного срабатывания Face ID. Камера на высоте, функционал на отлично.</div>
                             </div>
@@ -519,5 +545,65 @@
                 </a>
             </div>
         </footer>
+
+        <div style="display: none;">
+            <div id="js-video-dialog">
+                <div class="dialog dialog_video">
+                    <div class="dialog__close arcticmodal-close"></div>
+                    <iframe width="100%" height="100%" id="js-video" src="https://www.youtube.com/embed/B4iJdDt3UdM" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                </div>
+            </div>
+        </div>
+
+        <div style="display: none;">
+            <div id="js-review-dialog">
+                <div class="dialog dialog_review">
+                    <div class="dialog__close arcticmodal-close"></div>
+
+                    <h1 class="title dialog__title">
+                        <span class="title__inner hidden-phone">Оставить отзыв</span>
+                        <span class="visible-phone">Оставить отзыв</span>
+                    </h1>
+                    <div class="dialog__text">Перед отправкой отзыва убедитесь, что он&nbsp;не&nbsp;нарушает правил модерации: не&nbsp;содержит ссылок на&nbsp;сторонние ресурсы и&nbsp;оскорблений.</div>
+                    <div class="dialog__row dialog__row_input">
+                        <div class="input input_name dialog__input">
+                            <input type="text" placeholder="Ваше имя" />
+                            <div class="input__decoration"></div>
+                        </div>
+                        <div class="input input_phone dialog__input">
+                            <input type="text" placeholder="Телефон" class="js-input-phone" />
+                            <div class="input__decoration"></div>
+                        </div>
+                        <div class="stars stars_large dialog__stars js-stars"></div>
+                    </div>
+                    <div class="dialog__row dialog__row_textarea">
+                        <div class="textarea">
+                            <textarea name="name" rows="3" placeholder="Ваш отзыв"></textarea>
+                        </div>
+                    </div>
+                    <div class="dialog__row dialog__row_button">
+                        <a href="#" id="js-thanks-dialog-open" class="button dialog__button">Отправить</a>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <div style="display: none;">
+            <div id="js-thanks-dialog">
+                <div class="dialog dialog_thanks">
+                    <div class="dialog__close arcticmodal-close"></div>
+
+                    <h1 class="title dialog__title">
+                        <span class="title__inner hidden-phone">Спасибо!</span>
+                        <span class="visible-phone">Спасибо!</span>
+                    </h1>
+                    <div class="dialog__text">Ваш отзыв отправлен на модерацию!</div>
+                    <a href="#" class="button arcticmodal-close">Закрыть</a>
+
+                </div>
+            </div>
+        </div>
+
     </body>
 </html>

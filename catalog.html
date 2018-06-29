@@ -9,6 +9,7 @@
         <script src="assets/javascripts/scripts.js"></script>
         <script src="assets/javascripts/filter.js"></script>
         <script src="assets/javascripts/tabs.js"></script>
+        <script src="assets/javascripts/menu.js"></script>
         <title>Jura / Каталог</title>
     </head>
     <body>
@@ -33,9 +34,30 @@
                 <a href="#" class="header__item header__item_basket">
                     <i class="icon icon_basket header__icon"></i><span>3</span>
                 </a>
-                <a href="#" class="header__item header__menu">
+                <a href="#" id="js-menu-open" class="header__item header__menu">
                     <i class="icon icon_menu header__icon"></i><span class="hidden-phone">Меню</span>
                 </a>
+                <div id="js-menu" class="menu js-hidden">
+                    <div id="js-menu-close" class="menu__close"></div>
+                    <div class="menu__title">Меню</div>
+                    <ul class="menu__list">
+                        <li class="menu__item">
+                            <a href="#" class="menu__link">О компании</a>
+                        </li>
+                        <li class="menu__item">
+                            <a href="#" class="menu__link">Каталог</a>
+                        </li>
+                        <li class="menu__item">
+                            <a href="#" class="menu__link">Сервисный центр</a>
+                        </li>
+                        <li class="menu__item">
+                            <a href="#" class="menu__link">Контакты</a>
+                        </li>
+                        <li class="menu__item">
+                            <a href="#" class="menu__link menu__link_current">Бутик</a>
+                        </li>
+                    </ul>
+                </div>
             </div>
         </header>
 
