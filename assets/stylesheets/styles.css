@@ -852,6 +852,7 @@ h1 {
         height: 15px; } }
 
 .header {
+  position: relative;
   display: flex;
   flex-flow: row nowrap;
   font-size: 14px; }
@@ -1211,6 +1212,80 @@ h1 {
         left: 22px;
         width: 276px;
         background-image: url("../images/components/boutique/map-babel-phone.svg"); } }
+
+.menu {
+  position: absolute;
+  top: -1px;
+  z-index: 998;
+  box-sizing: border-box;
+  border: 1px solid rgba(151, 151, 151, 0.42);
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.15);
+  background: #fff; }
+  @media all and (min-width: 769px) {
+    .menu {
+      right: 70px;
+      width: 300px;
+      padding: 36px 58px; } }
+  @media all and (min-width: 321px) and (max-width: 768px) {
+    .menu {
+      right: 0;
+      width: 286px;
+      padding: 13px 50px 30px; } }
+  @media all and (max-width: 320px) {
+    .menu {
+      right: 0;
+      left: 0;
+      padding: 2px 47px 35px; } }
+  .menu__close {
+    position: absolute;
+    width: 24px;
+    height: 24px;
+    background: url("../images/components/menu/close.svg") center no-repeat;
+    cursor: pointer; }
+    @media all and (min-width: 769px) {
+      .menu__close {
+        top: 42px;
+        right: 41px; } }
+    @media all and (min-width: 321px) and (max-width: 768px) {
+      .menu__close {
+        top: 19px;
+        right: 23px; } }
+    @media all and (max-width: 320px) {
+      .menu__close {
+        top: 9px;
+        right: 20px; } }
+    .menu__close:hover {
+      background-image: url("../images/components/menu/close-hover.svg"); }
+  .menu__title {
+    position: relative;
+    color: #596473;
+    font-size: 14px;
+    line-height: 36px; }
+    @media all and (min-width: 769px) {
+      .menu__title {
+        margin: 0 0 24px; } }
+    @media all and (min-width: 321px) and (max-width: 768px) {
+      .menu__title {
+        margin: 0 0 21px; } }
+    @media all and (max-width: 320px) {
+      .menu__title {
+        margin: 0 0 27px; } }
+    .menu__title::before {
+      position: absolute;
+      top: 50%;
+      left: -28px;
+      width: 24px;
+      height: 24px;
+      margin: -12px 0 0;
+      background: url("../images/components/menu/menu.svg") center no-repeat;
+      content: ''; }
+  .menu__link {
+    color: #596473;
+    font-size: 18px;
+    line-height: 40px;
+    letter-spacing: .36px; }
+    .menu__link_current, .menu__link:hover {
+      color: #df0714; }
 
 .nav {
   position: relative;
