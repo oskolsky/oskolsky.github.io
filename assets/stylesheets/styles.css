@@ -1420,6 +1420,7 @@ h1 {
   flex-flow: row nowrap;
   align-items: center;
   justify-content: space-between;
+  box-shadow: 0 0 6px 0 rgba(0, 0, 0, 0.24);
   background-color: #fff; }
   @media all and (min-width: 321px) and (max-width: 768px) {
     .panel {
