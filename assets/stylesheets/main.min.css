@@ -648,7 +648,9 @@ body {
     padding: 0 2.625rem;
     border-radius: 2.875rem;
     font-size: .875rem;
-    font-family: UniversLTStd-Black;
+    /* font-family: UniversLTStd-Black; */
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
     letter-spacing: -.025em;
     color: #000;
     background-color: #fff;
@@ -658,7 +660,7 @@ body {
 }
 
 .btn span {
-    margin-top: .25rem
+    margin-top: .1rem
 }
 
 .btn.btn-light-blue {
@@ -1354,7 +1356,9 @@ footer .content .content-social {
     position: relative;
     z-index: 2;
     display: block;
-    font-family: UniversLTStd-Black;
+    /* font-family: UniversLTStd-Black; */
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
     font-size: .9375rem;
     margin-bottom: 1.1875rem;
     letter-spacing: -.025em;
@@ -1373,7 +1377,9 @@ footer .content .content-social {
     position: relative;
     z-index: 2;
     display: block;
-    font-family: UniversLTStd-Bold;
+    /* font-family: UniversLTStd-Bold; */
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
     font-size: 3.375rem;
     line-height: 3.8125rem;
     letter-spacing: -.05em;
@@ -1417,7 +1423,8 @@ footer .content .content-social {
     position: relative;
     z-index: 2;
     display: block;
-    font-family: UniversLTStd-Roman;
+    /* font-family: UniversLTStd-Roman; */
+    font-family: 'Roboto', sans-serif;
     font-size: 1rem;
     line-height: 1.875rem;
     -webkit-transition: opacity .3s .8s ease-out;
@@ -1950,7 +1957,8 @@ footer .content .content-social {
 
 #block6 .inner .col .block .title {
     display: block;
-    font-family: UniversLTStd-LightCn;
+    /* font-family: UniversLTStd-LightCn; */
+    font-family: 'Roboto', sans-serif;
     font-size: 12.5rem;
     letter-spacing: -.05em;
     -webkit-transform: translateY(-1.25rem);
@@ -1964,16 +1972,19 @@ footer .content .content-social {
 }
 
 #block6 .inner .col .block .title .sup {
+    font-size: 2.725rem;
     position: relative;
-    vertical-align: top;
-    top: .4rem;
+    vertical-align: bottom;
+    top: -2rem;
+    left: 1rem;
     height: 0;
     letter-spacing: -.3rem
 }
 
 #block6 .inner .col .block .subtitle {
     display: block;
-    font-family: UniversLTStd-Roman;
+    /* font-family: UniversLTStd-Roman; */
+    font-family: 'Roboto', sans-serif;
     font-size: 1.3125rem;
     letter-spacing: -.025em;
     -webkit-transform: translateY(-1.25rem);
@@ -1983,7 +1994,8 @@ footer .content .content-social {
     transition: opacity .3s .3s ease-out, -webkit-transform .3s .3s ease-out;
     transition: transform .3s .3s ease-out, opacity .3s .3s ease-out;
     transition: transform .3s .3s ease-out, opacity .3s .3s ease-out, -webkit-transform .3s .3s ease-out;
-    opacity: 0
+    opacity: 0;
+    line-height: 1.5;
 }
 
 #block6 .inner .col .block.block-light-blue .title {
@@ -2118,7 +2130,9 @@ footer .content .content-social {
     position: relative;
     z-index: 2;
     display: block;
-    font-family: UniversLTStd-Black;
+    /* font-family: UniversLTStd-Black; */
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
     font-size: .9375rem;
     margin-bottom: 1.1875rem;
     letter-spacing: -.025em;
@@ -2137,7 +2151,9 @@ footer .content .content-social {
     position: relative;
     z-index: 2;
     display: block;
-    font-family: UniversLTStd-Bold;
+    /* font-family: UniversLTStd-Bold; */
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
     font-size: 3.375rem;
     line-height: 3.8125rem;
     letter-spacing: -.05em;
@@ -2222,7 +2238,8 @@ footer .content .content-social {
     position: relative;
     z-index: 2;
     display: block;
-    font-family: UniversLTStd-Roman;
+    /* font-family: UniversLTStd-Roman; */
+    font-family: 'Roboto', sans-serif;
     font-size: 1rem;
     line-height: 1.875rem;
     -webkit-transition: opacity .3s .6s ease-out;
@@ -2247,7 +2264,8 @@ footer .content .content-social {
 #block7 .inner .content-text .text .mini {
     display: block;
     font-size: .75rem;
-    margin-top: 1.875rem
+    margin-top: 1.875rem;
+    line-height: 1.5;
 }
 
 #block7 .inner .block {
@@ -2360,11 +2378,14 @@ footer .content .content-social {
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center;
-    margin-top: 8.75rem
+    margin-top: 4rem
 }
 
 #block8 .inner .content-title .title {
-    font-family: UniversLTStd-Bold;
+    color: #1CF4F4;
+    /* font-family: UniversLTStd-Bold; */
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
     font-size: 3.375rem;
     letter-spacing: -.05em;
     line-height: 3.75rem;
@@ -2394,7 +2415,7 @@ footer .content .content-social {
     -webkit-box-direction: normal;
     -ms-flex-direction: row;
     flex-direction: row;
-    margin: 7.5rem auto 7.5rem;
+    margin: 3.5rem auto 7.5rem;
     max-width: 75rem
 }
 
@@ -2604,7 +2625,8 @@ footer .content .content-social {
 #block9 .inner .content-iron .table-iron {
     position: relative;
     z-index: 1;
-    font-family: UniversLTStd-Bold;
+    /* font-family: UniversLTStd-Bold; */
+    font-family: 'Roboto', sans-serif;
     font-size: 1.125rem;
     text-align: left;
     width: 73.75rem
@@ -3119,7 +3141,9 @@ footer .content .content-social {
         font-size: 6.25rem
     }
     #block6 .inner .col .block .title .sup {
-        top: .1rem;
+        top: -1rem;
+        left: .5rem;
+        font-size: 1.5rem;
         letter-spacing: -.1rem
     }
     #block6 .inner .col .block .subtitle {
