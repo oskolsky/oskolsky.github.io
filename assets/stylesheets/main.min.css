@@ -924,7 +924,7 @@ footer .content .content-social {
 
 #block2 .inner .content-text .line-vert {
     position: absolute;
-    top: -5rem;
+    top: -.7rem;
     left: -2.5rem;
     -webkit-transform: translateY(-3.125rem);
     -ms-transform: translateY(-3.125rem);
@@ -938,7 +938,9 @@ footer .content .content-social {
 
 #block2 .inner .content-text .sup-title {
     display: block;
-    font-family: UniversLTStd-Black;
+    /* font-family: UniversLTStd-Black; */
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
     font-size: .9375rem;
     margin-bottom: 1.1875rem;
     letter-spacing: -.025em;
@@ -955,7 +957,9 @@ footer .content .content-social {
 
 #block2 .inner .content-text .title {
     display: block;
-    font-family: UniversLTStd-Bold;
+    /* font-family: UniversLTStd-Bold; */
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
     font-size: 3.375rem;
     line-height: 3.8125rem;
     letter-spacing: -.05em;
@@ -972,7 +976,8 @@ footer .content .content-social {
 
 #block2 .inner .content-text .text {
     display: block;
-    font-family: UniversLTStd-Roman;
+    /* font-family: UniversLTStd-Roman; */
+    font-family: 'Roboto', sans-serif;
     font-size: 1rem;
     line-height: 1.875rem;
     margin-bottom: 3.125rem;
