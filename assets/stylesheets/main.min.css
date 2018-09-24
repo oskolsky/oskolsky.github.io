@@ -2592,15 +2592,17 @@ footer .content .content-social {
     display: flex;
     -webkit-box-pack: center;
     -ms-flex-pack: center;
-    justify-content: center;
+    /* justify-content: center; */
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center;
-    margin-top: 8.75rem
+    /* margin-top: 8.75rem */
 }
 
 #block9 .inner .content-title .title {
-    font-family: UniversLTStd-Bold;
+    /* font-family: UniversLTStd-Bold; */
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
     font-size: 3.375rem;
     letter-spacing: -.05em;
     line-height: 3.75rem;
@@ -2655,6 +2657,10 @@ footer .content .content-social {
     border-bottom: 1px solid #d6d5e7
 }
 
+#block9 .inner .content-iron .table-iron tr:last-child {
+    border-bottom: 0;
+}
+
 #block9 .inner .content-iron .table-iron tr th {
     vertical-align: middle;
     border-right: 1px solid #d6d5e7;
@@ -2665,7 +2671,7 @@ footer .content .content-social {
 }
 
 #block9 .inner .content-iron .table-iron tr th:nth-of-type(1) {
-    border: 0;
+    /* border: 0; */
     text-align: left
 }
 
@@ -2722,24 +2728,27 @@ footer .content .content-social {
     font-family: UniversLTStd-Bold
 }
 
-#block9 .inner .content-iron .table-iron tr.iron-type .price {
+#block9 .inner .content-iron .table-iron tr .price {
     display: block;
+    margin-top: 1.25rem;
     margin-bottom: 1.25rem;
     font-size: 1.125rem;
     text-transform: uppercase;
     letter-spacing: -.05em;
-    font-family: UniversLTStd-Roman
+    /* font-family: UniversLTStd-Roman */
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
 }
 
-#block9 .inner .content-iron .table-iron tr.iron-type .btn {
-    margin-bottom: 1.875rem
+#block9 .inner .content-iron .table-iron tr .btn {
+    margin-bottom: 1.875rem;
 }
 
 #block9 .inner .content-iron .table-iron tr.dots-mobile {
     display: none
 }
 
-#block9 .inner .content-iron .table-iron tr.buy-mobile {
+#block9 .inner .content-iron .buy-mobile {
     display: none
 }
 
@@ -3437,6 +3446,9 @@ footer .content .content-social {
         -webkit-box-flex: 0;
         -ms-flex: 0 0 5.8125rem;
         flex: 0 0 5.8125rem
+    }
+    #block9 .inner .content-iron .table-iron tr.buy-desktop {
+        display: none !important;
     }
     #block9 .inner .content-iron .table-iron tr.buy-mobile {
         border: 0;
