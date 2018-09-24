@@ -2752,6 +2752,10 @@ footer .content .content-social {
     display: none
 }
 
+#block9 .inner .content-iron .table-iron tr.buy-desktop {
+    border-bottom: 0;
+}
+
 #block9.active-enter .inner .content-title .title {
     -webkit-transform: translateY(0);
     -ms-transform: translateY(0);
