@@ -780,7 +780,7 @@ footer .content .content-social {
     width: 100%;
     height: 100%;
     margin: 0 3.75rem;
-    text-align: center;
+    /* text-align: center; */
     overflow: hidden;
     background-size: cover;
     background-position: center center;
@@ -803,6 +803,17 @@ footer .content .content-social {
     background-repeat: no-repeat
 }
 
+#block1 .inner .logo-award {
+    position: absolute;
+    top: 50px;
+    right: 50px;
+}
+
+#block1 .inner .logo-award img {
+    width: 203px;
+    height: 130px;
+}
+
 #block1 .inner .content {
     position: absolute;
     top: 0;
@@ -817,7 +828,7 @@ footer .content .content-social {
     justify-content: center;
     -webkit-box-align: center;
     -ms-flex-align: center;
-    align-items: center;
+    /* align-items: center; */
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
     -ms-flex-direction: column;
@@ -825,12 +836,15 @@ footer .content .content-social {
     background-color: rgba(0, 0, 0, .15);
     opacity: 0;
     -webkit-transition: opacity .3s .6s ease-out;
-    transition: opacity .3s .6s ease-out
+    transition: opacity .3s .6s ease-out;
+    padding-left: 10rem;
 }
 
 #block1 .inner .content .title {
     color: #fff;
-    font-family: UniversLTStd-Black;
+    /* font-family: UniversLTStd-Black; */
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
     font-size: 4.4375rem;
     text-transform: uppercase;
     letter-spacing: -.025em;
@@ -843,7 +857,7 @@ footer .content .content-social {
     display: flex;
     -webkit-box-pack: center;
     -ms-flex-pack: center;
-    justify-content: center;
+    /* justify-content: center; */
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center;
@@ -1229,7 +1243,9 @@ footer .content .content-social {
     position: relative;
     z-index: 2;
     display: block;
-    font-family: UniversLTStd-Black;
+    /* font-family: UniversLTStd-Black; */
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
     font-size: .9375rem;
     margin-bottom: 1.1875rem;
     letter-spacing: -.025em;
@@ -1248,7 +1264,9 @@ footer .content .content-social {
     position: relative;
     z-index: 2;
     display: block;
-    font-family: UniversLTStd-Bold;
+    /* font-family: UniversLTStd-Bold; */
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
     font-size: 3.375rem;
     line-height: 3.8125rem;
     letter-spacing: -.05em;
@@ -1340,7 +1358,7 @@ footer .content .content-social {
 
 #block3 .inner .content-text .line-vert {
     position: absolute;
-    top: -5rem;
+    top: -.5rem;
     left: -2.5rem;
     -webkit-transform: translateY(-3.125rem);
     -ms-transform: translateY(-3.125rem);
@@ -2802,15 +2820,29 @@ footer .content .content-social {
     #block1 .inner .video {
         display: none
     }
+    #block1 .inner .logo-award {
+        position: static;
+        display: inline-block;
+        vertical-align: top;
+        margin-bottom: 30px;
+    }
+    #block1 .inner .logo-award img {
+        width: 101px;
+        height: 65px;
+    }
     #block1 .inner .content {
         height: auto;
-        margin-top: 4.125rem;
-        background-color: transparent
+        margin-top: 5.125rem;
+        background-color: transparent;
+        justify-content: center;
+        padding-left: 0;
+        text-align: center;
     }
     #block1 .inner .content .title {
         padding: 0 1.75rem;
         font-size: 2.625rem;
-        margin-bottom: 1.625rem
+        margin-bottom: 1.625rem;
+        text-align: center;
     }
     #block1 .inner .content .subtitle {
         -webkit-box-orient: vertical;
