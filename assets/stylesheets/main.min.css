@@ -1520,7 +1520,9 @@ footer .content .content-social {
     position: relative;
     z-index: 2;
     display: block;
-    font-family: UniversLTStd-Black;
+    /* font-family: UniversLTStd-Black; */
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
     font-size: .9375rem;
     margin-bottom: 1.1875rem;
     letter-spacing: -.025em;
@@ -1539,7 +1541,9 @@ footer .content .content-social {
     position: relative;
     z-index: 2;
     display: block;
-    font-family: UniversLTStd-Bold;
+    /* font-family: UniversLTStd-Bold; */
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
     font-size: 3.375rem;
     line-height: 3.8125rem;
     letter-spacing: -.05em;
@@ -1597,7 +1601,8 @@ footer .content .content-social {
     position: relative;
     z-index: 2;
     display: block;
-    font-family: UniversLTStd-Roman;
+    /* font-family: UniversLTStd-Roman; */
+    font-family: 'Roboto', sans-serif;
     font-size: 1rem;
     line-height: 1.875rem;
     margin-bottom: 5.9375rem;
