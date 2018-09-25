@@ -311,42 +311,6 @@ template {
     display: none
 }
 
-@font-face {
-    font-family: Slick;
-    src: url(../fonts/Slick.eot);
-    src: url(../fonts/Slick.eot?#iefix) format("embedded-opentype"), url(../fonts/Slick.woff) format("woff"), url(../fonts/Slick.ttf) format("truetype"), url(../fonts/Slick.svg#slick) format("svg")
-}
-
-@font-face {
-    font-family: UniversLTStd-Roman;
-    src: url(../fonts/UniversLTStd-Roman.eot);
-    src: url(../fonts/UniversLTStd-Roman.eot?#iefix) format("embedded-opentype"), url(../fonts/UniversLTStd-Roman.woff) format("woff"), url(../fonts/UniversLTStd-Roman.ttf) format("truetype"), url(../fonts/UniversLTStd-Roman.svg#universe-roman) format("svg")
-}
-
-@font-face {
-    font-family: UniversLTStd-Black;
-    src: url(../fonts/UniversLTStd-Black.eot);
-    src: url(../fonts/UniversLTStd-Black.eot?#iefix) format("embedded-opentype"), url(../fonts/UniversLTStd-Black.woff) format("woff"), url(../fonts/UniversLTStd-Black.ttf) format("truetype"), url(../fonts/UniversLTStd-Black.svg#universe-black) format("svg")
-}
-
-@font-face {
-    font-family: UniversLTStd-Bold;
-    src: url(../fonts/UniversLTStd-Bold.eot);
-    src: url(../fonts/UniversLTStd-Bold.eot?#iefix) format("embedded-opentype"), url(../fonts/UniversLTStd-Bold.woff) format("woff"), url(../fonts/UniversLTStd-Bold.ttf) format("truetype"), url(../fonts/UniversLTStd-Bold.svg#universe-bold) format("svg")
-}
-
-@font-face {
-    font-family: UniversLTStd-LightCn;
-    src: url(../fonts/UniversLTStd-LightCn.eot);
-    src: url(../fonts/UniversLTStd-LightCn.eot?#iefix) format("embedded-opentype"), url(../fonts/UniversLTStd-LightCn.woff) format("woff"), url(../fonts/UniversLTStd-LightCn.ttf) format("truetype"), url(../fonts/UniversLTStd-LightCn.svg#universe-lightcn) format("svg")
-}
-
-@font-face {
-    font-family: UniversLTStd-Cn;
-    src: url(../fonts/UniversLTStd-Cn.eot);
-    src: url(../fonts/UniversLTStd-Cn.eot?#iefix) format("embedded-opentype"), url(../fonts/UniversLTStd-Cn.woff) format("woff"), url(../fonts/UniversLTStd-Cn.ttf) format("truetype"), url(../fonts/UniversLTStd-Cn.svg#universe-cn) format("svg")
-}
-
 html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
     position: relative;
     margin: 0;
@@ -508,7 +472,7 @@ body {
 }
 
 .slick-prev:before, .slick-next:before {
-    font-family: Slick;
+    font-family: 'Roboto', sans-serif;
     font-size: 20px;
     line-height: 1;
     color: white;
@@ -600,7 +564,7 @@ body {
     content: "•";
     width: 20px;
     height: 20px;
-    font-family: Slick;
+    font-family: 'Roboto', sans-serif;
     font-size: .75rem;
     line-height: 20px;
     text-align: center;
@@ -648,7 +612,6 @@ body {
     padding: 0 2.625rem;
     border-radius: 2.875rem;
     font-size: .875rem;
-    /* font-family: UniversLTStd-Black; */
     font-family: 'Roboto', sans-serif;
     font-weight: 700;
     letter-spacing: -.025em;
@@ -780,7 +743,6 @@ footer .content .content-social {
     width: 100%;
     height: 100%;
     margin: 0 3.75rem;
-    /* text-align: center; */
     overflow: hidden;
     background-size: cover;
     background-position: center center;
@@ -828,7 +790,6 @@ footer .content .content-social {
     justify-content: center;
     -webkit-box-align: center;
     -ms-flex-align: center;
-    /* align-items: center; */
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
     -ms-flex-direction: column;
@@ -842,7 +803,6 @@ footer .content .content-social {
 
 #block1 .inner .content .title {
     color: #fff;
-    /* font-family: UniversLTStd-Black; */
     font-family: 'Roboto', sans-serif;
     font-weight: 700;
     font-size: 4.4375rem;
@@ -857,12 +817,11 @@ footer .content .content-social {
     display: flex;
     -webkit-box-pack: center;
     -ms-flex-pack: center;
-    /* justify-content: center; */
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center;
     color: #1cf4f4;
-    font-family: UniversLTStd-Roman;
+    font-family: 'Roboto', sans-serif;
     font-size: 1.5rem
 }
 
@@ -954,7 +913,6 @@ footer .content .content-social {
 
 #block2 .inner .content-text .sup-title {
     display: block;
-    /* font-family: UniversLTStd-Black; */
     font-family: 'Roboto', sans-serif;
     font-weight: 700;
     font-size: .9375rem;
@@ -973,7 +931,6 @@ footer .content .content-social {
 
 #block2 .inner .content-text .title {
     display: block;
-    /* font-family: UniversLTStd-Bold; */
     font-family: 'Roboto', sans-serif;
     font-weight: 700;
     font-size: 3.375rem;
@@ -992,7 +949,6 @@ footer .content .content-social {
 
 #block2 .inner .content-text .text {
     display: block;
-    /* font-family: UniversLTStd-Roman; */
     font-family: 'Roboto', sans-serif;
     font-size: 1rem;
     line-height: 1.875rem;
@@ -1243,7 +1199,6 @@ footer .content .content-social {
     position: relative;
     z-index: 2;
     display: block;
-    /* font-family: UniversLTStd-Black; */
     font-family: 'Roboto', sans-serif;
     font-weight: 700;
     font-size: .9375rem;
@@ -1264,7 +1219,6 @@ footer .content .content-social {
     position: relative;
     z-index: 2;
     display: block;
-    /* font-family: UniversLTStd-Bold; */
     font-family: 'Roboto', sans-serif;
     font-weight: 700;
     font-size: 3.375rem;
@@ -1374,7 +1328,6 @@ footer .content .content-social {
     position: relative;
     z-index: 2;
     display: block;
-    /* font-family: UniversLTStd-Black; */
     font-family: 'Roboto', sans-serif;
     font-weight: 700;
     font-size: .9375rem;
@@ -1395,7 +1348,6 @@ footer .content .content-social {
     position: relative;
     z-index: 2;
     display: block;
-    /* font-family: UniversLTStd-Bold; */
     font-family: 'Roboto', sans-serif;
     font-weight: 700;
     font-size: 3.375rem;
@@ -1441,7 +1393,6 @@ footer .content .content-social {
     position: relative;
     z-index: 2;
     display: block;
-    /* font-family: UniversLTStd-Roman; */
     font-family: 'Roboto', sans-serif;
     font-size: 1rem;
     line-height: 1.875rem;
@@ -1545,7 +1496,6 @@ footer .content .content-social {
     position: relative;
     z-index: 2;
     display: block;
-    /* font-family: UniversLTStd-Black; */
     font-family: 'Roboto', sans-serif;
     font-weight: 700;
     font-size: .9375rem;
@@ -1566,7 +1516,6 @@ footer .content .content-social {
     position: relative;
     z-index: 2;
     display: block;
-    /* font-family: UniversLTStd-Bold; */
     font-family: 'Roboto', sans-serif;
     font-weight: 700;
     font-size: 3.375rem;
@@ -1626,7 +1575,6 @@ footer .content .content-social {
     position: relative;
     z-index: 2;
     display: block;
-    /* font-family: UniversLTStd-Roman; */
     font-family: 'Roboto', sans-serif;
     font-size: 1rem;
     line-height: 1.875rem;
@@ -1733,7 +1681,7 @@ footer .content .content-social {
     top: 40%;
     left: 50%;
     z-index: 3;
-    width: 25.625rem;
+    width: 28.625rem;
     color: #1cf4f4;
     text-align: left;
     margin-left: 15.625rem
@@ -1755,7 +1703,8 @@ footer .content .content-social {
 
 #block5 .inner .slider .slide .content-text .sup-title {
     display: block;
-    font-family: UniversLTStd-Black;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
     font-size: .9375rem;
     margin-bottom: 1.1875rem;
     letter-spacing: -.025em;
@@ -1772,7 +1721,6 @@ footer .content .content-social {
 
 #block5 .inner .slider .slide .content-text .title {
     display: block;
-    /* font-family: UniversLTStd-Bold; */
     font-family: 'Roboto', sans-serif;
     font-weight: 700;
     font-size: 3.375rem;
@@ -1791,7 +1739,7 @@ footer .content .content-social {
 
 #block5 .inner .slider .slide .content-text .text {
     display: block;
-    font-family: UniversLTStd-Roman;
+    font-family: 'Roboto', sans-serif;
     font-size: 1rem;
     line-height: 1.875rem;
     margin-bottom: 3.125rem;
@@ -1808,7 +1756,9 @@ footer .content .content-social {
     width: 100%;
     display: -webkit-box;
     display: -ms-flexbox;
-    display: flex
+    display: flex;
+    background: rgba(0, 0, 0, .50);
+    height: 120px;
 }
 
 #block5 .inner .nav .content-nav {
@@ -1819,20 +1769,20 @@ footer .content .content-social {
     display: -ms-flexbox;
     display: flex;
     -ms-flex-pack: distribute;
-    justify-content: space-around;
-    -webkit-box-align: start;
-    -ms-flex-align: start;
-    align-items: flex-start
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
 }
 
 #block5 .inner .nav .nav-btn {
     display: inline-block;
-    width: 19.375rem;
-    height: 3.125rem;
-    /* font-family: UniversLTStd-Bold; */
+    width: 80px;
+    height: 80px;
     font-family: 'Roboto', sans-serif;
     font-weight: 700;
     font-size: 1.125rem;
+    margin: 0 15px;
     color: #fff;
     opacity: 1;
     -webkit-transition: color .3s ease-out, opacity .3s ease-out;
@@ -1841,19 +1791,40 @@ footer .content .content-social {
     text-align: center
 }
 
-#block5 .inner .nav .nav-btn:after {
+#block5 .inner .nav .nav-btn.nav-btn-slide-0 {
+    background: url(../images/block5/slide1-preview.jpg) center no-repeat;
+}
+
+#block5 .inner .nav .nav-btn.nav-btn-slide-1 {
+    background: url(../images/block5/slide2-preview.jpg) center no-repeat;
+}
+
+#block5 .inner .nav .nav-btn.nav-btn-slide-2 {
+    background: url(../images/block5/slide3-preview.jpg) center no-repeat;
+}
+
+#block5 .inner .nav .nav-btn.nav-btn-slide-3 {
+    background: url(../images/block5/slide4-preview.jpg) center no-repeat;
+}
+
+#block5 .inner .nav .nav-btn.nav-btn-slide-4 {
+    position: relative;
+    background: url(../images/block5/slide5-preview.jpg) center no-repeat;
+}
+
+#block5 .inner .nav .nav-btn.nav-btn-slide-4::after {
     content: '';
-    width: 100%;
-    height: .3125rem;
     position: absolute;
-    bottom: 0;
-    left: 0;
-    background-color: #1cf4f4;
-    opacity: 0
+    top: 50%;
+    left: 50%;
+    background: url(../images/block5/play.svg) center no-repeat;
+    width: 24px;
+    height: 24px;
+    margin: -12px 0 0 -12px;
 }
 
 #block5 .inner .nav .nav-btn.active, #block5 .inner .nav .nav-btn:hover {
-    color: #1cf4f4;
+    border: 2px solid #1cf4f4;
     opacity: 1
 }
 
@@ -1869,7 +1840,7 @@ footer .content .content-social {
 #block5 .inner .text-mobile .text {
     text-align: left;
     display: block;
-    font-family: UniversLTStd-Roman;
+    font-family: 'Roboto', sans-serif;
     font-size: .875rem;
     line-height: 1.75rem;
     margin: 4.375rem 2.6875rem 8.125rem
@@ -1979,7 +1950,6 @@ footer .content .content-social {
 
 #block6 .inner .col .block .title {
     display: block;
-    /* font-family: UniversLTStd-LightCn; */
     font-family: 'Roboto', sans-serif;
     font-size: 12.5rem;
     letter-spacing: -.05em;
@@ -2005,7 +1975,6 @@ footer .content .content-social {
 
 #block6 .inner .col .block .subtitle {
     display: block;
-    /* font-family: UniversLTStd-Roman; */
     font-family: 'Roboto', sans-serif;
     font-size: 1.3125rem;
     letter-spacing: -.025em;
@@ -2152,7 +2121,6 @@ footer .content .content-social {
     position: relative;
     z-index: 2;
     display: block;
-    /* font-family: UniversLTStd-Black; */
     font-family: 'Roboto', sans-serif;
     font-weight: 700;
     font-size: .9375rem;
@@ -2173,7 +2141,6 @@ footer .content .content-social {
     position: relative;
     z-index: 2;
     display: block;
-    /* font-family: UniversLTStd-Bold; */
     font-family: 'Roboto', sans-serif;
     font-weight: 700;
     font-size: 3.375rem;
@@ -2260,7 +2227,6 @@ footer .content .content-social {
     position: relative;
     z-index: 2;
     display: block;
-    /* font-family: UniversLTStd-Roman; */
     font-family: 'Roboto', sans-serif;
     font-size: 1rem;
     line-height: 1.875rem;
@@ -2405,7 +2371,6 @@ footer .content .content-social {
 
 #block8 .inner .content-title .title {
     color: #1CF4F4;
-    /* font-family: UniversLTStd-Bold; */
     font-family: 'Roboto', sans-serif;
     font-weight: 700;
     font-size: 3.375rem;
@@ -2464,7 +2429,6 @@ footer .content .content-social {
     background-size: cover;
     -webkit-transition: background-image .3s ease-out;
     transition: background-image .3s ease-out;
-    /* cursor: pointer; */
     margin: .625rem;
     -webkit-transform: translateY(-1.25rem);
     -ms-transform: translateY(-1.25rem);
@@ -2489,68 +2453,28 @@ footer .content .content-social {
     background-image: url(../images/block8/block1.jpg)
 }
 
-/* #block8 .inner .content-box .box.box1:hover {
-    background-image: url(../images/block8/block1-hover.jpg)
-} */
-
 #block8 .inner .content-box .box.box2 {
     background-image: url(../images/block8/block2.jpg)
 }
-
-/* #block8 .inner .content-box .box.box2:hover {
-    background-image: url(../images/block8/block2-hover.jpg)
-} */
 
 #block8 .inner .content-box .box.box3 {
     background-image: url(../images/block8/block3.jpg)
 }
 
-/* #block8 .inner .content-box .box.box3:hover {
-    background-image: url(../images/block8/block3-hover.jpg)
-} */
-
 #block8 .inner .content-box .box.box4 {
     background-image: url(../images/block8/block4.jpg)
 }
-
-/* #block8 .inner .content-box .box.box4:hover {
-    background-image: url(../images/block8/block4-hover.jpg)
-} */
 
 #block8 .inner .content-box .box .content-text {
     position: absolute;
     bottom: 27px;
     right: 20px;
     left: 20px;
-    /* display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
-    justify-content: center;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -ms-flex-direction: column;
-    flex-direction: column;
-    -webkit-transition: opacity .3s ease-out;
-    transition: opacity .3s ease-out;
-    -webkit-transform: translateY(-1.25rem);
-    -ms-transform: translateY(-1.25rem);
-    transform: translateY(-1.25rem);
-    -webkit-transition: opacity .3s ease-out, -webkit-transform .3s ease-out;
-    transition: opacity .3s ease-out, -webkit-transform .3s ease-out;
-    transition: transform .3s ease-out, opacity .3s ease-out;
-    transition: transform .3s ease-out, opacity .3s ease-out, -webkit-transform .3s ease-out;
-    /* opacity: 0 */ */
 }
 
 #block8 .inner .content-box .box .content-text .title {
     max-width: 18.125rem;
     font-size: 1.2rem;
-    /* font-family: UniversLTStd-Bold; */
     font-family: 'Roboto', sans-serif;
     font-weight: 700;
     color: #453F91;
@@ -2602,15 +2526,12 @@ footer .content .content-social {
     display: flex;
     -webkit-box-pack: center;
     -ms-flex-pack: center;
-    /* justify-content: center; */
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center;
-    /* margin-top: 8.75rem */
 }
 
 #block9 .inner .content-title .title {
-    /* font-family: UniversLTStd-Bold; */
     font-family: 'Roboto', sans-serif;
     font-weight: 700;
     font-size: 3.375rem;
@@ -2655,7 +2576,6 @@ footer .content .content-social {
 #block9 .inner .content-iron .table-iron {
     position: relative;
     z-index: 1;
-    /* font-family: UniversLTStd-Bold; */
     font-family: 'Roboto', sans-serif;
     font-size: 1.125rem;
     text-align: left;
@@ -2681,7 +2601,6 @@ footer .content .content-social {
 }
 
 #block9 .inner .content-iron .table-iron tr th:nth-of-type(1) {
-    /* border: 0; */
     text-align: left
 }
 
@@ -2731,11 +2650,12 @@ footer .content .content-social {
     font-size: 1.125rem;
     text-transform: uppercase;
     letter-spacing: -.05em;
-    font-family: UniversLTStd-Roman
+    font-family: 'Roboto', sans-serif;
 }
 
 #block9 .inner .content-iron .table-iron tr.iron-type .type b {
-    font-family: UniversLTStd-Bold
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
 }
 
 #block9 .inner .content-iron .table-iron tr .price {
@@ -2745,7 +2665,6 @@ footer .content .content-social {
     font-size: 1.125rem;
     text-transform: uppercase;
     letter-spacing: -.05em;
-    /* font-family: UniversLTStd-Roman */
     font-family: 'Roboto', sans-serif;
     font-weight: 700;
 }
@@ -2783,7 +2702,7 @@ footer .content .content-social {
 .browsehappy {
     background: #1cf4f4;
     color: #453f91;
-    font-family: UniversLTStd-Roman;
+    font-family: 'Roboto', sans-serif;
     font-size: .875rem;
     text-transform: uppercase;
     letter-spacing: -.025em;
@@ -2792,7 +2711,8 @@ footer .content .content-social {
 }
 
 .browsehappy a {
-    font-family: UniversLTStd-Black;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
     cursor: pointer
 }
 
@@ -3336,38 +3256,7 @@ footer .content .content-social {
         width: 100%;
         height: 100%
     }
-    /* #block8 .inner .content-box .box.box1 {
-        background-image: url(../images/block8/block1-hover.jpg);
-        -webkit-transition-delay: .15s;
-        transition-delay: .15s
-    } */
-    /* #block8 .inner .content-box .box.box1:hover {
-        background-image: url(../images/block8/block1-hover.jpg)
-    }
-    #block8 .inner .content-box .box.box2 {
-        background-image: url(../images/block8/block2-hover.jpg);
-        -webkit-transition-delay: .3s;
-        transition-delay: .3s
-    } */
-    /* #block8 .inner .content-box .box.box2:hover {
-        background-image: url(../images/block8/block2-hover.jpg)
-    }
-    #block8 .inner .content-box .box.box3 {
-        background-image: url(../images/block8/block3-hover.jpg);
-        -webkit-transition-delay: .45s;
-        transition-delay: .45s
-    } */
-    /* #block8 .inner .content-box .box.box3:hover {
-        background-image: url(../images/block8/block3-hover.jpg)
-    } */
-    /* #block8 .inner .content-box .box.box4 {
-        background-image: url(../images/block8/block4-hover.jpg);
-        -webkit-transition-delay: .6s;
-        transition-delay: .6s
-    } */
-    /* #block8 .inner .content-box .box.box4:hover {
-        background-image: url(../images/block8/block4-hover.jpg)
-    } */
+
     #block8 .inner .content-box .box .content-text {
         bottom: 5px;
         opacity: 1
