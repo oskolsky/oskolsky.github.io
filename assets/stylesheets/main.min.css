@@ -2872,7 +2872,7 @@ footer .content .content-social {
         -webkit-transform: none;
         -ms-transform: none;
         transform: none;
-        margin-top: 9.375rem;
+        margin-top: 5.375rem;
         margin-bottom: 2.6875rem
     }
     #block2 .inner .content-text .line-vert {
@@ -3186,7 +3186,7 @@ footer .content .content-social {
         -webkit-box-align: center;
         -ms-flex-align: center;
         align-items: center;
-        margin: 5.3125rem 0 4.625rem
+        margin: 5.3125rem 0 0;
     }
     #block7 .inner .content-text {
         width: 100%
@@ -3252,7 +3252,7 @@ footer .content .content-social {
         transform: none
     }
     #block7 .inner .block.block1 {
-        margin-bottom: 6.875rem
+        margin-bottom: 3.5rem;
     }
     #block7 .inner .block.block2 {
         margin-bottom: 0
@@ -3277,7 +3277,7 @@ footer .content .content-social {
         -ms-flex-direction: column;
         flex-direction: column;
         max-width: none;
-        margin: 4.5625rem .625rem .625rem;
+        margin: 4.5625rem .625rem 1.625rem;
     }
     #block8 .inner .content-box .box {
         position: relative;
@@ -3331,7 +3331,7 @@ footer .content .content-social {
         line-height: 2.5rem
     }
     #block9 .inner .content-iron {
-        margin: 4.125rem 2.6875rem 6.25rem
+        margin: 0 2.6875rem 1rem;
     }
     #block9 .inner .content-iron .content-slider-mobile {
         position: absolute;
@@ -3430,7 +3430,7 @@ footer .content .content-social {
     }
 
     #block9 .delivery .item:not(:last-child) {
-        margin-bottom: 30px;
+        margin: 0 0 30px;
     }
 
     #block9 .delivery .item .line {
