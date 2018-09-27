@@ -529,10 +529,14 @@ body {
 .slick-dots li {
     position: relative;
     display: inline-block;
-    height: 1.25rem;
-    width: 1.25rem;
+    height: 12px;
+    width: 12px;
     padding: 0;
     cursor: pointer
+}
+
+.slick-dots li:not(:last-child) {
+    margin-right: 15px;
 }
 
 .slick-dots li button {
@@ -545,7 +549,7 @@ body {
     line-height: 0;
     font-size: 0;
     color: transparent;
-    padding: 5px;
+    padding: 0;
     cursor: pointer
 }
 
@@ -559,13 +563,16 @@ body {
 
 .slick-dots li button:before {
     position: absolute;
+    display: block;
+    background: #453f91;
+    border-radius: 50%;
     top: 0;
     left: 0;
-    content: "•";
-    width: 20px;
-    height: 20px;
+    content: "";
+    width: 12px;
+    height: 12px;
     font-family: 'Roboto', sans-serif;
-    font-size: .75rem;
+    font-size: 0;
     line-height: 20px;
     text-align: center;
     color: white;
@@ -575,7 +582,7 @@ body {
 }
 
 .slick-dots li.slick-active button:before {
-    color: #1cf4f4;
+    background-color: #1cf4f4;
     opacity: 1
 }
 
@@ -3347,13 +3354,13 @@ footer .content .content-social {
     }
     #block9 .inner .content-iron .content-slider-mobile .slick-dots {
         height: 1.25rem;
-        top: 17.5rem
+        top: 16.5rem
     }
     #block9 .inner .content-iron .content-slider-mobile .slick-dots li button:before {
-        color: #453f91
+        background-color: #453f91;
     }
     #block9 .inner .content-iron .content-slider-mobile .slick-dots li.slick-active button:before {
-        color: #1cf4f4
+        background-color: #1cf4f4;
     }
     #block9 .inner .content-iron .table-iron {
         width: 100%
