@@ -1,14 +1,43 @@
 <!DOCTYPE html>
-<html>
+<html lang="ru">
     <head>
-        <meta charset="UTF-8">
-        <link href="styles.css" rel="stylesheet" />
+        <meta charset="utf-8" />
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto&amp;subset=cyrillic" />
+        <link rel="stylesheet" href="assets/stylesheets/styles.css" />
         <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
-        <title>Bork Dashboard</title>
+        <title>Bork</title>
     </head>
     <body>
-        <div id="app" class="app"></div>
-        <script type="text/javascript" src="settings.js"></script>
-        <script type="text/javascript" src="bundle.js"></script>
+        <main class="wrapper">
+            <header class="header">
+                <img src="assets/images/bork-logo.svg" width="79" height="16" class="logo" alt="Bork" />
+            </header>
+            <div class="body">
+                <div>
+                    <section>
+                        <h1 class="title">Мы&nbsp;обновляем сайт для вашего удобства</h1>
+                        <p class="muted">
+                            В&nbsp;настоящее время на&nbsp;сайте проходит техническое обслуживание.
+                            <br />
+                            Мы&nbsp;скоро вернемся. Спасибо что вы&nbsp;с&nbsp;нами.
+                        </p>
+                    </section>
+                    <hr class="hr" />
+                    <div itemscope itemtype="http://schema.org/Organization">
+                        <p>
+                            Готовы ответить на&nbsp;все вопросы
+                            <br />
+                            по&nbsp;телефону
+                        </p>
+                        <p class="phone" itemprop="telephone">8 800 500 88 99</p>
+                        <p>
+                            и&nbsp;в&nbsp;фирменных бутиках
+                            <br />
+                            BORK.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </main>
     </body>
 </html>
