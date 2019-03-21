@@ -1,0 +1,59 @@
+@font-face {
+    font-family: 'bork';
+    src: url('../fonts/Bork-Display-Bold.woff2') format('woff2'),
+        url('../fonts/Bork-Display-Bold.woff') format('woff'),
+        url('../fonts/Bork-Display-Bold.ttf') format('truetype'),
+        url('../fonts/Bork-Display-Bold.svg#bork') format('svg');
+    font-weight: 700;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'bork';
+    src: url('../fonts/Bork-Display-Regilar.woff2') format('woff2'),
+        url('../fonts/Bork-Display-Regilar.woff') format('woff'),
+        url('../fonts/Bork-Display-Regilar.ttf') format('truetype'),
+        url('../fonts/Bork-Display-Regilar.svg#bork') format('svg');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Akzidenz-Ext';
+    src: url('../fonts/akzidenzgroteskpro-ext.woff2') format('woff2'),
+        url('../fonts/akzidenzgroteskpro-ext.woff') format('woff'),
+        url('../fonts/akzidenzgroteskpro-ext.ttf') format('truetype'),
+        url('../fonts/akzidenzgroteskpro-ext.svg#Akzidenz-Ext') format('svg');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Akzidenz';
+    src: url('../fonts/akzidenzgroteskpro-md.woff2') format('woff2'),
+        url('../fonts/akzidenzgroteskpro-md.woff') format('woff'),
+        url('../fonts/akzidenzgroteskpro-md.ttf') format('truetype'),
+        url('../fonts/akzidenzgroteskpro-md.svg#Akzidenz') format('svg');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Akzidenz';
+    src: url('../fonts/akzidenzgroteskpro-regular.woff2') format('woff2'),
+        url('../fonts/akzidenzgroteskpro-regular.woff') format('woff'),
+        url('../fonts/akzidenzgroteskpro-regular.ttf') format('truetype'),
+        url('../fonts/akzidenzgroteskpro-regular.svg#Akzidenz') format('svg');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Akzidenz';
+    src: url('../fonts/akzidenzgroteskpro-light.woff2') format('woff2'),
+        url('../fonts/akzidenzgroteskpro-light.woff') format('woff'),
+        url('../fonts/akzidenzgroteskpro-light.ttf') format('truetype'),
+        url('../fonts/akzidenzgroteskpro-light.svg#AkzidenzGroteskPro-Light') format('svg');
+    font-weight: 300;
+    font-style: normal;
+}
