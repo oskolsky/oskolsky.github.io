@@ -1,138 +1,14 @@
 <!DOCTYPE html>
-<html lang="ru" dir="ltr">
+<html>
     <head>
-        <meta charset="utf-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <link rel="stylesheet" href="assets/stylesheets/styles.css">
-        <title>Chat</title>
+        <meta charset="UTF-8">
+        <link href="styles.css" rel="stylesheet" />
+        <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+        <title>Bork Dashboard</title>
     </head>
     <body>
-
-        <div class="chat-demo-container">
-
-            <div class="chat-wrapper">
-                <div class="chat">
-                    <div class="chat__header">Чат</div>
-                    <div class="chat__body">
-
-                        <div class="chat__item">
-                            <div class="chat__item-avatar"></div>
-                            <div class="chat__item-name">Александра</div>
-                            <div>
-                                <div class="chat__item-message-wrapper">
-                                    <div class="chat__item-message">Добрый день</div>
-                                </div>
-                                <div class="chat__item-message-wrapper">
-                                    <div class="chat__item-message">Это большой длинный текст который переходит на вторую строку</div>
-                                </div>
-                                <div class="chat__item-message-wrapper">
-                                    <div class="chat__item-message">5 млн в месяц сможете перевести</div>
-                                </div>
-                            </div>
-                            <div class="chat__item-time">10:24</div>
-                        </div>
-
-                        <div class="chat__item chat__item--own chat__item--read">
-                            <div>
-                                <div class="chat__item-message-wrapper">
-                                    <div class="chat__item-message">отлично</div>
-                                </div>
-                                <div class="chat__item-message-wrapper">
-                                    <div class="chat__item-message">спасибо 😀</div>
-                                </div>
-                            </div>
-                            <div class="chat__item-status"></div>
-                            <div class="chat__item-time">10:26</div>
-                        </div>
-
-                        <div class="chat__item">
-                            <div class="chat__item-avatar"></div>
-                            <div class="chat__item-name">Александра</div>
-                            <div>
-                                <div class="chat__item-message-wrapper">
-                                    <div class="chat__item-message">Рада была ответить, всего доброго</div>
-                                </div>
-                            </div>
-                            <div class="chat__item-time">10:25</div>
-                        </div>
-
-                        <div class="chat__item chat__item--own chat__item--read">
-                            <div>
-                                <div class="chat__item-message-wrapper">
-                                    <div class="chat__item-message">всего доброго</div>
-                                </div>
-                            </div>
-                            <div class="chat__item-status"></div>
-                            <div class="chat__item-time">10:26</div>
-                        </div>
-
-                        <div class="chat__item">
-                            <div class="chat__item-avatar"></div>
-                            <div class="chat__item-name">Александра</div>
-                            <div>
-                                <div class="chat__item-message-wrapper">
-                                    <div class="chat__item-message">Добрый день</div>
-                                </div>
-                                <div class="chat__item-message-wrapper">
-                                    <div class="chat__item-message">Это большой длинный текст который переходит на вторую строку</div>
-                                </div>
-                                <div class="chat__item-message-wrapper">
-                                    <div class="chat__item-message">5 млн в месяц сможете перевести</div>
-                                </div>
-                            </div>
-                            <div class="chat__item-time">10:24</div>
-                        </div>
-
-                        <div class="chat__item chat__item--own chat__item--unread">
-                            <div>
-                                <div class="chat__item-message-wrapper">
-                                    <div class="chat__item-message">всего доброго</div>
-                                </div>
-                            </div>
-                            <div class="chat__item-status"></div>
-                            <div class="chat__item-time">10:26</div>
-                        </div>
-
-                        <div class="chat__item chat__item--own chat__item--unread">
-                            <div>
-                                <div class="chat__item-message-wrapper">
-                                    <div class="chat__item-message">
-                                        <div class="chat__item-message-file-name">Мои_документ.doc</div>
-                                        <div class="chat__item-message-file-size">231 кб</div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="chat__item-status"></div>
-                            <div class="chat__item-time">10:26</div>
-                        </div>
-
-                    </div>
-                    <div class="chat__faq">
-                        <a href="#" class="chat__faq-hide"></a>
-                        <div class="chat__faq-title">Популярные запросы</div>
-                        <div class="chat__faq-link"><a href="#">Как купить технику BORK?</a></div>
-                        <div class="chat__faq-link"><a href="#">Как заказать доставку?</a></div>
-                        <div class="chat__faq-link"><a href="#">Как оплатить?</a></div>
-                    </div>
-                    <div class="chat__file">
-                        <span class="chat__file-name">Рисунок.jpg</span>
-                        <span class="chat__file-size">542 кб</span>
-                        <a href="#" class="chat__file-hide"></a>
-                    </div>
-                    <div class="chat__footer">
-                        <textarea class="chat__textarea" placeholder="Напишите что нибудь…" autofocus></textarea>
-                        <a href="#" class="chat__submit"></a>
-                        <a href="#" class="chat__smile"></a>
-                        <a href="#" class="chat__attach"></a>
-                    </div>
-                </div>
-
-                <a href="#" class="chat-toggle"></a>
-                <a href="#" class="chat-toggle chat-toggle--opened"></a>
-            </div>
-
-        </div>
-
-        <script type="text/javascript" src="assets/javascripts/bundle.js"></script>
+        <div id="app" class="app"></div>
+        <script type="text/javascript" src="settings.js"></script>
+        <script type="text/javascript" src="bundle.js"></script>
     </body>
 </html>
